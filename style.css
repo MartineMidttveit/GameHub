@@ -5,6 +5,13 @@
     background-color: black;
 }
 
+.inner_header {
+    width: 1100px;
+    height: 100%;
+    display: block;
+    background-color: black;
+}
+
 .logo_container {
     height: 250px;
     display: table;
@@ -12,7 +19,7 @@
 }
 
 .logo_container h1 {
-    color: D22CF5;
+    color: #D22CF5;
     height: 100%;
     display: table-cell;
     vertical-align: middle;
@@ -22,7 +29,8 @@
 }
 
 .logo_container h1 span {
-    font-weight: 200;
+    font-weight: 300;
+    color: white;
 }
 
 .navigation {
@@ -35,4 +43,9 @@
     display: table;
     float: left;
     padding: 0px 20px; 
+}
+
+.navigation a li {
+    display: table-cell;
+    vertical-align: middle;
 }
