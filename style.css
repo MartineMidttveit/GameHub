@@ -35,6 +35,14 @@
     color: white;
 }
 
+.navigation_header {
+    width: 100%;
+    height: 64px;
+    background-color: #0F0F17;
+    opacity: 80%;
+    display: block;
+}
+
 .navigation {
     float: right;
     height: 100%;
