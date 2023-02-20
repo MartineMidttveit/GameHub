@@ -40,6 +40,9 @@
     font-family: 'Poppins', sans-serif;
     color: white;
     font-size: 14px;
+    height: 100%;
+    vertical-align: middle;
+    display: table-cell;
 }
 .navigation_header {
     width: 100%;
