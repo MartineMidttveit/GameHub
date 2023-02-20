@@ -1,26 +1,13 @@
-.header {width: 100%;
-    height: 112px;
-    display: block;
-    background-color: 000000;
+body {
+
+    font-family: 'Montserrat', sans-serif;  
 }
 
-.logo_container {
-    height: 100%;
-    display: table;
-    float: left;
-}
+.header {
 
-.logo_container h1 {
-    color: 000000;
-    height: 100%;
-    display: table-cell;
-    vertical-align: left;
-    font-family: Montserrat;
-    font-size: 36px;
-    font-weight: 800;
-
-}
-
-.logo_container h1 span {
-    font-weight: 200;
+    min-height: 100vh;
+    width: 100%;
+    background: black;
+    color: white;
+    position: relative;
 }
