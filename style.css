@@ -10,6 +10,7 @@
     height: 100%;
     display: block;
     background-color: black;
+    margin: 0 auto;
 }
 
 .logo_container {
@@ -23,14 +24,14 @@
     height: 100%;
     display: table-cell;
     vertical-align: middle;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-size: 36px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .logo_container h1 span {
-    font-weight: 300;
-    font-family: 'Montserrat';
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
     color: white;
 }
 
@@ -49,4 +50,7 @@
 .navigation a li {
     display: table-cell;
     vertical-align: middle;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
