@@ -104,5 +104,15 @@
     letter-spacing: 0.4px;
 }
 
+.container {
+    width: 1440px;
+    height: 905px;
+}
+
+/*resize images*/
+.container img {
+    width: 100%;
+    height: auto;
+}
 
    
