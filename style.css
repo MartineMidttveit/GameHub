@@ -196,8 +196,23 @@ top: 60px;
     text-align: center;
 }
 
-.Games_list {
-
-
+.Gallery {
+    margin: 10px 50px;
+    float: left;
+    width: 224px;
+    height: 286px;
+    align-items: center;
 }
+
+.gallery img {
+    width: 224px;
+    height: 286px;
+    padding: 41px;
+    object-fit: cover;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
 
