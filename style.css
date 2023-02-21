@@ -1,7 +1,6 @@
 .header {
-    width: 100%;
+    width: 1440px;
     height: 112px;
-    display: block;
     background-color: black;
 }
 
@@ -21,12 +20,16 @@
 
 .logo_container h1 {
     color: #D22CF5;
-    height: 100%;
-    display: table-cell;
     vertical-align: middle;
     font-family: 'Montserrat', sans-serif;
     font-size: 36px;
     font-weight: 700;
+    position: absolute;
+    left: 122px;
+    right: 1105px;
+    height: 50px;
+    top: 18px;
+
 }
 
 .logo_container h1 span {
@@ -40,10 +43,13 @@
     font-family: 'Poppins', sans-serif;
     color: white;
     font-size: 14px;
-    height: 100%;
-    vertical-align: middle;
-    display: table-cell;
+    position: absolute;
+    left: 126px;
+    top: 72px;
+    right: 1154px;
+    height: 24px;
 }
+
 .navigation_header {
     width: 100%;
     height: 64px;
@@ -58,10 +64,10 @@
 }
 
 .navigation a {
-    height: 100%;
     display: table;
     float: left;
-    padding: 0px 20px; 
+    padding: 0px 45px; 
+    vertical-align: middle;
 }
 
 .navigation a li {
@@ -72,3 +78,31 @@
     font-size: 16px;
     color: white;
 }
+
+.Search_Bar {
+    position: absolute;
+    width: 588px;
+    height: 42px;
+    top: 134px;
+    left: 122px;
+    right: 749px;
+    background-color: white; 
+}
+
+.Search_Bar h1 {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: black;
+    right: 339px;
+    top: 13px;
+    bottom: 13px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.4px;
+}
+
+
+   
