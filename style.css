@@ -82,28 +82,43 @@
 }
 
 .Search_Bar {
-    position: absolute;
-    width: 588px;
-    height: 42px;
-    top: 134px;
+    color: black;
+    background-color: white;
+    opacity: 80%;
+    width: 450px;
+    height: 40px;
+    float: left;
+    position: relative;
+    top: 23px;
     left: 122px;
-    right: 749px;
-    background-color: white; 
 }
 
-.Search_Bar h1 {
-    font-size: 14px;
+.Search_Bar button img {
+    height: 20px;
+    width: 20px;
+}
+
+.Search_Bar button {
+    border: none;
+    background-color: white;
+    float: right;
+    position: relative;
+    right: 50px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.Search_Bar input {
+    border: none;
+    position: relative;
+    top: 6px;
+    color: #000000;
+    opacity: 100%;
+    font-size: 16px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    color: black;
-    right: 339px;
-    top: 13px;
-    bottom: 13px;
-    position: absolute;
-    display: flex;
-    align-items: center;
+    width: 350px;
     text-align: center;
-    letter-spacing: 0.4px;
+    left: 10px;
 }
 
 .Container {
@@ -129,15 +144,15 @@
 }
 
 .Hero_Text h1 {
-position: absolute;
-font-family: 'Montserrat', sans-serif;
-font-size: 20px;
-color: white;
-letter-spacing: 5.4px;
-text-align: center;
-font-weight: 400;
-right: 190px;
-top: 60px;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 5.4px;
+    text-align: center;
+    font-weight: 400;
+    right: 190px;
+    top: 60px;
 }
 
 .Hero_Text h2 {
@@ -238,15 +253,18 @@ top: 60px;
     top: 86px;
     right: 81px;
     bottom: 267px;
-    left: 684px;
+    left: 380px;
+    text-align: center;
 }
 
-.Information_box p1 {
+.Information_box P1 {
     color: white;
     font-family: 'Poppins';
     font-weight: 300;
     font-size: 20px;
-
+    text-align: center;
+    position: relative;
+    right: -500px;
 }
 
 .Information_box p span {
