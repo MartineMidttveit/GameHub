@@ -273,6 +273,7 @@
 
 .Information_box p span {
     color: #D22CF5;
+    font-weight: 600;
 }
 
 .Information_box button {
@@ -289,6 +290,74 @@
 .Information_box button:hover {
    background-color: white;
    transform: scale(1.1);
+}
+
+h3 {
+    position: absolute;
+    top: 262px;
+    left: 140px;
+    width: 224px;
+    height: 42px;
+    background-color: #000000;
+    opacity: 80%;
+    color: white;
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    align-items: center;
+    padding-top: 8px;
+}
+
+h4 {
+    position: absolute;
+    left: 448px;
+    width: 224px;
+    height: 42px;
+    background-color: #000000;
+    opacity: 80%;
+    color: white;
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    align-items: center; 
+    padding-top: 8px;
+    top: 258px;
+}
+
+h5 {
+    position: absolute;
+    top: 251px;
+    left: 756px;
+    width: 224px;
+    height: 42px;
+    background-color: #000000;
+    opacity: 80%;
+    color: white;
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    align-items: center; 
+    padding-top: 8px;
+}
+
+h6 {
+    position: absolute;
+    top: 241px;
+    left: 1064px;
+    width: 224px;
+    height: 42px;
+    background-color: #000000;
+    opacity: 80%;
+    color: white;
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    align-items: center; 
+    padding-top: 8px;
 }
 
 
