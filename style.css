@@ -292,7 +292,7 @@
    transform: scale(1.1);
 }
 
-h3 {
+h4 {
     position: absolute;
     top: 262px;
     left: 140px;
@@ -309,7 +309,7 @@ h3 {
     padding-top: 8px;
 }
 
-h4 {
+h5 {
     position: absolute;
     left: 448px;
     width: 224px;
@@ -326,7 +326,7 @@ h4 {
     top: 258px;
 }
 
-h5 {
+h6 {
     position: absolute;
     top: 251px;
     left: 756px;
@@ -343,7 +343,7 @@ h5 {
     padding-top: 8px;
 }
 
-h6 {
+h7 {
     position: absolute;
     top: 241px;
     left: 1064px;
