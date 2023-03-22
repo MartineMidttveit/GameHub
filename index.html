@@ -1,77 +1,241 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
+    <script
+      src="https://kit.fontawesome.com/b515e79b0f.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <style> body {background-color: black}
-        </style>
+    <link rel="stylesheet" href="/CSS/style.css" />
 
-    <div class="Container">
-        <div class="Text_box">
-            <div class="Hero_Text">
-                <h1>BATMAN CITY</h1>
-                <h2>Now available for PS5</h2>
-                <button>VIEW MORE</button>
-            </div>
-        </div> 
+    <title>GameHub | Home</title>
+  </head>
+  <body>
 
-    <div class="header">
-        <div class="inner_header">
-            <div class="logo_container">
-            <h1>GAME<span>HUB</span></h1>
-            <h2>the universe of games</h2>
-            </div>
-        </div>
+<!---------------------------------------------------- HEADER ---------------------------------------------------->
 
-            <div class="navigation_header">
-                <ul class="navigation">
-                    <a><li>Home</li></a>
-                    <a><li>Shop</li></a>
-                    <a><li>Sell</li></a>
-                    <a><li>Contact</li></a>
-                    <a><li>About</li></a>
-                </ul>
-                <div class="Search_Bar">
-                    <form action="Search">
-                        <input type="text" placeholder="Search for games..." name="q">
-                        <button type="submit"><img src="/IMAGES/pngfind.com-location-icon-png-576824.png"></button>
-                    </form>
-                </div>
-            </div>
+<header>
+  <nav class="header-nav">
+      <a id="logo" href="Index.html"
+        >GAME<span>HUB</span>
+        <p>The universe of games</p></a>
+
+      <div class="navigate">
+          <a href="#"><i class="fa-regular fa-user"></i></a>
+          <a href="#"><i class="fa-regular fa-heart"></i></a>
+          <a href="/HTML/Checkout.html"><i class="fa-solid fa-bag-shopping"></i></a>
+      </div>
+  </nav>
+</header>
+
+<!---------------------------------------------------- NAVIGATION HEADER ---------------------------------------------------->
+
+<header class="navigation">
+  <div class="search-bar">
+      <div id="form">
+          <input type="text" placeholder="Search for games..." />
+      </div>
+  </div>
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="hamburger-icon"
+        ><i class="fas fa-bars"></i
+      ></label>
+
+  <nav class="nav">
+      <a href="Index.html">Home</a>
+      <a href="/HTML/shop.html">Shop</a>
+      <a href="#">Sell</a>
+      <a href="HTML/contact.html">Contact</a>
+      <a href="HTML/about.html">About</a>
+  </nav>
+</header>
+
+<!---------------------------------------------------- HERO-PICTURE ---------------------------------------------------->
+
+<div class="Background">
+    <div class="Textbox">
+        <h2>BATMAN CITY</h2>
+        <p>Now available for Playstation 5</p>
+        <a id="view-btn" class="view-btn" href="#">VIEW MORE</a>
+    </div>
+</div>
+
+<!---------------------------------------------------- HEADLINE ---------------------------------------------------->
+
+<div class="subtitle">
+    <div class="line"></div>
+        <h3>FEATURED<span> GAMES</span></h3>
+        <div class="line"></div>
+</div>
+
+<!---------------------------------------------------- GALLERY 1 ---------------------------------------------------->
+
+<div class="Gallery">
+    <div class="Game1">
+      <a href="Shop.html"><img src="/IMAGES/lich.webp" alt="World of Warcraft - Wrath of the Lich King" /></a>
+        <div class="Desc1">
+          <a class="desc" href="#">World of Warcraft</a>
         </div>
     </div>
 
-<div class="Featured">
-    <h3>FEATURED <span>GAMES</span></h3>
-</div>
-
-<div class="listing_box"> 
-
-        <div class="gallery">
-        <img src="/IMAGES/lich.webp">
-        <h4>World of Warcraft</h4>
-        <img src="/IMAGES/grand.webp">
-        <h5>Grand Theft Auto</h5>
-        <img src="/IMAGES/got.png">
-        <h6>Game of Thrones</h6>
-        <img src="/IMAGES/ggg.png">
-        <h7>Halo Infinite</h7>
-</div>
-</div>
-
-    <div class="Information_box">
-        <p><span>BUY</span> A GAME</p>
-        <p>OR <span>SELL</span> THE ONES YOU'VE FINISHED!</p>
-        <P1>Offering the best prices on the market as well as price guarantee</P1> 
-        <button>READ MORE</button>
+    <div class="Game2">
+        <a href="Shop.html"><img src="/IMAGES/grand.webp" alt="Grand Theft Auto" /></a>
+        <div class="Desc2">
+          <a class="desc" href="#">Grand Theft Auto</a>
+        </div>
     </div>
 
-</body>
+    <div class="Game3">
+      <a href="Shop.html"><img src="/IMAGES/got.png" alt="Game of Thrones - Dragon" /></a>
+        <div class="Desc3">
+          <a class="desc" href="#">Game of Thrones</a>
+        </div>
+    </div>
+
+    <div class="Game4">
+      <a href="Shop.html"><img src="/IMAGES/ggg.png" alt="Halo Infinite - Astronaut" /></a>
+        <div class="Desc4">
+          <a class="desc" href="#">Halo Infinite</a>
+        </div>
+    </div>
+</div>
+
+<!---------------------------------------------------- SECTION 1 ---------------------------------------------------->
+
+<div class="Info-container">
+  <img src="/IMAGES/ps5.jpg" alt="Playstation 5 Controller" />
+    <div class="text-box">
+      <h4>BUY A GAME OR SELL <br />THE ONES YOU'VE FINISHED</h4>
+        <p>
+          Offering the best prices on the market <br />as well as price
+          guarantee.
+        </p>
+      <a id="read-btn" href="#">READ MORE</a>
+    </div>
+</div>
+
+<!---------------------------------------------------- HEADLINE ---------------------------------------------------->
+
+<div class="subtitle2">
+  <div class="line"></div>
+      <h3>POPULAR<span> GAMES</span></h3>
+      <div class="line"></div>
+</div>
+
+<!---------------------------------------------------- GALLERY 2 ---------------------------------------------------->
+
+<div class="Gallery2">
+  <div class="Game5">
+    <a href="#"><img src="/IMAGES/Callofduty.png" alt="Call of Duty - Soldiers" /></a>
+      <div class="Desc5">
+          <a class="desc" href="#">World of Warcraft</a>
+      </div>
+</div>
+
+  <div class="Game6">
+    <a href="#"><img src="/IMAGES/carsss.png" alt="Grand Theft Auto" /></a>
+      <div class="Desc6">
+        <a class="desc" href="#">Grand Theft Auto</a>
+      </div>
+  </div>
+
+  <div class="Game7">
+    <a href="#"
+        ><img src="/IMAGES/Assassinscreed.png" alt="Assassins Creed" /></a>
+    <div class="Desc7">
+        <a class="desc" href="#">Game of Thrones</a>
+    </div>
+  </div>
+
+  <div class="Game8">
+    <a href="#"><img src="/IMAGES/drage1.png" alt="Game of Thrones" /></a>
+      <div class="Desc8">
+          <a class="desc" href="#">Halo Infinite</a>
+      </div>
+    </div>
+</div>
+
+<!---------------------------------------------------- SECTION 2 ---------------------------------------------------->
+
+<div class="Info-container2">
+  <div class="text-box2">
+    <h4>NEWSLETTER</h4>
+      <p>
+        Sign up for our newsletter and be the first to know about the<br />latest
+        news, products, and promotions. Simply enter your<br /> email address
+        and click the subscribe button.
+      </p>
+
+  <div class="subscription">
+      <form id="newsletter">
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+      </form>
+  </div>
+
+  <button class="subscribe" type="submit">SUBSCRIBE</button>
+  </div>
+
+  <img src="/IMAGES/jjj.png" alt="Arcane Character" width="534px" height="490px" />
+</div>
+
+<!---------------------------------------------------- FOOTER ---------------------------------------------------->
+
+<footer>
+  <div id="footer-main">
+      <div class="Contact">
+        <a id="contact" href="#">CONTACT</a>
+        <p>Contact us</p>
+        <p>Support</p>
+      </div>
+
+      <div class="About">
+        <a id="about" href="#">ABOUT</a>
+        <p>About</p>
+        <p>Our culture</p>
+        <p>Careers</p>
+      </div>
+
+      <div class="Partners">
+        <a id="partners" href="#">PARTNERS</a>
+        <p>EA Games</p>
+        <p>Blizzard</p>
+        <p>League of Legends</p>
+        <p>Xbox</p>
+        <p>Playstation</p>
+        <p>Nintendo</p>
+      </div>
+
+      <div class="Follow">
+        <a id="follow" href="#">FOLLOW US</a>
+        <div class="follow-btns">
+          <a id="instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a id="facebook" href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a id="linkedin" href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="contact-footer">
+        <span id="phone-ico"><i class="fa-solid fa-phone"></i></span>
+        <span id="phone-nmbr">+47 552 24 356</span><br/>
+
+        <span id="email-ico"><i class="fa-solid fa-envelope"></i></span>
+        <span id="email-adr">gamehub@customersupport.com</span>
+      </div>
+  
+      <p class="Terms">Privacy Policy | Terms & Conditions | Cookie Policy</p>
+  </div>
+</footer>
+
+  </body>
 </html>

@@ -1,0 +1,292 @@
+/*----------------------Thank You-----------------------*/
+
+.top-section {
+    background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.51) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    width: 1200px;
+    margin: 0 auto;
+    border-radius: 70px;
+}
+
+h1 {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 36px;
+    color: #FF6001;
+    margin-top: 40px;
+    margin-bottom: 6px;
+}
+
+p {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 28px;
+}
+
+.order {
+    background-color: white;
+    color: #000000;
+    padding: 0px 15px;
+    height: 64px;
+}
+
+/*----------------------Order Summary-----------------------*/
+
+.summary-wrapper {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: 40px 200px;
+}
+
+.summary {
+    background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.51) 100%);
+    padding: 50px 0px;
+    width: 466px;
+    display: flex;
+    flex-direction: column;
+    grid-row: 1 / span 2;
+    grid-column: 3 / span 1;
+}
+
+.summary h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #FF6001;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+}
+
+.Game1,
+.Game2 {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+}
+
+.game-pic {
+    height: 90px;
+    width: 70px;
+    margin: 0;
+}
+
+.Game1 p,
+.Game2 p {
+    text-align: center;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.Game1 h3,
+.Game2 h3 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin: 0;
+}
+
+.Game1 h4,
+.Game2 h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: right;
+    line-height: 2.0;
+    margin: 0;
+}
+
+.Prices {
+    margin-top: 40px;
+}
+
+.Prices p {
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 2.0;
+    font-weight: 500;
+    margin: 0;
+    padding-right: 46px;
+}
+
+.Prices h5 {
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 2.0;
+    font-weight: 500;
+    margin: 0;
+    padding-right: 46px;
+    padding-top: 10px;
+}
+
+/*---------------------- Shipping/payment -----------------------*/
+
+.Shipping {
+    background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.51) 100%);
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.Billing {
+    background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.51) 100%);
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.Shipping-method {
+    background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.51) 100%);
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.payment-method {
+    background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.51) 100%);
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.Shipping h6,
+.Billing h6, 
+.Shipping-method h6,
+.payment-method h6 {
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: 15px;
+    padding-left: 42px;
+}
+
+.Shipping p,
+.Billing p, 
+.Shipping-method p,
+.payment-method p {
+    line-height: 0;
+    text-align: left;
+    padding-left: 42px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.Shipping p span,
+.Billing p span, 
+.Shipping-method p span,
+.payment-method p span {
+    font-weight: 300;
+    padding-left: 4px;
+}
+
+.map {
+    height: 80px;
+    width: 80%;
+    box-sizing: unset;
+    margin-left: 34px;
+    border-radius: 50px;
+}
+
+
+/*-----------------------------Footer------------------------------*/
+
+    footer {
+        height: 261px;
+        width: 100%;
+        background-color: black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-bottom: 100px;
+        border-top: 1px solid #101018;
+    }
+    
+    
+    .contact-footer {
+        position: relative;
+        bottom: 90px;
+    }
+    
+    .phone-ico,
+    .phone-nmbr,
+    .email-ico,
+    .email-adr {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+    }
+    
+    .phone-ico,
+    .email-ico {
+        padding-right: 15px;
+    }
+    
+    .Contact,
+    .About,
+    .Partners,
+    .Follow {
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        margin-top: 40px;
+    }
+    
+    .Contact a,
+    .About a,
+    .Partners a,
+    .Follow a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        letter-spacing: 0.4px;
+    }
+    
+    .Contact p,
+    .About p,
+    .Partners p,
+    .Follow p {
+        line-height: 1.0;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .Follow i {
+        font-size: 28px;
+        display: inline-block;
+        margin: 10px 15px 30px 0px;
+    }
+    
+    .Follow p {
+        text-decoration: underline;
+    }
+    
+    .Follow i:hover {
+        color: #FF6001;
+        transform: rotate(1.0turn);
+        transition: 1s;
+    }
+    
+    .Contact a:hover,
+    .About a:hover,
+    .Partners a:hover,
+    .Follow a:hover {
+        color: #FF6001;
+        transition: .3s;
+    }
+    
+    .fa-phone,
+    .fa-envelope {
+        font-size: 18px;
+    }
+    
+    .Contact p {
+        font-weight: 300;
+    }    

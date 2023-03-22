@@ -1,0 +1,123 @@
+body {
+    background-color: #101018;
+}
+
+.Shoppingbag {
+    background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.31) 100%);
+    width: 1196px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 200px;
+    padding: 40px 100px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+}
+
+.Shoppingbag h1,
+.delivery-info h1 {
+    grid-column: 1 / span 5;
+    color: #ff6001;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.bag-titles {
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+
+.style-2 {
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+.style-3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+}
+
+.col-1 {
+    grid-column: 1 / span 1;
+}
+
+.col-2 {
+    grid-column: 2 / span 1;
+}
+
+.col-3 {
+    grid-column: 3 / span 1;
+}
+
+.col-4 {
+    grid-column: 4 / span 1;
+}
+
+.col-5 {
+    grid-column: 5 / span 1;
+}
+
+.col-6 {
+    grid-column: 6 / span 1;
+}
+
+.col-1 img,
+.col-7 img {
+    height: 62px;
+    width: 50px;
+}
+
+.chosen-device {
+    background-color: white;
+    width: 100%;
+    height: 30px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 6px;
+}
+
+/* DELIVERY INFO */
+
+.bottom-part {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.delivery-info {
+    height: 400px;
+    width: 830px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.31) 100%);
+    margin: 50px auto;
+    padding: 40px 100px;
+}
+
+#insert-name,
+#insert-address,
+#insert-code,
+#post-office {
+    background-color: white;
+    height: 40px;
+    margin: 20px 0px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.del-info {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    width: 600px;
+    height: 40px;
+}
+
