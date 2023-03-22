@@ -67,6 +67,47 @@ body {
     transform: scale(1.1);
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .Hero {
+        height: 500px;
+        width: 100%;
+    }
+
+    .herotext {
+        height: 230px;
+    }
+
+    .herotext h1 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .Hero {
+        height: 400px;
+    }
+
+    .herotext {
+        height: 180px;
+        margin-bottom: 50px;
+    }
+
+    .herotext h1 {
+        font-size: 24px;
+        margin-top: 34px;
+    }
+
+    .herotext p {
+        margin-bottom: 16px;
+    }
+
+    #view-btn2 {
+        height: 30px;
+        width: 120px;
+        padding: 2px 0px;
+    }
+}
+
 /*-------------------------------------------------- Sort by --------------------------------------------------*/
 
 .nav-line {
@@ -79,46 +120,144 @@ body {
     align-items: center;
 }
 
-.sort-by,
-.best-match {
+.sort-by {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 16px;
+    height: 72px;
+    padding-right: 100px;
+}
+
+.sort-by p span {
+    background-color: white;
+    color: #000000;
+    padding: 22px;
+    margin-left: 40px;
 }
 
 .best-match {
     color: black;
     background-color: white;
-    display: inline-block;
-    padding: 0px 55px;
+    display: flex;
     position: relative;
     margin-right: 82px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
-.best-match i {
-    position: absolute;
+#filter {
+    display: none;
 }
 
-.sort-by {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .nav-line {
+        justify-content: space-between;
+    }
+    
+    .sort-by {
+        padding-right: 12px;
+    }
+
+    #filter {
+        display: block;
+        height: 30px;
+        width: 100px;
+        margin-left: 12px;
+        background-color: #FF6001;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        border: none;
+        border-radius: 50px;
+    }
+
+    .filter {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px){
+    .nav-line {
+        justify-content: space-between;
+    }
+    
+    #filter {
+        display: block;
+        height: 30px;
+        width: 100px;
+        margin-left: 12px;
+        background-color: #FF6001;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        border: none;
+        border-radius: 50px;
+    }
+
+    .filter {
+        display: none;
+    }
+
+    .sort-by {
+        padding-right: 12px;
+    }
+
+    .sort-by p span {
+        padding: 10px 6px;
+        margin-left: 10px;
+    }
+}
+
+
+/*-------------------------------------------------- SHOP CONTAINERS  --------------------------------------------------*/
+
+.shop-main-container {
+    display: flex;
+    gap: 10px;
+}
+
+.shop-grid {
+    display: grid;
+    padding: 30px 60px;
+    gap: 20px;
+    width: 100%;
+    justify-items: center;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 400px 400px 400px 400px 400px 400px;
     margin-right: 40px;
 }
 
-/*-------------------------------------------------- Shop container --------------------------------------------------*/
-/*
-.shop-container {
-    width: 75%;
-    height: auto;
-    display: grid;
-    background-color: #4b0f38;
-    grid-template-columns: repeat(3, 1fr, 1fr, 1fr);
-    grid-template-rows: auto;
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .shop-grid {
+        padding: 0;
+        margin: 0;
+        grid-template-columns: 21% 21% 21% 21%;
+        grid-template-rows: 200px 200px 200px 200px 200px 200px;
+        padding-top: 10px;
+        gap: 22px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .shop-grid {
+        padding: 10px;
+        margin: 0;
+        grid-template-columns: 48% 48%;
+        grid-template-rows: 350px 350px 350px 350px 350px 350px;
+        gap: 14px;
+    }
 }
 
 /*-------------------------------------------------- Filter --------------------------------------------------*/
 
 .filter {
     background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.31) 100%);
-    width: 224px;
+    width: 300px;
     height: 1736px;
     border-radius: 50px;
     padding: 10px;
@@ -162,152 +301,178 @@ body {
     line-height: 2.0;
 }
 
-/*-------------------------------------------------- Games --------------------------------------------------*/
 
-.Games {
-    height: auto;
-    margin-top: 30px;
-    display: grid;
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .filter {
+        margin: 10px 10px;
+        padding: 0;
+        width: 200px;
+        height: auto;
+    }
+
+    .filter h2 {
+        font-size: 18px;
+    }
+
+    .filter p {
+        font-size: 12px;
+    }
 }
 
-/*-------------------------------------------------- The small games --------------------------------------------------*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .filter {
+        display: none;
+    }
+}
 
-.shop1,
-.shop2,
-.shop4,
-.shop5,
-.shop6,
-.shop7,
-.shop8,
-.shop9,
-.shop11,
-.shop12,
-.shop13,
-.shop14,
-.shop15,
-.shop16,
-.shop17,
-.shop18,
-.shop19 {
-    width: 224px;
-    height: 328px;
+/*-------------------------------------------------- GAMES --------------------------------------------------*/
+
+.game-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.51) 100%);
-    margin-bottom: 20px;
-    display: inline-block;
-}
-
-.shop1 img,
-.shop2 img,
-.shop4 img,
-.shop5 img,
-.shop6 img,
-.shop7 img,
-.shop8 img,
-.shop9 img,
-.shop11 img,
-.shop12 img,
-.shop13 img,
-.shop14 img,
-.shop15 img,
-.shop16 img,
-.shop17 img,
-.shop18 img,
-.shop19 img {
+  }
+  
+  .game-container img {
     height: 175px;
     width: 135px;
-    margin-left: 44.5px;
-    margin-top: 30px;
-}
-
-.shop1 h3,
-.shop2 h3,
-.shop3 h3,
-.shop4 h3,
-.shop5 h3,
-.shop6 h3,
-.shop7 h3,
-.shop8 h3,
-.shop9 h3,
-.shop10 h3,
-.shop11 h3,
-.shop12 h3,
-.shop13 h3,
-.shop14 h3,
-.shop15 h3,
-.shop16 h3,
-.shop17 h3,
-.shop18 h3,
-.shop19 h3 {
+  }
+  
+  .game-container h3,
+  .shop3 h3,
+  .shop10 h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 0.4px;
     text-align: center;
-}
-
-.shop1 p,
-.shop2 p,
-.shop3 p,
-.shop4 p,
-.shop5 p,
-.shop6 p,
-.shop7 p,
-.shop8 p,
-.shop9 p,
-.shop10 p,
-.shop11 p,
-.shop12 p,
-.shop13 p,
-.shop14 p,
-.shop15 p,
-.shop16 p,
-.shop17 p,
-.shop18 p,
-.shop19 p  {
+  }
+  
+  .game-container p,
+  .shop3 p,
+  .shop10 p {
     font-family: 'Poppins';
     font-size: 14px;
     font-weight: 400;
     text-align: center;
     color: rgb(223, 223, 223);
-    line-height: 1.0;
+    line-height: 1;
+  }
+  
+  .shop3,
+  .shop10 {
+    position: relative;
+    grid-column: span 2;
+    width: 100%;
+    height: 100%;
+    grid-row: span 2;
+  }
+  
+  .shop10 div,
+  .shop3 div {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    
+    .game-container h3,
+    .shop3 h3,
+    .shop10 h3 {
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    .game-container p,
+    .shop3 p,
+    .shop10 p {
+        font-size: 12px;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    .game-container img {
+        height: 100px;
+        width: 70px;
+        padding-bottom: 10px;
+    }
 }
 
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    
+    .game-container h3,
+    .shop3 h3,
+    .shop10 h3 {
+        font-size: 18px;
+        line-height: 1.5;
+        margin: 0;
+    }
 
-/*-------------------------------------------------- The big games --------------------------------------------------*/
+    .game-container p,
+    .shop3 p,
+    .shop10 p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    .game-container img {
+        padding-bottom: 20px;
+    }
+}
+
+/*-------------------------------------------------- BIG GAMES --------------------------------------------------*/
 
 #Ironman img {
-    height: 676px;
-    width: 472px;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
 }
 
 .text-container {
-    width: 265px; 
     background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.51) 100%);
     height: 100px;
-    width: 472px;
+    width: 100%;
     background-color: #000000;
     opacity: 80%;
     text-align: center;
 }
 
 #Ninja img {
-    height: 672px;
-    width: 472px;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .text-container {
+        height: 16%;
+        padding: 4px;
+    }
+}
 
-/*-------------------------------------------------- Bottom text --------------------------------------------------*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .text-container {
+        padding: 10px;
+    }
+}
+
+/*-------------------------------------------------- BOTTOM SECTION --------------------------------------------------*/
 
 .bottom-text {
     margin-top: 40px;
     margin-bottom: 70px;
     width: 100%;
-    margin-left: 650px;
-}
-
-.bottom-text p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
 }
@@ -321,9 +486,8 @@ body {
     font-size: 16px;
     color: white;
     text-decoration: none;
-    padding-left: 40px;
+    padding: 10px 40px;
 }
-
 
 #page {
     text-decoration: none;
@@ -336,7 +500,13 @@ body {
     color: #FF6001;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
-    padding-left: 40px;
     text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .bottom-text {
+        height: 16%;
+        padding: 4px;
+    }
 }
 
