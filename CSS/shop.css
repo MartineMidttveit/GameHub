@@ -285,6 +285,10 @@ body {
     margin-left: 40px;
 }
 
+.filter p:hover {
+    cursor: pointer;
+}
+
 .solid-stars {
     color: #FF6001;
 }
