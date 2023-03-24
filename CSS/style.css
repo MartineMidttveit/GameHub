@@ -109,7 +109,7 @@ html {
   @media (max-width: 800px) {
     .navigate {
       padding: 0px 8px;
-      margin-top: 32px;
+      margin-top: 14px;
       font-size: 18px;
     }
     .navigation {
