@@ -228,8 +228,8 @@ body {
     gap: 20px;
     width: 100%;
     justify-items: center;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 400px 400px 400px 400px 400px 400px;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(6, 400px);
     margin-right: 40px;
 }
 
@@ -237,8 +237,8 @@ body {
     .shop-grid {
         padding: 0;
         margin: 0;
-        grid-template-columns: 21% 21% 21% 21%;
-        grid-template-rows: 200px 200px 200px 200px 200px 200px;
+        grid-template-columns: repeat(4, 21%);
+        grid-template-rows: repeat(6, 200px);
         padding-top: 10px;
         gap: 22px;
     }
@@ -248,8 +248,8 @@ body {
     .shop-grid {
         padding: 10px;
         margin: 0;
-        grid-template-columns: 48% 48%;
-        grid-template-rows: 350px 350px 350px 350px 350px 350px;
+        grid-template-columns: repeat(2, 48%);
+        grid-template-rows: repeat(6, 350px);
         gap: 14px;
     }
 }
@@ -347,9 +347,7 @@ body {
     width: 135px;
   }
   
-  .game-container h3,
-  .shop3 h3,
-  .shop10 h3 {
+  .shop-grid h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 600;
@@ -357,9 +355,7 @@ body {
     text-align: center;
   }
   
-  .game-container p,
-  .shop3 p,
-  .shop10 p {
+  .shop-grid p {
     font-family: 'Poppins';
     font-size: 14px;
     font-weight: 400;
@@ -386,17 +382,13 @@ body {
 
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     
-    .game-container h3,
-    .shop3 h3,
-    .shop10 h3 {
+    .shop-grid {
         font-size: 14px;
         line-height: 1.5;
         margin: 0;
     }
 
-    .game-container p,
-    .shop3 p,
-    .shop10 p {
+    .shop-grid p {
         font-size: 12px;
         line-height: 1.5;
         margin: 0;
@@ -411,17 +403,13 @@ body {
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
     
-    .game-container h3,
-    .shop3 h3,
-    .shop10 h3 {
+    .shop-grid h3 {
         font-size: 18px;
         line-height: 1.5;
         margin: 0;
     }
 
-    .game-container p,
-    .shop3 p,
-    .shop10 p {
+    .shop-grid p {
         font-size: 16px;
         line-height: 1.5;
         margin: 0;
