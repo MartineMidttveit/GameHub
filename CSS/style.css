@@ -1,934 +1,933 @@
 /*-------------------------------------------------- GLOBAL --------------------------------------------------*/
 
 html {
-    box-sizing: border-box;
-    background-color: rgb(0, 0, 0); 
-  }
-  
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit; 
-  }
-  
-  body {
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 0 auto;
-    color: white; 
-  }
-  
-  /*-------------------------------------------------- HEADER --------------------------------------------------*/
-  
+  box-sizing: border-box;
+  background-color: rgb(0, 0, 0);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 auto;
+  color: white;
+}
+
+/*-------------------------------------------------- HEADER --------------------------------------------------*/
+
+header {
+  height: 112px;
+  background-color: black;
+  top: 0px;
+  z-index: 3;
+  position: fixed;
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#logo {
+  font-size: 36px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  color: #d22cf5;
+  text-decoration: none;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  margin-top: 40px;
+}
+
+#logo span {
+  color: white;
+  font-weight: 400;
+}
+
+#logo p {
+  font-size: 16px;
+  color: white;
+  font-family: 'Poppins';
+  font-weight: 300;
+}
+.navigate {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.navigate a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  padding: 4px 20px;
+  font-size: 22px;
+  margin-top: 44px;
+}
+
+.navigate a:hover {
+  color: #d22cf5;
+  transition: 0.2s;
+}
+
+@media (max-width: 1398px) {
   header {
-    height: 112px;
-    background-color: black;
-    top: 0px;
-    z-index: 3;
-    position: fixed;
-    max-width: 1600px;
-    margin: 0 auto;
-    width: 100%;
+    padding: 18px 3px;
+    transition: 0.2s;
+    max-height: 112px;
+    position: unset;
   }
-  
-  .header-nav {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-  
+
   #logo {
-    font-size: 36px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    color: #d22cf5;
-    text-decoration: none;
-    line-height: 16px;
-    letter-spacing: 0.4px;
-    margin-top: 40px;
-  }
-  
-  #logo span {
-    color: white;
-    font-weight: 400;
-  }
-  
-  #logo p {
-    font-size: 16px;
-    color: white;
-    font-family: 'Poppins';
-    font-weight: 300;
-  }
-  .navigate {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-  }
-  
-  .navigate a {
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-    padding: 4px 20px;
-    font-size: 22px;
-    margin-top: 44px;
-  }
-  
-  .navigate a:hover {
-    color: #d22cf5;
+    margin-top: 22px;
     transition: 0.2s;
   }
-  
-  @media (max-width: 1398px) {
-    header {
-      padding: 18px 3px;
-      transition: 0.2s;
-      max-height: 112px;
-      position: unset;
-    }
-  
-    #logo {
-      margin-top: 22px;
-      transition: 0.2s;
-    }
-  
-    .navigate a {
-      margin-top: 22px;
-      margin-bottom: 0px;
-      transition: 0.2s;
-    }
+
+  .navigate a {
+    margin-top: 22px;
+    margin-bottom: 0px;
+    transition: 0.2s;
+    padding: 10px;
   }
-  
-  @media (max-width: 480px) {
-    .navigation {
-      padding: 0 10% !important;
-    }
-  }
-  
-  @media (max-width: 800px) {
-    .navigate {
-      padding: 0px 8px;
-      margin-top: 14px;
-      font-size: 18px;
-    }
-    .navigation {
-      justify-content: flex-end;
-    }
-  
-    #logo {
-      font-size: 24px;
-    }
-  
-    #logo p {
-      font-size: 12px;
-      letter-spacing: 0px;
-    }
-  
-    header input {
-      font-size: 15px;
-      padding: 10px 0px;
-    }
-  
-    .search-bar {
-      width: 70%;
-    }
-  }
-  
-  /*-------------------------------------------------- NAVIGATIONBAR --------------------------------------------------*/
-  
+}
+
+@media (max-width: 480px) {
   .navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(16, 16, 24, 0.9);
-    color: white;
-    height: 60px;
-    top: 112px;
-    font-size: 18px;
-    padding: 0 80px;
+    padding: 0 10% !important;
   }
-  
-  .search-bar {
-    background-color: white;
-    clip-path: polygon(0 0, 58% 0, 100% 100%, 0% 100%);
+}
+
+@media (max-width: 800px) {
+  .navigate {
+    padding: 0px 8px;
     margin-top: 14px;
-    width: 650px;
-    height: 42px;
-  }
-  
-  #form {
-    position: relative;
-  }
-  
-  input {
-    border: none;
-    padding: 10px 15px;
     font-size: 18px;
-    margin-right: 10px;
-    font-family: 'Poppins', sans-serif;
-    background-color: transparent;
-    width: 100%;
-    position: absolute;
-    z-index: 9999;
   }
-  
-  .nav,
-  #menu-checkbox {
+  .navigation {
+    justify-content: flex-end;
+  }
+
+  #logo {
+    font-size: 24px;
+  }
+
+  #logo p {
+    font-size: 12px;
+    letter-spacing: 0px;
+  }
+
+  header input {
+    font-size: 15px;
+    padding: 10px 0px;
+  }
+
+  .search-bar {
+    width: 70%;
+  }
+}
+
+/*-------------------------------------------------- NAVIGATIONBAR --------------------------------------------------*/
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(16, 16, 24, 0.9);
+  color: white;
+  height: 60px;
+  top: 112px;
+  font-size: 18px;
+  padding: 0 80px;
+}
+
+.search-bar {
+  background-color: white;
+  clip-path: polygon(0 0, 58% 0, 100% 100%, 0% 100%);
+  margin-top: 14px;
+  width: 650px;
+  height: 42px;
+}
+
+#form {
+  position: relative;
+}
+
+input {
+  border: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  margin-right: 10px;
+  font-family: 'Poppins', sans-serif;
+  background-color: transparent;
+  width: 100%;
+  position: absolute;
+  z-index: 9999;
+}
+
+.nav,
+#menu-checkbox {
+  display: none;
+}
+
+#menu-checkbox:checked ~ .nav {
+  display: block;
+}
+
+.nav a {
+  display: block;
+  color: white;
+  padding: 10px 28px;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav a:hover {
+  color: #d22cf5;
+  transition: 0.2s;
+}
+
+.nav {
+  display: flex;
+  position: absolute;
+  left: 0px;
+  text-align: center;
+  top: 168px;
+  padding: 0px 122px;
+  margin-right: 2%;
+  z-index: 9999;
+}
+
+@media (max-width: 480px) {
+  .search-bar {
+    padding-left: 20px;
+    width: 90% !important;
+  }
+}
+
+@media (max-width: 1080px) {
+  .nav {
+    width: 100%;
+    display: none;
+    background-color: #101018;
+  }
+  .search-bar {
+    width: 70%;
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .nav {
+    position: static;
+    padding: 0;
+  }
+
+  .hamburger-icon {
     display: none;
   }
-  
-  #menu-checkbox:checked ~ .nav {
-    display: block;
-  }
-  
-.nav a {
-    display: block;
-    color: white;
-    padding: 10px 28px;
-    font-size: 18px;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-.nav a:hover {
-    color: #d22cf5;
-    transition: .2s;
-  }
-  
-  .nav {
-    display: flex;
-    position: absolute;
-    left: 0px;
-    text-align: center;
-    top: 168px;
-    padding: 0px 122px;
-    margin-right: 2%;
-  }
-  
-  @media (max-width: 480px) {
-    .search-bar {
-      padding-left: 20px;
-      width: 90% !important;
-    }
-  }
-  
-  @media (max-width: 1080px) {
-    .nav {
-      width: 100%;
-      display: none;
-      background-color: #101018;
-    }
-    .search-bar {
-      width: 70%;
-      padding-left: 20px;
-    }
-  }
-  
-  @media (min-width: 1080px) {
-    .nav {
-      position: static;
-      padding: 0;
-    }
-  
-    .hamburger-icon {
-      display: none;
-    }
-  
-    .nav a {
-      display: inline-block;
-    }
-  }
-  
-  
-  /*-------------------------------------------------- HEROPICTURE/TEXT --------------------------------------------------*/
-  
-  .Background {
-    background-image: url(/IMAGES/header.png);
-    height: 1000px;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex: 1 1 auto;
-  }
-  
-  .Textbox {
-    background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.56) 100%);
-    height: 270px;
-    width: clamp(350px, 50%, 520px);
-    border-radius: 40px 0px 0px 40px;
-    margin-bottom: 180px;
-    justify-content: center;
-  }
-  
-  .Textbox h2 {
-    font-size: 36px;
-    font-weight: 400;
-    font-family: 'Montserrat';
-    text-align: center;
-    align-self: center;
-    letter-spacing: 5.4px;
-    margin-top: 52px;
-    line-height: 1;
-  }
-  
-  .Textbox p {
-    font-size: 16px;
-    font-weight: 400;
-    font-family: 'Montserrat';
-    letter-spacing: 0.4px;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  #view-btn {
-    background-color: #ff6001;
-    height: 42px;
-    width: 150px;
-    border-radius: 60px;
-    font-weight: 500;
-    letter-spacing: 0.4px;
-    font-size: 16px;
-    font-family: 'Poppins';
-    text-decoration: none;
-    color: black;
-    display: block;
-    text-align: center;
-    padding-top: 8px;
-    margin-left: 180px;
-  }
-  
-  #view-btn:hover {
-    background-color: white;
-    transform: scale(1.1);
-  }
-  
-  @media (max-width: 800px) {
-    .Background {
-      height: 500px;
-    }
-  
-    .Textbox {
-      height: 200px;
-      width: 300px;
-      margin-bottom: 50px;
-    }
-  
-    .Textbox h2 {
-      font-size: 30px;
-      line-height: 0;
-    }
-  
-    #view-btn {
-      margin: 0 auto;
-      width: 130px;
-      height: 36px;
-      padding-top: 5px;
-    }
-  }
-  
-  /*-------------------------------------------------- FEATURED GAMES --------------------------------------------------*/
-  
-  .subtitle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0;
-    color: white;
-  }
-  
-  .line {
-    flex: 1;
-    height: 0.5px;
-    margin: 0 10px;
-    background-color: white;
-    max-width: 100%;
-  }
-  
-  .subtitle h3 {
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  
-  .subtitle h3 span {
-    color: #ff6001;
-  }
-  
-  /*-------------------------------------------------- GALLERY1 --------------------------------------------------*/
-  
-  .Gallery {
-    background: linear-gradient(
-      180deg,
-      rgba(16, 16, 24, 0.9) 0%,
-      rgba(16, 16, 24, 0) 100%);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 1 100%;
-    justify-content: center;
-  }
-  
-  @media (max-width: 480px) {
-    .Gallery {
-      justify-content: flex-start;
-      flex-wrap: nowrap;
-      overflow: auto;
-    }
-  }
-  
-  .Desc1 a,
-  .Desc2 a,
-  .Desc3 a,
-  .Desc4 a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-  }
-  
-  .Desc1,
-  .Desc2,
-  .Desc3,
-  .Desc4 {
-    height: 42px;
-    width: 232px;
-    background: black;
-    opacity: 80%;
-    text-align: center;
-    padding-top: 8px;
-    margin-top: -46px;
-  }
-  
-  .Game1,
-  .Game2,
-  .Game3,
-  .Game4 {
-    margin: 30px 40px;
-  }
-  
-  .Game1 a img,
-  .Game2 a img,
-  .Game3 a img,
-  .Game4 a img {
-    height: 286px;
-    width: 232px;
-    object-fit: cover;
-  }
-  
-  .Game1:hover,
-  .Game2:hover,
-  .Game3:hover,
-  .Game4:hover {
-    transform: scale(1.1);
-    transition: 0.15s;
-  }
-  
-  .Desc1:hover,
-  .Desc2:hover,
-  .Desc3:hover,
-  .Desc4:hover {
-    height: -286px;
-    transition: 1s;
-  }
-  
-  /*-------------------------------------------------- INFORMATIONAL --------------------------------------------------*/
-  
-  .Info-container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 130px 60px;
-  }
-  
-  .Info-container img {
-    height: 316px;
-    width: 558px;
-    margin-left: 80px;
-    margin-right: 80px;
-  }
-  
-  .text-box {
-    display: block;
-    align-items: center;
-    margin-right: 80px;
-    margin-left: 80px;
-  }
-  
-  .text-box h4 {
-    font-size: 28px;
-    font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    line-height: 1.5;
-  }
-  
-  .text-box p {
-    font-size: 20px;
-    font-weight: 300;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  #read-btn {
-    display: block;
-    background-color: #ff6001;
-    height: 42px;
-    width: 150px;
-    border-radius: 60px;
-    font-weight: 500;
-    letter-spacing: 0.4px;
-    font-size: 16px;
-    font-family: 'Poppins';
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    padding: 8px;
-    margin: 0 auto;
-  }
-  
-  #read-btn:hover {
-    background-color: white;
-    transform: scale(1.1);
-  }
-  
-  @media (max-width: 800px) {
-    .Info-container img {
-      width: 100%;
-      object-fit: contain;
-      margin: 10% 0%;
-      padding: 0;
-      height: 300px;
-      opacity: 40%;
-    }
-  
-    .Info-container {
-      box-sizing: unset;
-      padding: 0;
-      margin: 0;
-      display: relative;
-    }
-  
-    .text-box {
-      position: absolute;
-      margin: 0px 40px;
-    }
-  
-    .text-box h4 {
-      font-size: 20px;
-    }
-  
-    .text-box p {
-      font-size: 16px;
-      padding-bottom: 10px;
-    }
-  
-    br {
-      display: none;
-    }
-  
-    #read-btn {
-      text-align: center;
-      height: 28px;
-      width: 120px;
-      padding: 4px;
-    }
-  }
-  
-  /*-------------------------------------------------- POPULAR GAMES --------------------------------------------------*/
-  
-  .subtitle2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0;
-    color: white;
-  }
-  
-  .line {
-    flex: 1;
-    height: 0.5px;
-    margin: 0 10px;
-    background-color: white;
-    max-width: 100%;
-  }
-  
-  .subtitle2 h3 {
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  
-  .subtitle2 h3 span {
-    color: #ff6001;
-  }
-  
-  /*-------------------------------------------------- GALLERY2 --------------------------------------------------*/
-  
-  .Gallery2 {
-    background: linear-gradient(
-      180deg,
-      rgba(16, 16, 24, 0.9) 0%,
-      rgba(16, 16, 24, 0) 100%
-    );
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 1 100%;
-    justify-content: center;
-    position: relative;
-  }
-  
-  @media (max-width: 480px) {
-    .Gallery2 {
-      justify-content: flex-start;
-      flex-wrap: nowrap;
-      overflow: auto;
-    }
-  }
-  .Desc5 a,
-  .Desc6 a,
-  .Desc7 a,
-  .Desc8 a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-  }
-  
-  .Desc5,
-  .Desc6,
-  .Desc7,
-  .Desc8 {
-    height: 42px;
-    width: 232px;
-    background-color: #000000;
-    opacity: 80%;
-    position: relative;
-    text-align: center;
-    margin-top: -46px;
-    padding-top: 8px;
-  }
-  
-  .Game5,
-  .Game6,
-  .Game7,
-  .Game8 {
-    margin: 30px 40px;
-  }
-  
-  .Game5 a img,
-  .Game6 a img,
-  .Game7 a img,
-  .Game8 a img {
-    height: 286px;
-    width: 232px;
-    object-fit: cover;
-  }
-  
-  .Game5:hover,
-  .Game6:hover,
-  .Game7:hover,
-  .Game8:hover {
-    transform: scale(1.1);
-    transition: 0.15s;
-  }
-  
-  /*-------------------------------------------------- NEWSLETTER --------------------------------------------------*/
-  
-  .Info-container2 {
-    margin: 90px auto;
-    padding: 0 auto;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-  
-  .Info-container2 img {
-    margin-right: 30px;
-  }
-  
-  .text-box2 h4 {
-    font-size: 28px;
-    font-weight: 500;
-    text-align: center;
-    width: 490px;
-    margin-left: 30px;
-    margin-top: 20px;
-    margin: 0 auto;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.5;
-    margin-bottom: 10px;
-  }
-  
-  .text-box2 p {
-    font-size: 20px;
-    font-weight: 300;
-    text-align: center;
-    margin: 0 auto;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .subscription {
-    margin-top: 30px;
+
+  .nav a {
     display: inline-block;
-    padding-left: 74px;
   }
-  
-  #newsletter {
-    background-color: white;
-    width: 336px;
-    height: 48px;
-    font-family: 'Poppins', sans-serif;
+}
+
+/*-------------------------------------------------- HEROPICTURE/TEXT --------------------------------------------------*/
+
+.Background {
+  background-image: url(/IMAGES/header.png);
+  height: 1000px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex: 1 1 auto;
+}
+
+.Textbox {
+  background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.56) 100%);
+  height: 270px;
+  width: clamp(350px, 50%, 520px);
+  border-radius: 40px 0px 0px 40px;
+  margin-bottom: 180px;
+  justify-content: center;
+}
+
+.Textbox h2 {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: 'Montserrat';
+  text-align: center;
+  align-self: center;
+  letter-spacing: 5.4px;
+  margin-top: 52px;
+  line-height: 1;
+}
+
+.Textbox p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Montserrat';
+  letter-spacing: 0.4px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#view-btn {
+  background-color: #ff6001;
+  height: 42px;
+  width: 150px;
+  border-radius: 60px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  font-size: 16px;
+  font-family: 'Poppins';
+  text-decoration: none;
+  color: black;
+  display: block;
+  text-align: center;
+  padding-top: 8px;
+  margin-left: 180px;
+}
+
+#view-btn:hover {
+  background-color: white;
+  transform: scale(1.1);
+}
+
+@media (max-width: 800px) {
+  .Background {
+    height: 500px;
   }
-  
-  #email {
-    font-size: 18px;
-    width: 330px;
+
+  .Textbox {
+    height: 200px;
+    width: 300px;
+    margin-bottom: 50px;
   }
-  
-  .subscribe {
-    background-color: #ff6001;
-    font-family: 'Poppins', sans-serif;
-    color: black;
-    height: 48px;
-    width: 120px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    position: absolute;
-    bottom: 137px;
+
+  .Textbox h2 {
+    font-size: 30px;
+    line-height: 0;
   }
-  
-  
-  @media (max-width: 800px) {
-    .text-box2 p {
-      max-width: 100%;
-      font-size: 14px;
-    }
-  
-    .text-box2 {
-      max-width: 100%;
-      padding: 0 20px;
-      position: absolute;
-    }
-  
-    .text-box2 h4 {
-      max-width: 100%;
-      font-size: 24px;
-    }
-    .Info-container2 {
-      max-width: 100%;
-      position: relative;
-      margin-top: 50px;
-    }
-  
-    .Info-container2 img {
-      margin: 0;
-      height: 75%;
-      width: 100%;
-    }
-  
-    br {
-      display: none;
-    }
-  
-    .subscription {
-      width: auto;
-      margin: 0 auto;
-      padding-left: 0px;
-      margin-top: 20px;
-    }
-  
-    #newsletter {
-      height: 40px;
-      width: 220px;
-    }
-  
-    #email {
-      font-size: 14px;
-      width: 210px;
-      padding: 10px;
-    }
-  
-    .subscribe {
-      width: 100px;
-      font-size: 14px;
-      height: 40px;
-      padding: 0;
-      margin: 0;
-      bottom: 4px;
-    }
-  
-  }
-  
-  /*-------------------------------------------------- Footer --------------------------------------------------*/
-  
-  footer {
+
+  #view-btn {
     margin: 0 auto;
-    padding: 0 auto;
-    color: white;
+    width: 130px;
+    height: 36px;
+    padding-top: 5px;
+  }
+}
+
+/*-------------------------------------------------- FEATURED GAMES --------------------------------------------------*/
+
+.subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  color: white;
+}
+
+.line {
+  flex: 1;
+  height: 0.5px;
+  margin: 0 10px;
+  background-color: white;
+  max-width: 100%;
+}
+
+.subtitle h3 {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.subtitle h3 span {
+  color: #ff6001;
+}
+
+/*-------------------------------------------------- GALLERY1 --------------------------------------------------*/
+
+.Gallery {
+  background: linear-gradient(
+    180deg,
+    rgba(16, 16, 24, 0.9) 0%,
+    rgba(16, 16, 24, 0) 100%
+  );
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 100%;
+  justify-content: center;
+}
+
+@media (max-width: 480px) {
+  .Gallery {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow: auto;
+  }
+}
+
+.Desc1 a,
+.Desc2 a,
+.Desc3 a,
+.Desc4 a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.Desc1,
+.Desc2,
+.Desc3,
+.Desc4 {
+  height: 42px;
+  width: 232px;
+  background: black;
+  opacity: 80%;
+  text-align: center;
+  padding-top: 8px;
+  margin-top: -46px;
+}
+
+.Game1,
+.Game2,
+.Game3,
+.Game4 {
+  margin: 30px 40px;
+}
+
+.Game1 a img,
+.Game2 a img,
+.Game3 a img,
+.Game4 a img {
+  height: 286px;
+  width: 232px;
+  object-fit: cover;
+}
+
+.Game1:hover,
+.Game2:hover,
+.Game3:hover,
+.Game4:hover {
+  transform: scale(1.1);
+  transition: 0.15s;
+}
+
+.Desc1:hover,
+.Desc2:hover,
+.Desc3:hover,
+.Desc4:hover {
+  height: -286px;
+  transition: 1s;
+}
+
+/*-------------------------------------------------- INFORMATIONAL --------------------------------------------------*/
+
+.Info-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 130px 60px;
+}
+
+.Info-container img {
+  height: 316px;
+  width: 558px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.text-box {
+  display: block;
+  align-items: center;
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+.text-box h4 {
+  font-size: 28px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.text-box p {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+#read-btn {
+  display: block;
+  background-color: #ff6001;
+  height: 42px;
+  width: 150px;
+  border-radius: 60px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  font-size: 16px;
+  font-family: 'Poppins';
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding: 8px;
+  margin: 0 auto;
+}
+
+#read-btn:hover {
+  background-color: white;
+  transform: scale(1.1);
+}
+
+@media (max-width: 800px) {
+  .Info-container img {
+    width: 100%;
+    object-fit: contain;
+    margin: 10% 0%;
+    padding: 0;
+    height: 300px;
+    opacity: 40%;
+  }
+
+  .Info-container {
     box-sizing: unset;
+    padding: 0;
+    margin: 0;
+    display: relative;
+  }
+
+  .text-box {
+    position: absolute;
+    margin: 0px 40px;
+  }
+
+  .text-box h4 {
+    font-size: 20px;
+  }
+
+  .text-box p {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+
+  br {
+    display: none;
+  }
+
+  #read-btn {
+    text-align: center;
+    height: 28px;
+    width: 120px;
+    padding: 4px;
+  }
+}
+
+/*-------------------------------------------------- POPULAR GAMES --------------------------------------------------*/
+
+.subtitle2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  color: white;
+}
+
+.line {
+  flex: 1;
+  height: 0.5px;
+  margin: 0 10px;
+  background-color: white;
+  max-width: 100%;
+}
+
+.subtitle2 h3 {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.subtitle2 h3 span {
+  color: #ff6001;
+}
+
+/*-------------------------------------------------- GALLERY2 --------------------------------------------------*/
+
+.Gallery2 {
+  background: linear-gradient(
+    180deg,
+    rgba(16, 16, 24, 0.9) 0%,
+    rgba(16, 16, 24, 0) 100%
+  );
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 100%;
+  justify-content: center;
+  position: relative;
+}
+
+@media (max-width: 480px) {
+  .Gallery2 {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow: auto;
+  }
+}
+.Desc5 a,
+.Desc6 a,
+.Desc7 a,
+.Desc8 a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.Desc5,
+.Desc6,
+.Desc7,
+.Desc8 {
+  height: 42px;
+  width: 232px;
+  background-color: #000000;
+  opacity: 80%;
+  position: relative;
+  text-align: center;
+  margin-top: -46px;
+  padding-top: 8px;
+}
+
+.Game5,
+.Game6,
+.Game7,
+.Game8 {
+  margin: 30px 40px;
+}
+
+.Game5 a img,
+.Game6 a img,
+.Game7 a img,
+.Game8 a img {
+  height: 286px;
+  width: 232px;
+  object-fit: cover;
+}
+
+.Game5:hover,
+.Game6:hover,
+.Game7:hover,
+.Game8:hover {
+  transform: scale(1.1);
+  transition: 0.15s;
+}
+
+/*-------------------------------------------------- NEWSLETTER --------------------------------------------------*/
+
+.Info-container2 {
+  margin: 90px auto;
+  padding: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.Info-container2 img {
+  margin-right: 30px;
+}
+
+.text-box2 h4 {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  width: 490px;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.text-box2 p {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.subscription {
+  margin-top: 30px;
+  display: inline-block;
+  padding-left: 74px;
+}
+
+#newsletter {
+  background-color: white;
+  width: 336px;
+  height: 48px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#email {
+  font-size: 18px;
+  width: 330px;
+}
+
+.subscribe {
+  background-color: #ff6001;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  height: 48px;
+  width: 120px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 137px;
+}
+
+@media (max-width: 800px) {
+  .text-box2 p {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .text-box2 {
+    max-width: 100%;
+    padding: 0 20px;
+    position: absolute;
+  }
+
+  .text-box2 h4 {
+    max-width: 100%;
+    font-size: 24px;
+  }
+  .Info-container2 {
+    max-width: 100%;
+    position: relative;
     margin-top: 50px;
   }
-  
-  #footer-main {
-    display: grid;
-    grid-template-columns: repeat (4, 1fr);
-    grid-template-rows: auto auto;
-    background-color: black;
-    border-top: 1px solid #101018;
-    position: relative;
-    padding: 20px 10px;
+
+  .Info-container2 img {
+    margin: 0;
+    height: 75%;
+    width: 100%;
   }
-  
-  .Contact {
-    grid-column: 1 / span 1;
+
+  br {
+    display: none;
   }
-  
-  .About {
-    grid-column: 2 / span 1;
+
+  .subscription {
+    width: auto;
+    margin: 0 auto;
+    padding-left: 0px;
+    margin-top: 20px;
   }
-  
-  .Partners {
-    grid-column: 3 / span 1;
+
+  #newsletter {
+    height: 40px;
+    width: 220px;
   }
-  
-  .Follow {
-    grid-column: 4 / span 1;
-    display: inline-block;
-    text-align: center;
+
+  #email {
+    font-size: 14px;
+    width: 210px;
+    padding: 10px;
   }
-  
-  #contact,
-  #follow,
-  #partners,
-  #about {
-    text-decoration: none;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    font-family: 600;
-    line-height: 1.0;
+
+  .subscribe {
+    width: 100px;
+    font-size: 14px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    bottom: 4px;
   }
-  
-  .Contact p,
-  .About p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 12px;
-    line-height: 1.0;
-  }
-  
-  .Partners p {
-    line-height: 0.4;
-    font-family: 'Poppins', sans-serif;
-    font-size: 12px;
-  }
-  
-  .Partners p span {
-    text-decoration: underline;
-  }
-  
-  #instagram,
-  #facebook,
-  #linkedin {
-    display: grid;
-    padding: 6px 0px;
-    font-size: 16px;
-    text-decoration: none;
-    color: white;
-  }
-  
-  .contact-footer {
-    grid-column: 1 / span 4;
-    padding-left: 6px;
-  }
-  
+}
+
+/*-------------------------------------------------- Footer --------------------------------------------------*/
+
+footer {
+  margin: 0 auto;
+  padding: 0 auto;
+  color: white;
+  box-sizing: unset;
+  margin-top: 50px;
+}
+
+#footer-main {
+  display: grid;
+  grid-template-columns: repeat (4, 1fr);
+  grid-template-rows: auto auto;
+  background-color: black;
+  border-top: 1px solid #101018;
+  position: relative;
+  padding: 20px 10px;
+}
+
+.Contact {
+  grid-column: 1 / span 1;
+}
+
+.About {
+  grid-column: 2 / span 1;
+}
+
+.Partners {
+  grid-column: 3 / span 1;
+}
+
+.Follow {
+  grid-column: 4 / span 1;
+  display: inline-block;
+  text-align: center;
+}
+
+#contact,
+#follow,
+#partners,
+#about {
+  text-decoration: none;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-family: 600;
+  line-height: 1;
+}
+
+.Contact p,
+.About p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.Partners p {
+  line-height: 0.4;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+}
+
+.Partners p span {
+  text-decoration: underline;
+}
+
+#instagram,
+#facebook,
+#linkedin {
+  display: grid;
+  padding: 6px 0px;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+}
+
+.contact-footer {
+  grid-column: 1 / span 4;
+  padding-left: 6px;
+}
+
+#phone-ico,
+#phone-nmbr,
+#email-ico,
+#email-adr {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+}
+
+.Terms {
+  grid-column: 1 / span 4;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  padding-left: 6px;
+}
+
+#instagram:focus,
+#facebook:focus,
+#linkedin:focus {
+  color: #ff6001;
+  transition: 1s;
+}
+
+#contact:focus,
+#follow:focus,
+#partners:focus,
+#about:focus {
+  color: #ff6001;
+  transition: 0.3s;
+}
+
+@media (min-width: 800px) {
   #phone-ico,
   #phone-nmbr,
   #email-ico,
   #email-adr {
-  font-family: 'Poppins', sans-serif;
-  font-size: 12px;
+    font-size: 16px;
   }
-  
+
   .Terms {
-    grid-column: 1 / span 4;
-    font-family: 'Poppins', sans-serif;
-    font-size: 12px;
-    padding-left: 6px;
-  }
-  
-  #instagram:focus,
-  #facebook:focus,
-  #linkedin:focus {
-  color: #ff6001;
-  transition: 1s;
-  }
-  
-  #contact:focus,
-  #follow:focus,
-  #partners:focus,
-  #about:focus {
-  color: #ff6001;
-  transition: 0.3s;
-  }
-  
-  @media (min-width: 800px) {
-    #phone-ico,
-    #phone-nmbr,
-    #email-ico,
-    #email-adr {
     font-size: 16px;
   }
-  
-    .Terms {
+
+  .Contact p,
+  .About p,
+  .Partners p {
     font-size: 16px;
-    }
-  
-    .Contact p,
-    .About p,
-    .Partners p {
-    font-size: 16px;
-    }
-  
-    #contact,
-    #follow,
-    #partners,
-    #about {
+  }
+
+  #contact,
+  #follow,
+  #partners,
+  #about {
     font-size: 18px;
     padding: 0;
-    }
   }
-  
-  @media (min-width: 1180px) {
-  
+}
+
+@media (min-width: 1180px) {
   #footer-main {
-      justify-content: center;
-      gap: 0px 300px;
-      padding: 20px 0px;
+    justify-content: center;
+    gap: 0px 300px;
+    padding: 20px 0px;
   }
-  
+
   #contact:hover,
   #follow:hover,
   #partners:hover,
@@ -936,52 +935,52 @@ html {
     color: #ff6001;
     transition: 0.3s;
   }
-  
+
   #phone-ico,
   #phone-nmbr,
   #email-ico,
   #email-adr {
-  font-size: 14px;
+    font-size: 14px;
   }
-  
+
   .Terms {
     font-size: 14px;
   }
-  
+
   .Terms:hover {
     cursor: pointer;
   }
-  
+
   .Contact p,
   .About p,
   .Partners p {
     font-size: 14px;
   }
-  
+
   #instagram,
   #facebook,
   #linkedin {
     font-size: 24px;
     padding: 15px 10px;
   }
-  
+
   #instagram:hover,
   #facebook:hover,
   #linkedin:hover {
     color: #ff6001;
-    transition: .2s;
+    transition: 0.2s;
   }
-  
+
   #contact,
   #about,
   #partners,
   #follow {
     font-size: 16px;
   }
-  
+
   .follow-btns {
     text-align: left;
     display: flex;
   }
-  }
-  
+}
+
