@@ -794,8 +794,8 @@ footer {
 
 #footer-main {
   display: grid;
-  grid-template-columns: repeat (4, 1fr);
-  grid-template-rows: auto auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
   background-color: black;
   border-top: 1px solid #101018;
   position: relative;
