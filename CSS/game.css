@@ -189,3 +189,218 @@ body {
 .game-details span {
     font-weight: 600;
 }
+
+/* Mobile Styles */
+
+@media screen and (max-width: 767px) {
+  
+    .game-container {
+      height: auto;
+      width: 100%;
+      margin-top: 0px;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  
+    .game-container img {
+      height: auto;
+      width: 40%;
+      padding-top: 40px;
+      margin-bottom: 20px;
+    }
+  
+    .game-container h1 {
+      font-size: 28px;
+    }
+  
+    .game-container h2 {
+      font-size: 18px;
+    }
+  
+    .game-container h3 {
+      font-size: 18px;
+    }
+  
+    .game-forms {
+      width: 80%;
+      margin: 0 auto;
+    }
+  
+    #device,
+    #condition {
+      height: 50px;
+      width: 100%;
+      margin: 10px 0;
+      text-align: left;
+    }
+  
+    #device input,
+    #condition input {
+      height: 50px;
+      width: 80%;
+      font-size: 18px;
+    }
+  
+    #bag-btn {
+      height: 40px;
+      width: 150px;
+      margin-top: 30px;
+      font-size: 18px;
+      border-radius: 25px;
+    }
+  
+    .game-desc {
+      font-size: 14px;
+      width: 90%;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  
+    .game-gallery {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .game-gallery img {
+      height: 150px;
+      width: 33%;
+      margin: 0 auto;
+    }
+  
+    .game-nav {
+      height: 70px;
+      font-size: 16px;
+    }
+  
+    .game-nav p {
+      padding: 0px 20px;
+    }
+  
+    .game-details {
+      height: auto;
+      width: 100%;
+      border-radius: 0;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 30px;
+    }
+  
+    .game-details h4 {
+      font-size: 18px;
+    }
+  
+    .game-details p {
+      font-size: 14px;
+    }
+
+    .age-limit {
+        padding: 0px;
+    }
+    
+    .Gallery2 {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow: auto;
+    }
+
+    .subtitle {
+        margin-bottom: 0px;
+    }
+
+    .Game5,
+    .Game6,
+    .Game7,
+    .Game8 {
+        margin: 10px;
+    }
+
+}
+  /* iPad Styles */
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+    .game-container {
+      height: auto;
+      padding-top: 60px;
+      width: 90%;
+      margin-top: 40px;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  
+    .game-container img {
+      height: 300px;
+      width: 250px;
+      padding: 0px;
+      margin-bottom: 30px;
+    }
+  
+    .game-container h1 {
+      font-size: 28px;
+    }
+  
+    .game-container h2 {
+      font-size: 20px;
+    }
+  
+    .game-container h3 {
+      font-size: 20px;
+    }
+  
+    .game-forms {
+      width: 80%;
+      margin-bottom: 30px;
+      margin: 0 auto;
+    }
+  
+    #device,
+    #condition {
+      height: 50px;
+      width: 100%;
+      margin: 10px 0;
+      text-align: left;
+    }
+  
+    #device input,
+    #condition input {
+      height: 50px;
+      width: 72%;
+      font-size: 18px;
+    }
+  
+    #bag-btn {
+      height: 40px;
+      width: 160px; }
+
+    .game-desc {
+        margin-bottom: 40px;
+    }
+
+    .game-gallery {
+        width: 100%;
+    }
+
+    .game-gallery img {
+        height: 186px;
+        width: 33%;
+        margin: 0 auto;
+    }
+
+    .game-details {
+        width: 90%;
+        height: auto;
+        padding: 30px;
+    }
+
+    .game-details p {
+        font-size: 14px;
+    }
+
+    .age-limit h4{
+        margin-top: 0px;
+    }
+
+    .subtitle {
+        margin-top: 40px;
+    }
+    }
