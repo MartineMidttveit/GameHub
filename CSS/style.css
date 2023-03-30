@@ -276,7 +276,7 @@ input {
   line-height: 1;
 }
 
-.Textbox p {
+.text-box-text {
   font-size: 16px;
   font-weight: 400;
   font-family: 'Montserrat';
@@ -318,7 +318,7 @@ input {
     margin-bottom: 50px;
   }
 
-  .Textbox h2 {
+  .text-box-headline {
     font-size: 30px;
     line-height: 0;
   }
@@ -680,10 +680,7 @@ footer {
   text-align: center;
 }
 
-#contact,
-#follow,
-#partners,
-#about {
+#footer-heading {
   text-decoration: none;
   color: white;
   font-family: 'Montserrat', sans-serif;
@@ -709,9 +706,7 @@ footer {
   text-decoration: underline;
 }
 
-#instagram,
-#facebook,
-#linkedin {
+#follow-btn {
   display: grid;
   padding: 6px 0px;
   font-size: 16px;
@@ -724,10 +719,7 @@ footer {
   padding-left: 6px;
 }
 
-#phone-ico,
-#phone-nmbr,
-#email-ico,
-#email-adr {
+.contact-footer {
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
 }
@@ -739,26 +731,18 @@ footer {
   padding-left: 6px;
 }
 
-#instagram:focus,
-#facebook:focus,
-#linkedin:focus {
+#follow-btn:focus {
   color: #ff6001;
   transition: 1s;
 }
 
-#contact:focus,
-#follow:focus,
-#partners:focus,
-#about:focus {
+#footer-heading:focus {
   color: #ff6001;
   transition: 0.3s;
 }
 
 @media (min-width: 800px) {
-  #phone-ico,
-  #phone-nmbr,
-  #email-ico,
-  #email-adr {
+  .contact-footer {
     font-size: 16px;
   }
 
@@ -772,10 +756,7 @@ footer {
     font-size: 16px;
   }
 
-  #contact,
-  #follow,
-  #partners,
-  #about {
+  #footer-heading {
     font-size: 18px;
     padding: 0;
   }
@@ -788,19 +769,13 @@ footer {
     padding: 20px 0px;
   }
 
-  #contact:hover,
-  #follow:hover,
-  #partners:hover,
-  #about:hover {
+  #footer-heading:hover {
     color: #ff6001;
     transition: 0.3s;
   }
 
-  #phone-ico,
-  #phone-nmbr,
-  #email-ico,
-  #email-adr {
-    font-size: 14px;
+  .contact-footer {
+    font-size: 14px; 
   }
 
   .Terms {
@@ -815,26 +790,20 @@ footer {
   .About p,
   .Partners p {
     font-size: 14px;
+    line-height: 1.0;
   }
 
-  #instagram,
-  #facebook,
-  #linkedin {
+  #follow-btn {
     font-size: 24px;
     padding: 15px 10px;
   }
 
-  #instagram:hover,
-  #facebook:hover,
-  #linkedin:hover {
+  #follow-btn:hover {
     color: #ff6001;
     transition: 0.2s;
   }
 
-  #contact,
-  #about,
-  #partners,
-  #follow {
+  #footer-heading {
     font-size: 16px;
   }
 
