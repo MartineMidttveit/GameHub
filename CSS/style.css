@@ -146,7 +146,7 @@ header {
   top: 168px;
   padding: 0px 122px;
   margin-right: 2%;
-  z-index: 9999;
+  z-index: 999;
 }
 
 @media (max-width: 1398px) {
@@ -792,25 +792,31 @@ header {
   #follow-container {
     display: none;
   }
+
   #footer-main div {
     width: 30% 30% 30% 10%;
   }
+
   .contact-footer {
     display: none;
   }
+
   #follow-container-mobile {
     display: flex;
     flex-direction: column;
   }
+
   #follow-btn {
     font-size: 20px;
   }
+
   #terms-container-mobile {
     position: absolute;
     display: flex;
     bottom: 0;
     width: 100% !important;
   }
+  
   #contact-container-mobile {
     display: flex;
     position: absolute;
