@@ -84,7 +84,6 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: rgba(16, 16, 24, 0.9);
-  color: white;
   height: 60px;
   top: 112px;
   font-size: 18px;
@@ -344,7 +343,6 @@ header {
   align-items: center;
   justify-content: center;
   margin: 20px 0;
-  color: white;
 }
 
 .line {
@@ -652,7 +650,6 @@ header {
 #footer-main p {
   font-weight: 300;
   font-size: 15px;
-  color: #ffffff;
   font-family: 'Montserrat';
 }
 #footer-main a {
@@ -816,7 +813,7 @@ header {
     bottom: 0;
     width: 100% !important;
   }
-  
+
   #contact-container-mobile {
     display: flex;
     position: absolute;
