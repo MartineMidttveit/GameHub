@@ -19,6 +19,7 @@
     ></script>
 
     <link rel="stylesheet" href="/CSS/style.css" />
+    
 
     <title>GameHub | Home</title>
   </head>
@@ -28,14 +29,13 @@
 
 <header>
   <nav class="header-nav">
-      <a id="logo" href="Index.html"
-        >GAME<span>HUB</span>
+      <a id="logo" href="Index.html">GAME<span>HUB</span>
         <p>The universe of games</p></a>
 
       <div class="navigate">
-          <a href="#"><i class="fa-regular fa-user"></i></a>
-          <a href="#"><i class="fa-regular fa-heart"></i></a>
-          <a href="/HTML/Checkout.html"><i class="fa-solid fa-bag-shopping"></i></a>
+          <a class="top-nav" href="#"><i class="fa-regular fa-user"></i></a>
+          <a class="top-nav" href="#"><i class="fa-regular fa-heart"></i></a>
+          <a class="top-nav" href="/HTML/Checkout.html"><i class="fa-solid fa-bag-shopping"></i></a>
       </div>
   </nav>
 </header>
@@ -44,21 +44,22 @@
 
 <header class="navigation">
   <div class="search-bar">
-      <form id="form">
-          <input type="text" placeholder="Search for games..." />
+      <form id="search-form">
+          <input class="searching" type="text" placeholder="Search for games..." />
       </form>
   </div>
-      <input type="checkbox" id="menu-checkbox" />
-      <label for="menu-checkbox" class="hamburger-icon"
-        ><i class="fas fa-bars"></i
-      ></label>
 
-  <nav class="nav">
-      <a href="Index.html">Home</a>
-      <a href="/HTML/shop.html">Shop</a>
-      <a href="#">Sell</a>
-      <a href="/HTML/contact.html">Contact</a>
-      <a href="/HTML/about.html">About</a>
+  <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="hamburger-icon">
+        <i class="fas fa-bars"></i>
+      </label>
+
+  <nav class="nav-header">
+      <a class="nav-link" href="Index.html">Home</a>
+      <a class="nav-link" href="/HTML/shop.html">Shop</a>
+      <a class="nav-link" href="#">Sell</a>
+      <a class="nav-link" href="/HTML/contact.html">Contact</a>
+      <a class="nav-link" href="/HTML/about.html">About</a>
   </nav>
 </header>
 
@@ -68,7 +69,7 @@
     <div class="textbox">
         <h1 class="text-box-headline">BATMAN CITY</h1>
         <p class="text-box-text">Now available for Playstation 5</p>
-        <a id="view-btn" class="view-btn" href="/HTML/shop.html">VIEW MORE</a>
+        <a id="view-btn" href="/HTML/shop.html">VIEW MORE</a>
     </div>
 </div>
 
@@ -83,33 +84,41 @@
 <!---------------------------------------------------- GALLERY 1 ---------------------------------------------------->
 
 <div class="gallery">
-    <div class="games">
-      <a href="HTML/shop.html"><img src="/IMAGES/lich.webp" alt="World of Warcraft: The Lich King and his army standing in front of Icecrown Citadel" /></a>
-        <div class="desc1">
-          <a class="desc" href="#">World of Warcraft</a>
-        </div>
+  <div class="games">
+    <a href="HTML/shop.html">
+      <img src="/IMAGES/lich.webp" alt="World of Warcraft: The Lich King and his army standing in front of Icecrown Citadel" />
+    </a>
+    <div class="desc1">
+      <a class="desc" href="HTML/shop.html">World of Warcraft</a>
     </div>
+  </div>
 
-    <div class="games">
-        <a href="HTML/shop.html"><img src="/IMAGES/grand.webp" alt="Grand Theft Auto: Two guys in suits with a red car underneath them" /></a>
-        <div class="desc1">
-          <a class="desc" href="#">Grand Theft Auto</a>
-        </div>
-    </div>
+  <div class="games">
+      <a href="HTML/shop.html">
+        <img src="/IMAGES/grand.webp" alt="Grand Theft Auto: Two guys in suits with a red car underneath them" />
+      </a>
+      <div class="desc1">
+        <a class="desc" href="HTML/shop.html">Grand Theft Auto</a>
+      </div>
+  </div>
 
-    <div class="games">
-      <a href="HTML/shop.html"><img src="/IMAGES/got.png" alt="Game of Thrones: Portraying a female and a dragon face, blended together half and half" /></a>
-        <div class="desc1">
-          <a class="desc" href="#">Game of Thrones</a>
-        </div>
+  <div class="games">
+    <a href="HTML/shop.html">
+      <img src="/IMAGES/got.png" alt="Game of Thrones: Portraying a female and a dragon face, blended together half and half" />
+    </a>
+    <div class="desc1">
+      <a class="desc" href="HTML/shop.html">Game of Thrones</a>
     </div>
+  </div>
 
-    <div class="games">
-      <a href="HTML/shop.html"><img src="/IMAGES/ggg.png" alt="Halo Infinite: An astronaut in space with orange googles and a grey suit" /></a>
-        <div class="desc1">
-          <a class="desc" href="#">Halo Infinite</a>
-        </div>
-    </div>
+  <div class="games">
+    <a href="HTML/shop.html">
+      <img src="/IMAGES/ggg.png" alt="Halo Infinite: An astronaut in space with orange googles and a grey suit" />
+    </a>
+      <div class="desc1">
+        <a class="desc" href="HTML/shop.html">Halo Infinite</a>
+      </div>
+  </div>
 </div>
 
 <!---------------------------------------------------- INFO-CONTAINER ---------------------------------------------------->
@@ -118,10 +127,7 @@
   <img src="/IMAGES/ps5.jpg" alt="Playstation 5 controller with black background and purple/pink shadows" />
     <div class="text-box">
       <h3 class="text-box-subtitle">BUY A GAME OR SELL <br />THE ONES YOU'VE FINISHED</h3>
-        <p>
-          Offering the best prices on the market <br />as well as price
-          guarantee.
-        </p>
+        <p>Offering the best prices on the market <br />as well as price guarantee.</p>
       <a id="read-btn" href="HTML/about.html">READ MORE</a>
     </div>
 </div>
@@ -138,98 +144,136 @@
 
 <div class="gallery">
   <div class="games">
-    <a href="HTML/shop.html"><img src="/IMAGES/Callofduty.png" alt="Call of Duty: Soldiers holding guns on a battlefield with helicopters flying above" /></a>
-      <div class="desc1">
-          <a class="desc" href="#">World of Warcraft</a>
-      </div>
-</div>
-
-  <div class="games">
-    <a href="HTML/shop.html"><img src="/IMAGES/carsss.png" alt="Grand Theft Auto: A racing, green car with spoilers in the middle of a city" /></a>
-      <div class="desc1">
-        <a class="desc" href="#">Grand Theft Auto</a>
-      </div>
+    <a href="HTML/shop.html">
+      <img src="/IMAGES/Callofduty.png" alt="Call of Duty: Soldiers holding guns on a battlefield with helicopters flying above" />
+    </a>
+    <div class="desc1">
+      <a class="desc" href="#">World of Warcraft</a>
+    </div>
   </div>
 
   <div class="games">
-    <a href="HTML/shop.html"
-        ><img src="/IMAGES/Assassinscreed.png" alt="Assassins Creed: A ninja with a dagger and shield jumping in front of an ongoing battle" /></a>
+    <a href="HTML/shop.html">
+      <img src="/IMAGES/carsss.png" alt="Grand Theft Auto: A racing, green car with spoilers in the middle of a city" />
+    </a>
+    <div class="desc1">
+      <a class="desc" href="#">Grand Theft Auto</a>
+    </div>
+  </div>
+
+  <div class="games">
+    <a href="HTML/shop.html">
+      <img src="/IMAGES/Assassinscreed.png" alt="Assassins Creed: A ninja with a dagger and shield jumping in front of an ongoing battle" />
+    </a>
     <div class="desc1">
         <a class="desc" href="#">Game of Thrones</a>
     </div>
   </div>
 
   <div class="games">
-    <a href="HTML/shop.html"><img src="/IMAGES/drage1.png" alt="Game of Thrones: A firebreathing dragon with sharp teeth" /></a>
-      <div class="desc1">
-          <a class="desc" href="#">Halo Infinite</a>
-      </div>
+    <a href="HTML/shop.html">
+      <img src="/IMAGES/drage1.png" alt="Game of Thrones: A firebreathing dragon with sharp teeth" />
+    </a>
+    <div class="desc1">
+      <a class="desc" href="#">Halo Infinite</a>
+    </div>
     </div>
 </div>
 
 <!---------------------------------------------------- SECTION 2 ---------------------------------------------------->
 
-<div class="info-container">
-  <div class="text-box">
-    <h3 class="text-box-subtitle">NEWSLETTER</h3>
-      <p>
-        Sign up for our newsletter and be the first to know about the<br />latest
-        news, products, and promotions. Simply enter your<br /> email address
-        and click the subscribe button.
-      </p>
+<div id="newsletter-container">
+  <div id='newsletter-content-container'>
+    <div class="news-letter-text-box">
+      <h3 class="text-box-subtitle">NEWSLETTER</h3>
+        <p>
+          Sign up for our newsletter and be the first to know about the latest
+          news, products, and promotions. Simply enter your email address
+          and click the subscribe button.
+        </p>
+    </div>
 
-  <div class="subscription">
-      <form id="newsletter">
-          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-          <a id="subscribe-btn" href="#">SUBSCRIBE</a>
-      </form>
+    <form id="newsletter">
+      <input type="text" id="email" placeholder="Enter your email address" required>
+      <a id="subscribe-btn" href="#">SUBSCRIBE</a>
+    </form>
   </div>
 
-  <img id="newsletter-img" src="/IMAGES/jjj.png" alt="A portrait of a man with strong facial features, with one blue and one purple eye looking straight forward."/>
+  <div id='newsletter-image-container'>
+    <img id="newsletter-img" src="/IMAGES/jjj.png" alt="A portrait of a man with strong facial features, with one blue and one purple eye looking straight forward."/>
+  </div>
+</div>
 
 <!---------------------------------------------------- FOOTER ---------------------------------------------------->
 
 <footer id="footer-main">
-      <div class="Contact">
-        <a id="footer-heading" href="/HTML/contact.html">CONTACT</a>
-        <p>Contact us</p>
-        <p>Support</p>
-      </div>
-
-      <div class="About">
-        <a id="footer-heading" href="/HTML/about.html">ABOUT</a>
-        <p>About</p>
-        <p>Our culture</p>
-        <p>Careers</p>
-      </div>
-
-      <div class="Partners">
-        <a id="footer-heading" href="#">PARTNERS</a>
-        <p>EA Games</p>
-        <p>Blizzard</p>
-        <p>Xbox</p>
-        <p>Playstation</p>
-        <p>Nintendo</p>
-      </div>
-
-      <div class="Follow">
-        <a id="footer-heading" href="#">FOLLOW US</a>
-          <a id="follow-btn" href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a id="follow-btn" href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a id="follow-btn" href="#"><i class="fa-brands fa-linkedin"></i></a>
-      </div>
-
-      <div class="contact-footer">
-        <span id="phone-ico"><i class="fa-solid fa-phone"></i></span>
-        <span id="phone-nmbr">+47 552 24 356</span><br/>
-
-        <span id="email-ico"><i class="fa-solid fa-envelope"></i></span>
-        <span id="email-adr">gamehub@customersupport.com</span>
-      </div>
-  
-      <p class="Terms">Privacy Policy | Terms & Conditions | Cookie Policy</p>
+  <div id='contact-information-container'> 
+    <div class="Contact">
+      <a id="footer-heading" href="/HTML/contact.html">CONTACT</a>
+      <p>Contact us</p>
+      <p>Support</p>
+    </div>
+    <div class="contact-footer">
+      <span id="phone-ico"><i class="fa-solid fa-phone"></i></span>
+      <span id="phone-nmbr">+47 552 24 356</span><br/>
+      <span id="email-ico"><i class="fa-solid fa-envelope"></i></span>
+      <span id="email-adr">gamehub@customersupport.com</span>
+    </div>
   </div>
+  
+  <div>
+    <div class="About">
+      <a id="footer-heading" href="/HTML/about.html">ABOUT</a>
+      <p>About</p>
+      <p>Our culture</p>
+      <p>Careers</p>
+    </div>
+  </div>
+  <div>
+    <div class="Partners">
+      <a id="footer-heading" href="#">PARTNERS</a>
+      <p>EA Games</p>
+      <p>Blizzard</p>
+      <p>Xbox</p>
+      <p>Playstation</p>
+      <p>Nintendo</p>
+    </div>
+  </div>
+
+<!---------------------------------------------------- FOOTER MOBILE ---------------------------------------------------->
+
+  <div id='follow-container-mobile'>
+    <a id="follow-btn" href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a id="follow-btn" href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a id="follow-btn" href="#"><i class="fa-brands fa-linkedin"></i></a>
+  </div>
+  <div id='terms-container-mobile'><p class="Terms">Privacy Policy | Terms & Conditions | Cookie Policy</p></div>
+<div id='contact-container-mobile'>
+  <div class="contact-footer">
+    <span id="phone-ico"><i class="fa-solid fa-phone"></i></span>
+    <span id="phone-nmbr">+47 552 24 356</span><br/>
+    <span id="email-ico"><i class="fa-solid fa-envelope"></i></span>
+    <span id="email-adr">gamehub@customersupport.com</span>
+  </div>
+</div>
+  <div id='follow-container'>
+    <div class="Follow">
+      <a id="footer-heading" href="#">FOLLOW US</a>
+      <div>
+        <a id="follow-btn" href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a id="follow-btn" href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a id="follow-btn" href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <div >
+      <p class="Terms">Privacy Policy</p>
+      <p class="Terms">Terms & Conditions</p>
+      <p class="Terms"> Cookie Policy</p>
+    </div>
+  </div>
+
 </footer>
 
-  </body>
+</body>
 </html>

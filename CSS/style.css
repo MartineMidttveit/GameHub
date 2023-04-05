@@ -57,12 +57,13 @@ header {
   font-family: 'Poppins';
   font-weight: 300;
 }
+
 .navigate {
   display: flex;
   justify-content: flex-end;
 }
 
-.navigate a {
+.top-nav {
   text-decoration: none;
   color: white;
   display: inline-block;
@@ -71,7 +72,7 @@ header {
   margin-top: 2.75rem;
 }
 
-.navigate a:hover {
+.top-nav:hover {
   color: #d22cf5;
   transition: 0.2s;
 }
@@ -89,7 +90,7 @@ header {
     transition: 0.2s;
   }
 
-  .navigate a {
+  .top-nav {
     margin-top: 1.375rem;
     margin-bottom: 0px;
     transition: 0.2s;
@@ -154,11 +155,11 @@ header {
   height: 42px;
 }
 
-#form {
+#search-form {
   position: relative;
 }
 
-input {
+.searching {
   border: none;
   padding: 10px 15px;
   font-size: 18px;
@@ -170,16 +171,16 @@ input {
   z-index: 999;
 }
 
-.nav,
+.nav-header,
 #menu-checkbox {
   display: none;
 }
 
-#menu-checkbox:checked ~ .nav {
+#menu-checkbox:checked ~ .nav-header {
   display: block;
 }
 
-.nav a {
+.nav-link {
   display: block;
   color: white;
   padding: 10px 28px;
@@ -188,12 +189,12 @@ input {
   font-family: 'Poppins', sans-serif;
 }
 
-.nav a:hover {
+.nav-link:hover {
   color: #d22cf5;
   transition: 0.2s;
 }
 
-.nav {
+.nav-header {
   display: flex;
   position: absolute;
   left: 0px;
@@ -212,7 +213,7 @@ input {
 }
 
 @media (max-width: 1080px) {
-  .nav {
+  .nav-header {
     width: 100%;
     display: none;
     background-color: #101018;
@@ -224,7 +225,7 @@ input {
 }
 
 @media (min-width: 1080px) {
-  .nav {
+  .nav-header {
     position: static;
     padding: 0;
   }
@@ -233,7 +234,7 @@ input {
     display: none;
   }
 
-  .nav a {
+  .nav-link {
     display: inline-block;
   }
 }
@@ -535,17 +536,26 @@ input {
 
 /*-------------------------------------------------- NEWSLETTER --------------------------------------------------*/
 
-#newsletter-img {
-  margin-right: 30px;
-  width: 534px;
-  height: 490px;
-  object-fit: cover;
+#newsletter-container {
+  display: flex;
 }
 
-.subscription {
-  margin-top: 30px;
-  display: inline-block;
-  padding-left: 74px;
+#newsletter-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 62%;
+}
+#newsletter-image-container {
+  width: 30%;
+}
+
+#newsletter-img {
+  width: 100%;
+  height: 490px;
+  object-fit: cover;
 }
 
 #newsletter {
@@ -555,9 +565,26 @@ input {
   font-family: 'Poppins', sans-serif;
 }
 
+.news-letter-text-box {
+  display: block;
+  align-items: center;
+  margin-left: 80px;
+  padding: 0px 90px;
+}
+
+.news-letter-text-box p {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
 #email {
   font-size: 18px;
-  width: 330px;
+  width: 72%;
+  border: none;
+  height: 100%;
+  padding-left: 10px;
 }
 
 #subscribe-btn {
@@ -572,71 +599,69 @@ input {
   font-weight: 600;
   text-decoration: none;
   float: right;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 800px) {
-
-  #newsletter-img {
-    margin: 0;
-    height: 75%;
+  #newsletter-container {
+    flex-direction: column;
+    position: relative;
+  }
+  #newsletter-image-container {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.5;
     width: 100%;
   }
-
-  .subscription {
-    width: auto;
-    margin: 0 auto;
-    padding-left: 0px;
-    margin-top: 20px;
+  #newsletter-content-container {
+    z-index: 1;
+    width: 100%;
   }
-
-  #newsletter {
-    height: 40px;
-    width: 220px;
-  }
-
-  #email {
-    font-size: 14px;
-    width: 210px;
-    padding: 10px;
-  }
-
-  .subscribe {
-    width: 100px;
-    font-size: 14px;
-    height: 40px;
-    padding: 0;
+  .news-letter-text-box {
+    padding: 20px;
     margin: 0;
-    bottom: 4px;
+  }
+  #newsletter {
+    width: 100%;
+  }
+  #newsletter-img {
+    width: 100%;
+    margin: 0;
+    height: 100%;
   }
 }
 
 /*-------------------------------------------------- Footer --------------------------------------------------*/
 
 #footer-main {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
+  display: flex;
   background-color: black;
   border-top: 1px solid #101018;
   color: white;
   margin-top: 50px;
+  justify-content: space-evenly;
+  width: 100%;
+  position: relative;
+  height: 270px;
+  padding-top: 30px;
 }
 
-.Contact {
-  grid-column: 1 / span 1;
+#footer-main p {
+  font-weight: 300;
+  font-size: 15px;
+  color: #ffffff;
+  font-family: 'Montserrat';
+}
+#footer-main a {
+  font-weight: 600;
 }
 
-.About {
-  grid-column: 2 / span 1;
-}
-
-.Partners {
-  grid-column: 3 / span 1;
-}
-
-.Follow {
-  grid-column: 4 / span 1;
+#contact-information-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 #footer-heading {
@@ -648,26 +673,20 @@ input {
   line-height: 1;
 }
 
-.Contact p,
-.About p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 12px;
-  line-height: 1;
-  text-align: left;
-}
-
-.Partners p {
-  line-height: 0.4;
-  font-family: 'Poppins', sans-serif;
-  font-size: 12px;
-  text-align: left;
-}
-
 #follow-btn {
   padding: 6px 0px;
   font-size: 16px;
   text-decoration: none;
   color: white;
+}
+
+.Follow {
+  display: flex;
+  flex-direction: column;
+}
+.Follow div {
+  display: flex;
+  gap: 5px;
 }
 
 .contact-footer {
@@ -716,18 +735,13 @@ input {
 }
 
 @media (min-width: 1180px) {
-  #footer-main {
-    justify-content: center;
-    padding: 20px 200px;
-  }
-
   #footer-heading:hover {
     color: #ff6001;
     transition: 0.3s;
   }
 
   .contact-footer {
-    font-size: 14px; 
+    font-size: 14px;
   }
 
   .Terms {
@@ -742,7 +756,7 @@ input {
   .About p,
   .Partners p {
     font-size: 14px;
-    line-height: 1.0;
+    line-height: 1;
   }
 
   #follow-btn {
@@ -758,9 +772,55 @@ input {
   #footer-heading {
     font-size: 16px;
   }
-
-  .follow-btns {
-    text-align: left;
-  }
 }
 
+#follow-container-mobile {
+  display: none;
+}
+
+#terms-container-mobile {
+  display: none;
+}
+
+#contact-container-mobile {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  
+  #follow-container {
+    display: none;
+  }
+  #footer-main div {
+    width: 30% 30% 30% 10%;
+  }
+  .contact-footer {
+    display: none;
+  }
+  #follow-container-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  #follow-btn {
+    font-size: 20px;
+  }
+  #terms-container-mobile {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    width: 100% !important;
+  }
+  #contact-container-mobile {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+  }
+
+  .Contact p,
+  .About p,
+  .Partners p {
+    line-height: 0.5;
+    font-size: 12px;
+  }
+}
