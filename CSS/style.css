@@ -25,7 +25,6 @@ header {
   top: 0;
   position: fixed;
   max-width: 100rem;
-  margin: 0 auto;
   width: 100%;
   z-index: 999;
 }
@@ -42,7 +41,7 @@ header {
   font-weight: 800;
   color: #d22cf5;
   text-decoration: none;
-  line-height: 1rem;
+  line-height: 0.7;
   margin-top: 2.5rem;
 }
 
@@ -77,61 +76,6 @@ header {
   transition: 0.2s;
 }
 
-@media (max-width: 1398px) {
-  header {
-    padding: 18px 3px;
-    transition: 0.2s;
-    max-height: 7rem;
-    position: unset;
-  }
-
-  #logo {
-    margin-top: 22px;
-    transition: 0.2s;
-  }
-
-  .top-nav {
-    margin-top: 1.375rem;
-    margin-bottom: 0px;
-    transition: 0.2s;
-    padding: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .navigation {
-    padding: 0 10% !important;
-  }
-}
-
-@media (max-width: 800px) {
-  .navigate {
-    padding: 0px 8px;
-    margin-top: 14px;
-    font-size: 18px;
-  }
-  .navigation {
-    justify-content: flex-end;
-  }
-
-  #logo {
-    font-size: 24px;
-  }
-
-  #logo p {
-    font-size: 12px;
-    letter-spacing: 0px;
-  }
-
-  header input {
-    font-size: 15px;
-    padding: 10px 0px;
-  }
-
-  .search-bar {
-    width: 70%;
-  }
-}
 
 /*-------------------------------------------------- NAVIGATIONBAR --------------------------------------------------*/
 
@@ -203,6 +147,63 @@ header {
   padding: 0px 122px;
   margin-right: 2%;
   z-index: 9999;
+}
+
+@media (max-width: 1398px) {
+  header {
+    padding: 18px 3px;
+    transition: 0.2s;
+    max-height: 7rem;
+    position: unset;
+  }
+
+  #logo {
+    margin-top: 22px;
+    transition: 0.2s;
+  }
+
+  .top-nav {
+    margin-top: 1.375rem;
+    margin-bottom: 0px;
+    transition: 0.2s;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navigation {
+    padding: 0 10% !important;
+  }
+
+  .top-nav {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 800px) {
+  .navigate {
+    padding: 0px 8px;
+    margin-top: 14px;
+    font-size: 18px;
+  }
+  .navigation {
+    justify-content: flex-start space-between;
+    padding: 0px 40px;
+  }
+
+  #logo {
+    font-size: 24px;
+  }
+
+  #logo p {
+    font-size: 12px;
+    letter-spacing: 0px;
+  }
+
+  .searching {
+    font-size: 14px;
+    padding: 10px 0px;
+  }
 }
 
 @media (max-width: 480px) {
