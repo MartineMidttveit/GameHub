@@ -288,8 +288,7 @@ header {
   margin-left: 180px;
 }
 
-#view-btn:hover,
-#read-btn:hover {
+.rounded-btns:hover {
   background-color: white;
   transform: scale(1.1);
 }
@@ -594,7 +593,7 @@ header {
   width: 100%;
   position: relative;
   height: 270px;
-  padding-top: 30px;
+  padding: 50px 0px;
 }
 
 #contact-information-container {

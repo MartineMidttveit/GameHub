@@ -28,7 +28,6 @@ body {
 }
 
 .about-headlines {
-    color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     font-weight: 500;
@@ -42,7 +41,6 @@ body {
 }
 
 .about-text {
-    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 300;
     text-align: center;
@@ -176,7 +174,6 @@ body {
 
     .Mobile-text-1 h1 {
         margin: 0px;
-        color: white;
         font-family: 'Montserrat', sans-serif;
         font-size: 26px;
         font-weight: 500;
@@ -186,7 +183,6 @@ body {
     }
 
     .Mobile-text-1 p {
-        font-family: 'Poppins', sans-serif;
         font-size: 14px;
         font-weight: 300;
         text-align: center;

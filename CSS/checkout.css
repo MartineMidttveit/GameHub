@@ -26,9 +26,7 @@ body {
 }
 
 .top-section p {
-    font-family: 'Poppins';
     font-weight: 400;
-    font-size: 18px;
     text-align: center;
     line-height: 1.5;
     margin-bottom: 28px;
@@ -95,7 +93,6 @@ body {
 .Game1 h3,
 .Game2 h3 {
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     font-size: 22px;
     line-height: 1.5;
     font-weight: 500;
@@ -104,7 +101,6 @@ body {
 
 .Game1 h4,
 .Game2 h4 {
-    font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: 400;
     text-align: right;
@@ -118,8 +114,6 @@ body {
 
 .Prices p {
     text-align: right;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
     line-height: 2.0;
     font-weight: 500;
     margin: 0;
@@ -128,7 +122,6 @@ body {
 
 .Prices h5 {
     text-align: right;
-    font-family: 'Poppins', sans-serif;
     font-size: 20px;
     line-height: 2.0;
     font-weight: 500;
@@ -184,7 +177,6 @@ body {
     padding-left: 42px;
     font-weight: 500;
     letter-spacing: 0.5px;
-    font-family: 'Poppins', sans-serif;
 }
 
 .Shipping p span,

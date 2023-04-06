@@ -22,7 +22,7 @@ body {
 
 .nav-line {
     height: 72px;
-    background-color: #000000;
+    background-color: black;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -58,6 +58,12 @@ body {
     height: 100%;
     align-items: center;
     justify-content: center;
+}
+
+@media only screen and (min-width: 1024px) {
+    #filter {
+        display: none;
+    }
 }
 
 #filter {

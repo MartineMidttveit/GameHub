@@ -2,6 +2,8 @@ body {
     background-color: #101018;
 }
 
+/*--------------------------------SHOPPINGBAG--------------------------------*/
+
 .Shoppingbag {
     background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.31) 100%);
     width: 1196px;
@@ -26,21 +28,18 @@ body {
 }
 
 .bag-titles {
-    font-size: 22px;
-    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
     font-weight: 400;
     padding-bottom: 30px;
 }
 
 .style-2 {
     font-size: 17px;
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     margin: 0;
 }
 
 .style-3 {
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 14px;
     margin: 0;
@@ -81,11 +80,10 @@ body {
     width: 100%;
     height: 30px;
     color: black;
-    font-family: 'Poppins', sans-serif;
     padding-left: 6px;
 }
 
-/* DELIVERY INFO */
+/*--------------------------------DELIVERY INFO--------------------------------*/
 
 .bottom-part {
     display: flex;
@@ -102,16 +100,14 @@ body {
     padding: 40px 100px;
 }
 
-#insert-name,
-#insert-address,
-#insert-code,
-#post-office {
+#insert {
     background-color: white;
     height: 40px;
     margin: 20px 0px;
     width: 600px;
     display: flex;
     align-items: center;
+    padding-left: 10px;
 }
 
 .del-info {
@@ -119,5 +115,6 @@ body {
     font-size: 16px;
     width: 600px;
     height: 40px;
+    border: none;
 }
 
