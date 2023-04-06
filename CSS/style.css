@@ -15,6 +15,8 @@ body {
   max-width: 100rem;
   margin: 0 auto;
   color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
 }
 
 /*-------------------------------------------------- HEADER --------------------------------------------------*/
@@ -53,8 +55,7 @@ header {
 #logo p {
   font-size: 1rem;
   color: white;
-  font-family: 'Poppins';
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .navigate {
@@ -71,11 +72,6 @@ header {
   margin-top: 2.75rem;
 }
 
-.top-nav:hover {
-  color: #d22cf5;
-  transition: 0.2s;
-}
-
 
 /*-------------------------------------------------- NAVIGATIONBAR --------------------------------------------------*/
 
@@ -86,16 +82,15 @@ header {
   background-color: rgba(16, 16, 24, 0.9);
   height: 60px;
   top: 112px;
-  font-size: 18px;
   padding: 0 80px;
 }
 
 .search-bar {
   background-color: white;
   clip-path: polygon(0 0, 58% 0, 100% 100%, 0% 100%);
+  width: 50%;
+  height: 80%;
   margin-top: 14px;
-  width: 650px;
-  height: 42px;
 }
 
 #search-form {
@@ -103,7 +98,6 @@ header {
 }
 
 .searching {
-  border: none;
   padding: 10px 15px;
   font-size: 18px;
   margin-right: 10px;
@@ -112,6 +106,7 @@ header {
   width: 100%;
   position: absolute;
   z-index: 999;
+  border: none;
 }
 
 .nav-header,
@@ -127,11 +122,10 @@ header {
   display: block;
   color: white;
   padding: 10px 28px;
-  font-size: 18px;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
 }
 
+.top-nav:hover,
 .nav-link:hover {
   color: #d22cf5;
   transition: 0.2s;
@@ -142,8 +136,6 @@ header {
   position: absolute;
   left: 0px;
   text-align: center;
-  top: 168px;
-  padding: 0px 122px;
   margin-right: 2%;
   z-index: 999;
 }
@@ -196,7 +188,6 @@ header {
 
   #logo p {
     font-size: 12px;
-    letter-spacing: 0px;
   }
 
   .searching {
@@ -243,7 +234,7 @@ header {
 
 .background {
   background-image: url(/IMAGES/header2.png);
-  height: 900px;
+  height: 50rem;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -260,47 +251,45 @@ header {
   width: clamp(350px, 50%, 520px);
   border-radius: 40px 0px 0px 40px;
   margin-bottom: 180px;
-  justify-content: center;
 }
 
 .text-box-headline {
   font-size: 36px;
   font-weight: 400;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
-  align-self: center;
   letter-spacing: 5.4px;
   margin-top: 52px;
-  line-height: 1;
 }
 
 .text-box-text {
   font-size: 16px;
   font-weight: 400;
-  font-family: 'Montserrat';
-  letter-spacing: 0.4px;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   margin-bottom: 30px;
 }
 
-#view-btn {
+.rounded-btns {
   background-color: #ff6001;
   height: 42px;
   width: 150px;
   border-radius: 60px;
   font-weight: 500;
-  letter-spacing: 0.4px;
   font-size: 16px;
-  font-family: 'Poppins';
   text-decoration: none;
   color: black;
   display: block;
   text-align: center;
   padding-top: 8px;
+}
+
+#view-btn {
   margin-left: 180px;
 }
 
-#view-btn:hover {
+#view-btn:hover,
+#read-btn:hover {
   background-color: white;
   transform: scale(1.1);
 }
@@ -369,16 +358,11 @@ header {
 /*-------------------------------------------------- GALLERY1 --------------------------------------------------*/
 
 .gallery {
-  background: linear-gradient(
-    180deg,
-    rgba(16, 16, 24, 0.9) 0%,
-    rgba(16, 16, 24, 0) 100%
-  );
+  background: linear-gradient(180deg, rgba(16, 16, 24, 0.9) 0%, rgba(16, 16, 24, 0) 100%);
   width: 100%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  flex: 1 1 100%;
   justify-content: center;
 }
 
@@ -393,8 +377,6 @@ header {
 .desc {
   text-decoration: none;
   color: white;
-  font-family: 'Poppins', sans-serif;
-  font-size: 18px;
   font-weight: 300;
 }
 
@@ -434,23 +416,21 @@ header {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
   padding: 130px 60px;
+  justify-content: center;
+  align-items: center;
 }
 
 .info-container img {
   height: 316px;
   width: 558px;
-  margin-left: 80px;
-  margin-right: 80px;
+  margin: 0px 80px;
 }
 
 .text-box {
   display: block;
   align-items: center;
-  margin-right: 80px;
-  margin-left: 80px;
+  margin: 0px 80px;
 }
 
 .text-box-subtitle {
@@ -465,29 +445,10 @@ header {
   font-size: 20px;
   font-weight: 300;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
 }
 
 #read-btn {
-  display: block;
-  background-color: #ff6001;
-  height: 42px;
-  width: 150px;
-  border-radius: 60px;
-  font-weight: 500;
-  letter-spacing: 0.4px;
-  font-size: 16px;
-  font-family: 'Poppins';
-  text-decoration: none;
-  color: black;
-  text-align: center;
-  padding: 8px;
   margin: 0 auto;
-}
-
-#read-btn:hover {
-  background-color: white;
-  transform: scale(1.1);
 }
 
 @media (max-width: 800px) {
@@ -561,7 +522,6 @@ header {
   background-color: white;
   width: 450px;
   height: 48px;
-  font-family: 'Poppins', sans-serif;
 }
 
 .news-letter-text-box {
@@ -575,7 +535,6 @@ header {
   font-size: 20px;
   font-weight: 300;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
 }
 
 #email {
@@ -584,23 +543,14 @@ header {
   border: none;
   height: 100%;
   padding-left: 10px;
+  font-family: 'Poppins', sans-serif;
 }
 
 #subscribe-btn {
-  background-color: #ff6001;
-  font-family: 'Poppins', sans-serif;
-  color: black;
   height: 48px;
   width: 120px;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 600;
-  text-decoration: none;
   float: right;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border-radius: 0;
 }
 
 @media (max-width: 800px) {
@@ -647,15 +597,6 @@ header {
   padding-top: 30px;
 }
 
-#footer-main p {
-  font-weight: 300;
-  font-size: 15px;
-  font-family: 'Montserrat';
-}
-#footer-main a {
-  font-weight: 600;
-}
-
 #contact-information-container {
   display: flex;
   flex-direction: column;
@@ -667,8 +608,13 @@ header {
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
-  font-family: 600;
+  font-weight: 600;
   line-height: 1;
+}
+
+.footer-p {
+  font-weight: 300;
+  font-size: 15px;
 }
 
 #follow-btn {
@@ -684,31 +630,18 @@ header {
 }
 .Follow div {
   display: flex;
-  gap: 5px;
 }
 
-.contact-footer {
-  grid-column: 1 / span 4;
-  padding-left: 6px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 12px;
-}
-
+.contact-footer,
 .Terms {
-  grid-column: 1 / span 4;
-  font-family: 'Poppins', sans-serif;
-  font-size: 12px;
   padding-left: 6px;
+  font-size: 12px;
 }
 
-#follow-btn:focus {
-  color: #ff6001;
-  transition: 1s;
-}
-
+#follow-btn:focus,
 #footer-heading:focus {
   color: #ff6001;
-  transition: 0.3s;
+  transition: 1s;
 }
 
 @media (min-width: 800px) {
@@ -720,9 +653,7 @@ header {
     font-size: 16px;
   }
 
-  .Contact p,
-  .About p,
-  .Partners p {
+  .footer-p {
     font-size: 16px;
   }
 
@@ -750,9 +681,7 @@ header {
     cursor: pointer;
   }
 
-  .Contact p,
-  .About p,
-  .Partners p {
+  .footer-p {
     font-size: 14px;
     line-height: 1;
   }
@@ -786,16 +715,13 @@ header {
 
 @media (max-width: 800px) {
   
-  #follow-container {
+  #follow-container,
+  .contact-footer {
     display: none;
   }
 
   #footer-main div {
     width: 30% 30% 30% 10%;
-  }
-
-  .contact-footer {
-    display: none;
   }
 
   #follow-container-mobile {
@@ -821,9 +747,7 @@ header {
     left: 0;
   }
 
-  .Contact p,
-  .About p,
-  .Partners p {
+  .footer-p {
     line-height: 0.5;
     font-size: 12px;
   }
