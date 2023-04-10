@@ -19,7 +19,6 @@ body {
     flex: 1 1 100px;
 }
 
-
 .container1,
 .container2,
 .container3 {
@@ -65,7 +64,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .container3 {
@@ -141,10 +139,10 @@ body {
     }
 
     .Mobile-version {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-}
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
 
     .Mobile-1,
     .Mobile-2,
