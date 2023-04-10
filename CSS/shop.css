@@ -208,6 +208,20 @@ body {
     color: #D9D9D9;
 }
 
+#buy-now {
+    background-color: #101018;
+    color: white;
+    font-size: 14px;
+    width: 40%;
+    height: 10%;
+    padding: 10px;
+    margin-top: 14px;
+}
+
+#buy-now:hover {
+    background-color: white;
+    color: #000000;
+}
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .filter {
