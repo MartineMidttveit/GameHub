@@ -520,7 +520,7 @@ header {
 #newsletter {
   background-color: white;
   width: 450px;
-  height: 48px;
+  height: 42px;
 }
 
 .news-letter-text-box {
@@ -546,10 +546,14 @@ header {
 }
 
 #subscribe-btn {
-  height: 48px;
+  height: 42px;
   width: 120px;
   float: right;
   border-radius: 0;
+}
+
+#subscribe-btn:hover {
+  transform: unset;
 }
 
 @media (max-width: 800px) {
