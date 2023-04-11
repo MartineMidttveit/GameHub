@@ -300,14 +300,12 @@ header {
   }
 
   .textbox {
-    height: 200px;
     width: 300px;
     margin-bottom: 50px;
   }
 
   .text-box-headline {
     font-size: 30px;
-    line-height: 0;
   }
 
   #view-btn {
@@ -415,9 +413,9 @@ header {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 130px 60px;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  padding: 130px 60px;
 }
 
 .info-container img {
@@ -505,7 +503,7 @@ header {
   gap: 10px;
   align-items: center;
   justify-content: center;
-  width: 62%;
+  width: 70%;
 }
 #newsletter-image-container {
   width: 30%;
@@ -520,13 +518,13 @@ header {
 #newsletter {
   background-color: white;
   width: 450px;
-  height: 42px;
+  height: 48px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .news-letter-text-box {
   display: block;
   align-items: center;
-  margin-left: 80px;
   padding: 0px 90px;
 }
 
@@ -546,15 +544,26 @@ header {
 }
 
 #subscribe-btn {
-  height: 42px;
+  background-color: #ff6001;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  height: 48px;
   width: 120px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
   float: right;
-  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #subscribe-btn:hover {
-  transform: unset;
+  background-color: white;
 }
+
 
 @media (max-width: 800px) {
   #newsletter-container {
@@ -596,7 +605,6 @@ header {
   justify-content: space-evenly;
   width: 100%;
   position: relative;
-  height: 270px;
   padding: 50px 0px;
 }
 
@@ -621,8 +629,8 @@ header {
 }
 
 #follow-btn {
-  padding: 6px 0px;
-  font-size: 16px;
+  padding: 6px 8px;
+  font-size: 25px;
   text-decoration: none;
   color: white;
 }
@@ -631,6 +639,7 @@ header {
   display: flex;
   flex-direction: column;
 }
+
 .Follow div {
   display: flex;
 }
@@ -678,10 +687,6 @@ header {
 
   .Terms {
     font-size: 14px;
-  }
-
-  .Terms:hover {
-    cursor: pointer;
   }
 
   .footer-p {
@@ -734,6 +739,10 @@ header {
 
   #follow-btn {
     font-size: 20px;
+  }
+
+  #footer-heading {
+    font-size: 16px;
   }
 
   #terms-container-mobile {

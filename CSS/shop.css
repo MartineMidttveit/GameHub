@@ -60,78 +60,12 @@ body {
     justify-content: center;
 }
 
-@media only screen and (min-width: 1024px) {
-    #filter {
-        display: none;
-    }
-}
-
-#filter {
-    display: none;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .nav-line {
-        justify-content: space-between;
-    }
-    
-    .sort-by {
-        padding-right: 12px;
-    }
-
-    #filter {
-        display: block;
-        height: 30px;
-        width: 100px;
-        margin-left: 12px;
-        background-color: #FF6001;
-        font-size: 14px;
-        font-weight: 500;
-        border: none;
-        border-radius: 50px;
-        text-align: center;
-    }
-
-    .filter {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 0px) and (max-width: 767px){
-    .nav-line {
-        justify-content: space-between;
-    }
-    
-    #filter {
-        display: block;
-        height: 30px;
-        width: 100px;
-        margin-left: 12px;
-        font-size: 14px;
-        border: none;
-        font-family: 'Poppins', sans-serif;
-        padding: 0;
-    }
-
-    .filter {
-        display: none;
-    }
-
-    .sort-by {
-        padding-right: 12px;
-    }
-
-    .sort-by p span {
-        padding: 10px 6px;
-        margin-left: 10px;
-    }
-}
-
 
 /*-------------------------------------------------- SHOP CONTAINERS  --------------------------------------------------*/
 
 .shop-main-container {
     display: flex;
+    gap: 10px;
 }
 
 .shop-grid {
@@ -145,37 +79,34 @@ body {
     margin-right: 40px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .shop-grid {
-        padding: 0;
-        margin: 0;
-        grid-template-columns: repeat(4, 21%);
-        grid-template-rows: repeat(6, 200px);
-        padding-top: 10px;
-        gap: 22px;
-    }
-}
-
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-    .shop-grid {
-        padding: 10px;
-        margin: 0;
-        grid-template-columns: repeat(2, 48%);
-        grid-template-rows: repeat(6, 350px);
-        gap: 14px;
-    }
-}
-
 /*-------------------------------------------------- Filter --------------------------------------------------*/
 
 .filter {
     background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.31) 100%);
     width: 300px;
-    height: 1736px;
     border-radius: 50px;
-    padding: 10px;
     margin-top: 30px;
     margin-left: 40px;
+    padding-left: 30px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 30px;
+    height: fit-content;
+}
+
+.filter input {
+    width: auto;
+    position: static;
+    z-index: 0;
+}
+
+.tree-stars,
+.one-stars,
+.four-stars,
+.two-stars{
+    display: inline-block;
 }
 
 .filter h2, .filter p, .stars {
@@ -212,7 +143,7 @@ body {
     background-color: #101018;
     color: white;
     font-size: 14px;
-    width: 40%;
+    width: 60%;
     height: 10%;
     padding: 10px;
     margin-top: 14px;
@@ -223,28 +154,6 @@ body {
     color: #000000;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .filter {
-        margin: 10px 10px;
-        padding: 0;
-        width: 200px;
-        height: auto;
-    }
-
-    .filter h2 {
-        font-size: 18px;
-    }
-
-    .filter p {
-        font-size: 12px;
-    }
-}
-
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-    .filter {
-        display: none;
-    }
-}
 
 /*-------------------------------------------------- GAMES --------------------------------------------------*/
 
@@ -259,8 +168,9 @@ body {
   }
   
   .game-container img {
-    height: 175px;
+    height: 100%;
     width: 135px;
+    object-fit: cover;
   }
 
   .shop-grid h3,
@@ -300,46 +210,6 @@ body {
     width: 100%;
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    
-    .shop-grid {
-        font-size: 14px;
-        line-height: 1.5;
-        margin: 0;
-    }
-
-    .shop-grid p {
-        font-size: 12px;
-        line-height: 1.5;
-        margin: 0;
-    }
-
-    .game-container img {
-        height: 100px;
-        width: 70px;
-        padding-bottom: 10px;
-    }
-}
-
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-    
-    .shop-grid h3 {
-        font-size: 18px;
-        line-height: 1.5;
-        margin: 0;
-    }
-
-    .shop-grid p {
-        font-size: 16px;
-        line-height: 1.5;
-        margin: 0;
-    }
-
-    .game-container img {
-        padding-bottom: 20px;
-    }
-}
-
 /*-------------------------------------------------- BIG GAMES --------------------------------------------------*/
 
 #Ironman img {
@@ -361,19 +231,6 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .text-container {
-        height: 16%;
-        padding: 4px;
-    }
-}
-
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-    .text-container {
-        padding: 10px;
-    }
 }
 
 /*-------------------------------------------------- BOTTOM SECTION --------------------------------------------------*/
@@ -413,10 +270,175 @@ body {
     text-decoration: none;
 }
 
+@media only screen and (min-width: 1024px) {
+    #filter {
+        display: none;
+    }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .bottom-text {
         height: 16%;
         padding: 4px;
     }
+
+    .nav-line {
+        justify-content: space-between;
+    }
+    
+    .sort-by {
+        padding-right: 12px;
+    }
+
+    #filter {
+        display: block;
+        height: 30px;
+        width: 100px;
+        margin-left: 12px;
+        background-color: #FF6001;
+        font-size: 14px;
+        font-weight: 500;
+        border: none;
+        border-radius: 50px;
+        text-align: center;
+    }
+
+    .filter {
+        display: none;
+        margin: 10px 10px;
+        padding: 0;
+        width: 200px;
+        height: auto;
+    }
+
+    .filter h2 {
+        font-size: 18px;
+    }
+
+    .filter p {
+        font-size: 12px;
+    }
+    
+    .shop-grid {
+        padding: 0;
+        margin: 0;
+        grid-template-columns: repeat(4, 21%);
+        grid-template-rows: repeat(6, 300px);
+        padding-top: 10px;
+        gap: 22px;
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    .shop-grid p {
+        font-size: 12px;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    .game-container img {
+        height: 100%;
+        width: 70px;
+        padding-bottom: 10px;
+    }
+
+    .text-container {
+        height: 16%;
+        padding: 4px;
+    }
+
+    #buy-now {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
+
+@media only screen and (min-width: 0px) and (max-width: 767px){
+    .nav-line {
+        justify-content: space-between;
+    }
+    
+    #filter {
+        display: block;
+        height: 30px;
+        width: 100px;
+        margin-left: 12px;
+        font-size: 14px;
+        border: none;
+        font-family: 'Poppins', sans-serif;
+        padding: 0;
+    }
+
+    .filter {
+        display: none;
+    }
+
+    .sort-by {
+        padding-right: 12px;
+    }
+
+    .sort-by p span {
+        padding: 10px 6px;
+        margin-left: 10px;
+    }
+
+    .shop-grid {
+        padding: 10px;
+        margin: 0;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(18, 400px);
+        gap: 14px;
+      }
+
+      .filter {
+        display: none;
+    }
+
+    .shop-grid h3 {
+        font-size: 18px;
+        line-height: 1.5;
+        margin: 0;
+      }
+    
+      .shop-grid p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+      }
+    
+      .shop3,
+      .shop10 {
+        grid-column: span 1;
+      }
+    
+      .game-container img {
+        padding-bottom: 20px;
+      }
+      .game-container {
+        padding: 20px;
+      }
+
+      .text-container {
+        padding: 10px;
+    }
+
+    #buy-now {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+  
+ 
+
+
+
+
+
+    
