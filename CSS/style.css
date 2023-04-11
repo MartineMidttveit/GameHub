@@ -140,96 +140,6 @@ header {
   z-index: 999;
 }
 
-@media (max-width: 1398px) {
-  header {
-    padding: 18px 3px;
-    transition: 0.2s;
-    max-height: 7rem;
-    position: unset;
-  }
-
-  #logo {
-    margin-top: 22px;
-    transition: 0.2s;
-  }
-
-  .top-nav {
-    margin-top: 1.375rem;
-    margin-bottom: 0px;
-    transition: 0.2s;
-    padding: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .navigation {
-    padding: 0 10% !important;
-  }
-
-  .top-nav {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 800px) {
-  .navigate {
-    padding: 0px 8px;
-    margin-top: 14px;
-    font-size: 18px;
-  }
-  .navigation {
-    justify-content: flex-start space-between;
-    padding: 0px 40px;
-  }
-
-  #logo {
-    font-size: 24px;
-  }
-
-  #logo p {
-    font-size: 12px;
-  }
-
-  .searching {
-    font-size: 14px;
-    padding: 10px 0px;
-  }
-}
-
-@media (max-width: 480px) {
-  .search-bar {
-    padding-left: 20px;
-    width: 90% !important;
-  }
-}
-
-@media (max-width: 1080px) {
-  .nav-header {
-    width: 100%;
-    display: none;
-    background-color: #101018;
-  }
-  .search-bar {
-    width: 70%;
-    padding-left: 20px;
-  }
-}
-
-@media (min-width: 1080px) {
-  .nav-header {
-    position: static;
-    padding: 0;
-  }
-
-  .hamburger-icon {
-    display: none;
-  }
-
-  .nav-link {
-    display: inline-block;
-  }
-}
-
 /*-------------------------------------------------- HEROPICTURE/TEXT --------------------------------------------------*/
 
 .background {
@@ -293,35 +203,6 @@ header {
   transform: scale(1.1);
 }
 
-@media (max-width: 800px) {
-  .background {
-    height: 500px;
-    margin-top: 0px;
-  }
-
-  .textbox {
-    width: 300px;
-    margin-bottom: 50px;
-  }
-
-  .text-box-headline {
-    font-size: 30px;
-  }
-
-  #view-btn {
-    margin: 0 auto;
-    width: 130px;
-    height: 36px;
-    padding-top: 5px;
-  }
-}
-
-@media (max-width: 1400px) {
-  .background {
-    margin-top: 0px;
-  }
-}
-
 /*-------------------------------------------------- FEATURED GAMES --------------------------------------------------*/
 
 .subtitle {
@@ -361,14 +242,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-@media (max-width: 480px) {
-  .gallery {
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    overflow: auto;
-  }
 }
 
 .desc {
@@ -448,49 +321,6 @@ header {
   margin: 0 auto;
 }
 
-@media (max-width: 800px) {
-  .info-container img {
-    width: 100%;
-    object-fit: contain;
-    margin: 10% 0%;
-    padding: 0;
-    height: 300px;
-    opacity: 40%;
-  }
-
-  .info-container {
-    box-sizing: unset;
-    padding: 0;
-    margin: 0;
-    display: relative;
-  }
-
-  .text-box {
-    position: absolute;
-    margin: 0px 40px;
-  }
-
-  .text-box h4 {
-    font-size: 20px;
-  }
-
-  .text-box p {
-    font-size: 16px;
-    padding-bottom: 10px;
-  }
-
-  br {
-    display: none;
-  }
-
-  #read-btn {
-    text-align: center;
-    height: 28px;
-    width: 120px;
-    padding: 4px;
-  }
-}
-
 /*-------------------------------------------------- NEWSLETTER --------------------------------------------------*/
 
 #newsletter-container {
@@ -562,36 +392,6 @@ header {
 
 #subscribe-btn:hover {
   background-color: white;
-}
-
-
-@media (max-width: 800px) {
-  #newsletter-container {
-    flex-direction: column;
-    position: relative;
-  }
-  #newsletter-image-container {
-    position: absolute;
-    z-index: 0;
-    opacity: 0.5;
-    width: 100%;
-  }
-  #newsletter-content-container {
-    z-index: 1;
-    width: 100%;
-  }
-  .news-letter-text-box {
-    padding: 20px;
-    margin: 0;
-  }
-  #newsletter {
-    width: 100%;
-  }
-  #newsletter-img {
-    width: 100%;
-    margin: 0;
-    height: 100%;
-  }
 }
 
 /*-------------------------------------------------- Footer --------------------------------------------------*/
@@ -721,8 +521,168 @@ header {
   display: none;
 }
 
+/*MEDIA QUIERIES*/ 
+
+@media (max-width: 1398px) {
+  header {
+    padding: 18px 3px;
+    transition: 0.2s;
+    max-height: 7rem;
+    position: unset;
+  }
+
+  #logo {
+    margin-top: 22px;
+    transition: 0.2s;
+  }
+
+  .top-nav {
+    margin-top: 1.375rem;
+    margin-bottom: 0px;
+    transition: 0.2s;
+    padding: 10px;
+  }
+
+  .background {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navigation {
+    padding: 0 10% !important;
+  }
+
+  .top-nav {
+    font-size: 18px;
+  }
+
+  .search-bar {
+    padding-left: 20px;
+    width: 90% !important;
+  }
+
+  .gallery {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow: auto;
+  }
+}
+
 @media (max-width: 800px) {
-  
+  .navigate {
+    padding: 0px 8px;
+    margin-top: 14px;
+    font-size: 18px;
+  }
+  .navigation {
+    justify-content: flex-start space-between;
+    padding: 0px 40px;
+  }
+
+  #logo {
+    font-size: 24px;
+  }
+
+  #logo p {
+    font-size: 12px;
+  }
+
+  .searching {
+    font-size: 14px;
+    padding: 10px 0px;
+  }
+
+  .background {
+    height: 500px;
+    margin-top: 0px;
+  }
+
+  .textbox {
+    width: 300px;
+    margin-bottom: 50px;
+  }
+
+  .text-box-headline {
+    font-size: 30px;
+  }
+
+  #view-btn {
+    margin: 0 auto;
+    width: 130px;
+    height: 36px;
+    padding-top: 5px;
+  }
+
+  .info-container img {
+    width: 100%;
+    object-fit: contain;
+    margin: 10% 0%;
+    padding: 0;
+    height: 300px;
+    opacity: 40%;
+  }
+
+  .info-container {
+    box-sizing: unset;
+    padding: 0;
+    margin: 0;
+    display: relative;
+  }
+
+  .text-box {
+    position: absolute;
+    margin: 0px 40px;
+  }
+
+  .text-box h4 {
+    font-size: 20px;
+  }
+
+  .text-box p {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+
+  #read-btn {
+    text-align: center;
+    height: 28px;
+    width: 120px;
+    padding: 4px;
+  }
+
+  #newsletter-container {
+    flex-direction: column;
+    position: relative;
+  }
+
+  #newsletter-image-container {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.5;
+    width: 100%;
+  }
+
+  #newsletter-content-container {
+    z-index: 1;
+    width: 100%;
+  }
+
+  .news-letter-text-box {
+    padding: 20px;
+    margin: 0;
+  }
+
+  #newsletter {
+    width: 100%;
+  }
+
+  #newsletter-img {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+  }
+
   #follow-container,
   .contact-footer {
     display: none;
@@ -764,3 +724,41 @@ header {
     font-size: 12px;
   }
 }
+
+@media (max-width: 1080px) {
+  .nav-header {
+    width: 100%;
+    display: none;
+    background-color: #101018;
+  }
+  .search-bar {
+    width: 70%;
+    padding-left: 20px;
+  }
+
+  .gallery {
+    overflow: scroll;
+    flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 1080px) {
+  .nav-header {
+    position: static;
+    padding: 0;
+  }
+
+  .hamburger-icon {
+    display: none;
+  }
+
+  .nav-link {
+    display: inline-block;
+  }
+}
+
+
+
+
+
+
