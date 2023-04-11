@@ -18,9 +18,9 @@
     ></script>
 
     <link rel="stylesheet" href="/CSS/style.css" />
-    <link rel="stylesheet" href="/CSS/shoppingbag.css" />
+    <link rel="stylesheet" href="/CSS/checkout.css" />
 
-    <title>GameHub | Bag</title>
+    <title>GameHub | Success</title>
   </head>
   <body>
 
@@ -28,7 +28,7 @@
 
 <header>
   <nav class="header-nav">
-      <a id="logo" href="/index.html">GAME<span>HUB</span>
+      <a id="logo" href="Index.html">GAME<span>HUB</span>
         <p>The universe of games</p></a>
 
       <div class="navigate">
@@ -54,7 +54,7 @@
       </label>
 
   <nav class="nav-header">
-      <a class="nav-link" href="/index.html">Home</a>
+      <a class="nav-link" href="Index.html">Home</a>
       <a class="nav-link" href="/HTML/shop.html">Shop</a>
       <a class="nav-link" href="#">Sell</a>
       <a class="nav-link" href="/HTML/contact.html">Contact</a>
@@ -62,166 +62,148 @@
   </nav>
 </header>
 
-<!---------------------------------------------------- SHOPPINGBAG ---------------------------------------------------->
+<!---------------------------------------------------- THANK YOU  ---------------------------------------------------->
 
-<div class="Shoppingbag">
-    <h1>SHOPPINGBAG</h1>
-  
-  <div class="col-1">
-      <h2 class="bag-titles">Product</h2>
-      <img src="/IMAGES/COD.png" alt="Call of Duty Black Ops">
-  </div>
-  
-  <div class="col-2">
-    <h2 class="bag-titles">Title</h2>
-    <h3 class="style-2">Call of Duty</h3>
-    <h4 class="style-3">Black Ops</h4>
-  </div>
-  
-  <div class="col-3">
-    <h2 class="bag-titles">Device</h2>
-    <div class="chosen-device"><p>Playstation 4</p></div>
-  </div>
-  
-  <div class="col-4">
-    <h2 class="bag-titles">Condition</h2>
-    <h3 class="style-2">New</h3>
-  </div>
-  
-  <div class="col-5">
-    <h2 class="bag-titles">Quantity</h2>
-    <h3 class="style-2">- 1 +</h3>
-  </div>
-  
-  <div class="col-6">
-    <h2 class="bag-titles">Price</h2>
-    <h3 class="style-2">£39.99</h3>
-  </div>
-  
-  <div class="col-7">
-    <img src="/IMAGES/JUSTCAUSE.png" alt="Just Cause 3">
-  </div>
-  
-  <div class="col-8">
-    <h3 class="style-2">Just Cause</h3>
-    <h4 class="style-3">Explosion</h4>
-  </div>
-  
-  <div class="col-9">
-    <div class="chosen-device"><p>Playstation 4</p></div>
-  </div>
-  
-  <div class="col-10">
-    <h3 class="style-2">Pre-owned</h3>
-  </div>
-  
-  <div class="col-11">
-    <h3 class="style-2">- 1 +</h3>
-  </div>
-  
-  <div class="col-12">
-    <h3 class="style-2">£19.99</h3>
-  </div>
-  </div>
-  
-  <!---------------------------------------------------- DELIVERY INFO ---------------------------------------------------->
-  
-  <section class="bottom-part">
-  
-  <div class="delivery-info">
-    <h1>DELIVERY INFORMATION</h1>
-  
-    <form id="insert">
-      <input class="del-info" type="text" placeholder="Name:">
-    </form>
-  
-    <form id="insert">
-      <input class="del-info" type="text" placeholder="Address:">
-    </form>
-  
-    <form id="insert">
-      <input class="del-info" type="text" placeholder="Post code:">
-    </form>
-  
-    <form id="insert">
-      <input class="del-info" type="text" placeholder="Pick your closest post-office">
-    </form>
-  
-  </div>
-  </section>
+<section class="top-section">
+    <h1>THANK YOU!</h1>
+    <p>We have recieved your order and it will be processed shortly. <br>We have sent you an email regarding shipping information and order details.</p>
+
+    <div class="order">
+        <p>Your order number: #25678</p>
+    </div>
+
+    <p>Order date: 27.01.2023</p>
+</section>
+
+<!---------------------------------------------------- SUMMARY  ---------------------------------------------------->
+
+<div class="summary-wrapper">
+<section class="summary">
+    <h2>ORDER SUMMARY</h2>
+
+    <div class="Game1">
+        <img class="game-pic" src="/IMAGES/COD.png" alt="Call of Duty Black Ops Cover">
+        <h3>Call of Duty<p>Black Ops</p></h3>
+        <h4>£39.99</h4>
+    </div>
+
+    <div class="Game2">
+        <img class="game-pic" src="/IMAGES/JUSTCAUSE.png" alt="Just Cause 3 Cover">
+        <h3>Just Cause<p>3</p></h3>
+        <h4>£19.99</h4>
+    </div>
+
+    <div class="Prices">
+        <p>Subtotal: £59.98</p>
+        <p>Shipping: FREE</p>
+        <p>TAX: £10.00</p>
+        <hr></hr>
+        <h5>Grand Total: £69.98</h5>
+    </div>
+</section>
+
+<!---------------------------------------------------- SUMMARY INFO  ---------------------------------------------------->
+
+<section class="Shipping">
+    <h6>SHIPPING ADDRESS</h6>
+    <p>Name: <span>Jøran Berg</span></p>
+    <p>Address: <span>Totlandsveien 34</span></p>
+    <p>Post: <span>5353 Totland</span></p>
+</section>
+
+<section class="Billing">
+    <h6>BILLING ADDRESS</h6>
+    <p>Name: <span>Jøran Berg</span></p>
+    <p>Address: <span>Totlandsveien 34</span></p>
+    <p>Post: <span>5353 Totland</span></p>
+</section>
+
+<section class="Shipping-method">
+    <h6>SHIPPING METHOD</h6>
+    <p>Pick up at the <br>nearest post office</p>
+    <img class="map" src="/IMAGES/Map.png" alt="Map of Totland Post Office">
+</section>
+
+<section class="payment-method">
+    <h6>PAYMENT METHOD</h6>
+</section>
+</div>
+
 
 <!---------------------------------------------------- FOOTER ---------------------------------------------------->
 
 <footer id="footer-main">
-  <div id='contact-information-container'> 
+  <div id="contact-information-container">
     <div class="Contact">
       <a id="footer-heading" href="/HTML/contact.html">CONTACT</a>
-      <p class="footer-p">Contact us</p>
-      <p class="footer-p">Support</p>
+      <p>Contact us</p>
+      <p>Support</p>
     </div>
     <div class="contact-footer">
       <span id="phone-ico"><i class="fa-solid fa-phone"></i></span>
-      <span id="phone-nmbr">+47 552 24 356</span><br/>
+      <span id="phone-nmbr">+47 552 24 356</span><br />
       <span id="email-ico"><i class="fa-solid fa-envelope"></i></span>
       <span id="email-adr">gamehub@customersupport.com</span>
     </div>
   </div>
-  
+
   <div>
     <div class="About">
       <a id="footer-heading" href="/HTML/about.html">ABOUT</a>
-      <p class="footer-p">About</p>
-      <p class="footer-p">Our culture</p>
-      <p class="footer-p">Careers</p>
+      <p>About</p>
+      <p>Our culture</p>
+      <p>Careers</p>
     </div>
   </div>
   <div>
     <div class="Partners">
       <a id="footer-heading" href="#">PARTNERS</a>
-      <p class="footer-p">EA Games</p>
-      <p class="footer-p">Blizzard</p>
-      <p class="footer-p">Xbox</p>
-      <p class="footer-p">Playstation</p>
-      <p class="footer-p">Nintendo</p>
+      <p>EA Games</p>
+      <p>Blizzard</p>
+      <p>Xbox</p>
+      <p>Playstation</p>
+      <p>Nintendo</p>
     </div>
   </div>
-
-<!---------------------------------------------------- FOOTER MOBILE ---------------------------------------------------->
-
-  <div id='follow-container-mobile'>
+  <div id="follow-container-mobile">
     <a id="follow-btn" href="#"><i class="fa-brands fa-instagram"></i></a>
     <a id="follow-btn" href="#"><i class="fa-brands fa-facebook"></i></a>
     <a id="follow-btn" href="#"><i class="fa-brands fa-linkedin"></i></a>
   </div>
-  <div id='terms-container-mobile'><p class="Terms">Privacy Policy | Terms & Conditions | Cookie Policy</p></div>
-<div id='contact-container-mobile'>
-
-  <div class="contact-footer">
-    <span id="phone-ico"><i class="fa-solid fa-phone"></i></span>
-    <span id="phone-nmbr">+47 552 24 356</span><br/>
-    <span id="email-ico"><i class="fa-solid fa-envelope"></i></span>
-    <span id="email-adr">gamehub@customersupport.com</span>
+  <div id="terms-container-mobile">
+    <p class="Terms">Privacy Policy | Terms & Conditions | Cookie Policy</p>
   </div>
-</div>
-
-  <div id='follow-container'>
+  <div id="contact-container-mobile">
+    <div class="contact-footer">
+      <span id="phone-ico"><i class="fa-solid fa-phone"></i></span>
+      <span id="phone-nmbr">+47 552 24 356</span><br />
+      <span id="email-ico"><i class="fa-solid fa-envelope"></i></span>
+      <span id="email-adr">gamehub@customersupport.com</span>
+    </div>
+  </div>
+  <div id="follow-container">
     <div class="Follow">
       <a id="footer-heading" href="#">FOLLOW US</a>
       <div>
-        <a id="follow-btn" href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a id="follow-btn" href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a id="follow-btn" href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a id="follow-btn" href="#"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a id="follow-btn" href="#"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a id="follow-btn" href="#"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
       </div>
     </div>
 
     <div>
       <p class="Terms">Privacy Policy</p>
       <p class="Terms">Terms & Conditions</p>
-      <p class="Terms"> Cookie Policy</p>
+      <p class="Terms">Cookie Policy</p>
     </div>
   </div>
-
 </footer>
-
-</body>
-</html>
+  
+    </body>
+  </html>
