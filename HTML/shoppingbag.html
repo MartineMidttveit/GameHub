@@ -18,7 +18,7 @@
     ></script>
 
     <link rel="stylesheet" href="/CSS/style.css" />
-    <link rel="stylesheet" href="/CSS/checkout.css" />
+    <link rel="stylesheet" href="/CSS/shoppingbag.css" />
 
     <title>GameHub | Success</title>
   </head>
@@ -34,7 +34,7 @@
       <div class="navigate">
           <a class="top-nav" href="#"><i class="fa-regular fa-user"></i></a>
           <a class="top-nav" href="#"><i class="fa-regular fa-heart"></i></a>
-          <a class="top-nav" href="/HTML/Checkout.html"><i class="fa-solid fa-bag-shopping"></i></a>
+          <a class="top-nav" href="/HTML/shoppingbag.html"><i class="fa-solid fa-bag-shopping"></i></a>
       </div>
   </nav>
 </header>
@@ -64,70 +64,93 @@
 
 <!---------------------------------------------------- THANK YOU  ---------------------------------------------------->
 
-<section class="top-section">
-    <h1>THANK YOU!</h1>
-    <p>We have recieved your order and it will be processed shortly. <br>We have sent you an email regarding shipping information and order details.</p>
+<div class="Shoppingbag">
+  <h1>SHOPPINGBAG</h1>
 
-    <div class="order">
-        <p>Your order number: #25678</p>
-    </div>
+  <div class="col-1">
+    <h2 class="bag-titles">Product</h2>
+    <img src="/IMAGES/COD.png" alt="Call of Duty Black Ops" />
+  </div>
 
-    <p>Order date: 27.01.2023</p>
-</section>
+  <div class="col-2">
+    <h2 class="bag-titles">Title</h2>
+    <h3 class="style-2">Call of Duty</h3>
+    <h4 class="style-3">Black Ops</h4>
+  </div>
 
-<!---------------------------------------------------- SUMMARY  ---------------------------------------------------->
+  <div class="col-3">
+    <h2 class="bag-titles">Device</h2>
+    <div class="chosen-device"><p>Playstation 4</p></div>
+  </div>
 
-<div class="summary-wrapper">
-<section class="summary">
-    <h2>ORDER SUMMARY</h2>
+  <div class="col-4">
+    <h2 class="bag-titles">Condition</h2>
+    <h3 class="style-2">New</h3>
+  </div>
 
-    <div class="Game1">
-        <img class="game-pic" src="/IMAGES/COD.png" alt="Call of Duty Black Ops Cover">
-        <h3>Call of Duty<p>Black Ops</p></h3>
-        <h4>£39.99</h4>
-    </div>
+  <div class="col-5">
+    <h2 class="bag-titles">Quantity</h2>
+    <h3 class="style-2">- 1 +</h3>
+  </div>
 
-    <div class="Game2">
-        <img class="game-pic" src="/IMAGES/JUSTCAUSE.png" alt="Just Cause 3 Cover">
-        <h3>Just Cause<p>3</p></h3>
-        <h4>£19.99</h4>
-    </div>
+  <div class="col-6">
+    <h2 class="bag-titles">Price</h2>
+    <h3 class="style-2">£39.99</h3>
+  </div>
 
-    <div class="Prices">
-        <p>Subtotal: £59.98</p>
-        <p>Shipping: FREE</p>
-        <p>TAX: £10.00</p>
-        <hr></hr>
-        <h5>Grand Total: £69.98</h5>
-    </div>
-</section>
+  <div class="col-7">
+    <img src="/IMAGES/JUSTCAUSE.png" alt="Just Cause 3" />
+  </div>
 
-<!---------------------------------------------------- SUMMARY INFO  ---------------------------------------------------->
+  <div class="col-8">
+    <h3 class="style-2">Just Cause</h3>
+    <h4 class="style-3">Explosion</h4>
+  </div>
 
-<section class="Shipping">
-    <h6>SHIPPING ADDRESS</h6>
-    <p>Name: <span>Jøran Berg</span></p>
-    <p>Address: <span>Totlandsveien 34</span></p>
-    <p>Post: <span>5353 Totland</span></p>
-</section>
+  <div class="col-9">
+    <div class="chosen-device"><p>Playstation 4</p></div>
+  </div>
 
-<section class="Billing">
-    <h6>BILLING ADDRESS</h6>
-    <p>Name: <span>Jøran Berg</span></p>
-    <p>Address: <span>Totlandsveien 34</span></p>
-    <p>Post: <span>5353 Totland</span></p>
-</section>
+  <div class="col-10">
+    <h3 class="style-2">Pre-owned</h3>
+  </div>
 
-<section class="Shipping-method">
-    <h6>SHIPPING METHOD</h6>
-    <p>Pick up at the <br>nearest post office</p>
-    <img class="map" src="/IMAGES/Map.png" alt="Map of Totland Post Office">
-</section>
+  <div class="col-11">
+    <h3 class="style-2">- 1 +</h3>
+  </div>
 
-<section class="payment-method">
-    <h6>PAYMENT METHOD</h6>
-</section>
+  <div class="col-12">
+    <h3 class="style-2">£19.99</h3>
+  </div>
 </div>
+
+<!---------------------------------------------------- DELIVERY INFO ---------------------------------------------------->
+
+<section class="bottom-part">
+  <div class="delivery-info">
+    <h1>DELIVERY INFORMATION</h1>
+
+    <form id="insert-name">
+      <input class="del-info" type="text" placeholder="Name:" />
+    </form>
+
+    <form id="insert-address">
+      <input class="del-info" type="text" placeholder="Address:" />
+    </form>
+
+    <form id="insert-code">
+      <input class="del-info" type="text" placeholder="Post code:" />
+    </form>
+
+    <form id="post-office">
+      <input
+        class="del-info"
+        type="text"
+        placeholder="Pick your closest post-office"
+      />
+    </form>
+  </div>
+</section>
 
 
 <!---------------------------------------------------- FOOTER ---------------------------------------------------->
