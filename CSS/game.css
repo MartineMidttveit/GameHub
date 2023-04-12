@@ -7,13 +7,13 @@ body {
 .game-container {
   margin: 0 auto;
   height: 100%;
-  width: 1196px;
+  width: 75%;
   background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.56) 100%);
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 172px;
-  padding-bottom: 60px;
+  padding: 60px 0px;
   text-align: center;
 }
 
