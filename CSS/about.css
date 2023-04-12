@@ -1,165 +1,169 @@
 body {
     background-color: #101018;
-}
-
-/*---------------------------------------------------- ABOUT DESKTOP ----------------------------------------------------*/
-
-#user-experience {
+  }
+  
+  /*---------------------------------------------------- ABOUT DESKTOP ----------------------------------------------------*/
+  
+  #user-experience {
     margin-top: 172px;
-}
-
-#user-experience,
-.section {
+  }
+  
+  #user-experience,
+  .section {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px 0px;
     flex: 1 1 100px;
-}
-
-.container1,
-.container2,
-.container3 {
+  }
+  
+  .container1,
+  .container2,
+  .container3 {
     background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.31) 100%);
     padding: 0px 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.about-headlines {
+  }
+  
+  .about-headlines {
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     font-weight: 500;
     text-align: center;
     margin: 6px;
-}
-
-.about-headlines span {
-    color: #FF6001;
-}
-
-.about-text {
+  }
+  
+  .about-headlines span {
+    color: #ff6001;
+  }
+  
+  .about-text {
     font-size: 16px;
     font-weight: 300;
     text-align: center;
-    line-height: 2.0;
-}
-
-.container1 {
+    line-height: 2;
+  }
+  
+  .container1 {
     border-radius: 70px 0px 0px 70px;
     height: 440px;
     width: 40%;
-}
-
-.container2 {
+  }
+  
+  .container2 {
     border-radius: 0px 70px 70px 0px;
     height: 438px;
     width: 35%;
-}
-
-.container3 {
+  }
+  
+  .container3 {
     border-radius: 70px 0px 0px 70px;
     height: 440px;
     width: 40%;
-}
-
-.About1, .About3 {
+  }
+  
+  .About1,
+  .About3 {
     height: 440px;
     width: 35%;
     border-radius: 0px 70px 70px 0px;
     object-fit: cover;
-}
-
-.About2 {
+  }
+  
+  .About2 {
     height: 438px;
     width: 40%;
     border-radius: 70px 0px 0px 70px;
     object-fit: cover;
-}
-
-/*-------------------------MEDIA QUIERIES MOBILE ---------------------------*/
-
-@media only screen and (min-width: 0px) and (max-width: 767px) {
+  }
+  
+  /*-------------------------MEDIA QUIERIES MOBILE ---------------------------*/
+  
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
     #user-experience,
     .section {
-        margin-top: 10px;
-        display: flex;
-        flex-direction: column;
-        padding: 10px 0px;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      padding: 10px 0px;
     }
-
-    .About1, 
-    .About2, 
+  
+    .About1,
+    .About2,
     .About3 {
-        width: 90%;
-        object-fit: cover;
-        border-radius: 15px;
-        height: 300px;
+      width: 90%;
+      object-fit: cover;
+      border-radius: 15px;
+      height: 300px;
     }
-    
-    .About1, 
+  
+    .About1,
     .About3 {
-        order: 1;
+      order: 1;
     }
-
+  
     .container1,
     .container2,
     .container3 {
-        width: 90%;
-        border-radius: 15px;
-        padding: 40px 30px; 
-        height: auto;
+      width: 90%;
+      border-radius: 15px;
+      padding: 40px 30px;
+      height: auto;
     }
-
-    .container1, 
+  
+    .container1,
     .container3 {
-        order: 2;
+      order: 2;
     }
-
+  
     .about-headlines {
-        font-size: 24px;
+      font-size: 24px;
     }
-
+  
     .about-text {
-        font-size: 14px;
+      font-size: 14px;
     }
-}
-
-/*-------------------------MEDIA QUIERIES IPAD ---------------------------*/
-
-@media only screen and (min-width: 768px) and (max-width: 1080px) {
+  }
+  
+  /*-------------------------MEDIA QUIERIES IPAD ---------------------------*/
+  
+  @media only screen and (min-width: 1080px) and (max-width: 1398px) {
+    #user-experience {
+      margin-top: 0px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1080px) {
     #user-experience,
     .section {
-        margin-top: 30px;
-        display: flex;
-        padding: 10px 0px;
+      margin-top: 30px;
+      display: flex;
+      padding: 10px 0px;
     }
-
-    .About1, 
-    .About2, 
+  
+    .About1,
+    .About2,
     .About3 {
-        width: 38%;
-        object-fit: cover;
-        height: 400px;
+      width: 38%;
+      object-fit: cover;
+      height: 400px;
     }
-    
-
+  
     .container1,
     .container2,
     .container3 {
-        width: 90%;
-        padding: 40px 30px; 
-        height: 400px;
+      width: 90%;
+      padding: 40px 30px;
+      height: 400px;
     }
-
-
+  
     .about-headlines {
-        font-size: 26px;
+      font-size: 26px;
     }
-
+  
     .about-text {
-        font-size: 16px;
+      font-size: 16px;
     }
-}
+  }

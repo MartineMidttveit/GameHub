@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Got a question or complaint? Contact us on phone: +47 552 24 356 or email: gamehub@customersupport.com">
+    <meta
+      name="description"
+      content="Got a question or complaint? Contact us on phone: +47 552 24 356 or email: gamehub@customersupport.com"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,288 +26,331 @@
 
     <title>GameHub | Contact</title>
   </head>
-<body>
+  <body>
+    <!---------------------------------------------------- HEADER ---------------------------------------------------->
 
-<!---------------------------------------------------- HEADER ---------------------------------------------------->
+    <header>
+      <nav class="header-nav">
+        <a id="logo" href="/index.html"
+          >GAME<span>HUB</span>
+          <p>The universe of games</p></a
+        >
 
-<header>
-  <nav class="header-nav">
-      <a id="logo" href="/index.html">GAME<span>HUB</span>
-        <p>The universe of games</p></a>
-
-      <div class="navigate">
+        <div class="navigate">
           <a class="top-nav" href="#"><i class="fa-regular fa-user"></i></a>
           <a class="top-nav" href="#"><i class="fa-regular fa-heart"></i></a>
-          <a class="top-nav" href="/HTML/shoppingbag.html"><i class="fa-solid fa-bag-shopping"></i></a>
+          <a class="top-nav" href="/HTML/shoppingbag.html"
+            ><i class="fa-solid fa-bag-shopping"></i
+          ></a>
+        </div>
+      </nav>
+    </header>
+
+    <!---------------------------------------------------- NAVIGATION HEADER ---------------------------------------------------->
+
+    <header class="navigation">
+      <div class="search-bar">
+        <form id="search-form">
+          <input
+            class="searching"
+            type="text"
+            placeholder="Search for games..."
+          />
+        </form>
       </div>
-  </nav>
-</header>
 
-<!---------------------------------------------------- NAVIGATION HEADER ---------------------------------------------------->
-
-<header class="navigation">
-  <div class="search-bar">
-      <form id="search-form">
-          <input class="searching" type="text" placeholder="Search for games..." />
-      </form>
-  </div>
-
-  <input type="checkbox" id="menu-checkbox" />
+      <input type="checkbox" id="menu-checkbox" />
       <label for="menu-checkbox" class="hamburger-icon">
         <i class="fas fa-bars"></i>
       </label>
 
-  <nav class="nav-header">
-      <a class="nav-link" href="/index.html">Home</a>
-      <a class="nav-link" href="/HTML/shop.html">Shop</a>
-      <a class="nav-link" href="#">Sell</a>
-      <a class="nav-link" href="/HTML/contact.html">Contact</a>
-      <a class="nav-link" href="/HTML/about.html">About</a>
-  </nav>
-</header>
+      <nav class="nav-header">
+        <a class="nav-link" href="/index.html">Home</a>
+        <a class="nav-link" href="/HTML/shop.html">Shop</a>
+        <a class="nav-link" href="#">Sell</a>
+        <a class="nav-link" href="/HTML/contact.html">Contact</a>
+        <a class="nav-link" href="/HTML/about.html">About</a>
+      </nav>
+    </header>
 
-<!---------------------------------------------------- CONTACT FORM ---------------------------------------------------->
+    <!---------------------------------------------------- CONTACT FORM ---------------------------------------------------->
 
-<div class="Desktop-version">
-  <div class="container">
-      <div class="contact-container">
+    <div class="Desktop-version">
+      <div class="container">
+        <div class="contact-container">
           <h1>CONTACT <span>US</span></h1>
-              <form id="contact-info">
-                  <input type="text" placeholder="Name:">
-              </form>
+          <form id="contact-info">
+            <input type="text" placeholder="Name:" />
+          </form>
 
-              <form id="contact-info">
-                  <input type="text" placeholder="Email:">
-              </form>
+          <form id="contact-info">
+            <input type="text" placeholder="Email:" />
+          </form>
 
-              <form id="contact-message" class="message-box">
-                  <textarea placeholder="Your message...." id='textarea'></textarea>
-              </form>
-          <button id="send-btn" type="submit" class="rounded-btns">SEND</button>
-      </div>
-
-<!---------------------------------------------------- CONTACT INFO ---------------------------------------------------->
-
-    <div class="contact-image">
-        <div class="contact-info">
-          <div>
-            <h2>WE ARE HERE TO<br><span> SUPPORT YOU</span></h2>
+          <form id="contact-message" class="message-box">
+            <textarea placeholder="Your message...." id="textarea"></textarea>
+          </form>
+          <div id="send-btn-container">
+            <button id="send-btn" type="submit" class="rounded-btns">
+              SEND
+            </button>
           </div>
-           <div class='contact-content'>
-    
-            <div class="phone-email" >
-                <span class="phone-icon"><i class="fa-solid fa-phone"></i></span>
-                <span class="phone-number">+47 552 24 356</span><br>
+        </div>
 
-                <span class="email-icon"><i class="fa-solid fa-envelope"></i></span>
-                <span class="email">gamehub@customersupport.com</span>
+        <!---------------------------------------------------- CONTACT INFO ---------------------------------------------------->
+
+        <div class="contact-image">
+          <div class="contact-info">
+            <div>
+              <h2>WE ARE HERE TO<br /><span> SUPPORT YOU</span></h2>
             </div>
+            <div class="contact-content">
+              <div class="phone-email">
+                <div>
+                  <span class="phone-icon"
+                    ><i class="fa-solid fa-phone"></i
+                  ></span>
+                  <span class="phone-number">+47 552 24 356</span><br />
+                </div>
+                <div>
+                  <span class="email-icon"
+                    ><i class="fa-solid fa-envelope"></i
+                  ></span>
+                  <span class="email">gamehub@customersupport.com</span>
+                </div>
+              </div>
 
-            <div class="contact-details">
+              <div class="contact-details">
                 <div class="phone">
-                    <h3>PHONE</h3>
-                    <p>Mon-Fri: 08-16</p>
-                    <p>Sat: 10-14</p>
-                    <p>Sun: Closed</p>
+                  <h3>PHONE</h3>
+                  <p>Mon-Fri: 08-16</p>
+                  <p>Sat: 10-14</p>
+                  <p>Sun: Closed</p>
                 </div>
 
                 <div class="email">
-                    <h3>EMAIL</h3>
-                    <p>We are answering emails as soon as we can. Expected answer within 24 hours.</p>
+                  <h3>EMAIL</h3>
+                  <p>
+                    We are answering emails as soon as we can. Expected answer
+                    within 24 hours.
+                  </p>
                 </div>
+              </div>
             </div>
           </div>
         </div>
-    </div>
-</div>
+      </div>
 
-<!---------------------------------------------------- SUBTITLE ---------------------------------------------------->
+      <!---------------------------------------------------- SUBTITLE ---------------------------------------------------->
 
-<div class="subtitle">
-  <div class="line"></div>
-      <h2>FREQUENTLY<span> ASKED QUESTIONS</span></h2>
-  <div class="line"></div>
-</div>
+      <div class="subtitle">
+        <div class="line"></div>
+        <h2>FREQUENTLY<span> ASKED QUESTIONS</span></h2>
+        <div class="line"></div>
+      </div>
 
-<!---------------------------------------------------- Questions ---------------------------------------------------->
+      <!---------------------------------------------------- Questions ---------------------------------------------------->
 
-<div class="cathegories">
-    <h5 class="contact-subtitle">SHIPPING</h5>
-    <div class="contact-questions">
-        <ul>
+      <div class="cathegories">
+        <h5 class="contact-subtitle">SHIPPING</h5>
+        <div class="contact-questions">
+          <ul>
             <li>When does my order arrive?</li>
             <li>Where can I track my order?</li>
             <li>How much does the shipping cost?</li>
             <li>What is fastest - home deliver or post office?</li>
-        </ul>
-    </div>
+          </ul>
+        </div>
 
-
-    <h5 class="contact-subtitle">PROFILE</h5>
-    <div class="contact-questions">
-        <ul>
+        <h5 class="contact-subtitle">PROFILE</h5>
+        <div class="contact-questions">
+          <ul>
             <li>What do I do if I forget my password?</li>
             <li>How do I create an account?</li>
             <li>Can I change the email address for my profile?</li>
             <li>How do I link my giftcard to my profile?</li>
-        </ul>
-    </div>
+          </ul>
+        </div>
 
-    <h5 class="contact-subtitle">RETURNS & <br>GUARANTEE</h5>
-     <div class="contact-questions">
-        <ul>
+        <h5 class="contact-subtitle">RETURNS & <br />GUARANTEE</h5>
+        <div class="contact-questions">
+          <ul>
             <li>How much does it cost to return an order?</li>
             <li>How long is the guarantee for the different conditions?</li>
-            <li>When can I expect my money to be returned to my bank account?</li>
+            <li>
+              When can I expect my money to be returned to my bank account?
+            </li>
             <li>How do I make a return?</li>
-        </ul>
-    </div>
-
-    <h5 class="contact-subtitle">GIFT CARD & <br>COUPONS</h5>
-    <div class="contact-questions">
-            <ul>
-                <li>Where do I buy a gift card?</li>
-                <li>How and where do I use my coupon?</li>
-                <li>I signed up for the newsletter, but did not get a coupon code.</li>
-                <li>Can I use my coupon on pre-owned items?</li>
-            </ul>
+          </ul>
         </div>
-</div>
-</div>
 
-<!---------------------------------------------------- MOBILE VERSION ---------------------------------------------------->
-<div class="Mobile-version">
-    <div class="contact-image">
-      <div class="contact-container">
-        <h1>CONTACT <span>US</span></h1>
-            <form id="contact-info">
-                <input type="text" placeholder="Name:">
-            </form>
-
-            <form id="contact-info">
-                <input type="text" placeholder="Email:">
-            </form>
-
-            <form id="contact-message" class="message-box">
-              <textarea placeholder="Your message...." id='textarea'></textarea>
-
-            </form>
-        <button type="submit" class="send-btn">SEND</button>
+        <h5 class="contact-subtitle">GIFT CARD & <br />COUPONS</h5>
+        <div class="contact-questions">
+          <ul>
+            <li>Where do I buy a gift card?</li>
+            <li>How and where do I use my coupon?</li>
+            <li>
+              I signed up for the newsletter, but did not get a coupon code.
+            </li>
+            <li>Can I use my coupon on pre-owned items?</li>
+          </ul>
+        </div>
       </div>
     </div>
 
-    <div class="contact-info">
-      <h2>WE ARE HERE TO<span> SUPPORT YOU</span></h2>
+    <!---------------------------------------------------- MOBILE VERSION ---------------------------------------------------->
+    <div class="Mobile-version">
+      <div class="contact-image">
+        <div class="contact-container">
+          <h1>CONTACT <span>US</span></h1>
+          <form id="contact-info">
+            <input type="text" placeholder="Name:" />
+          </form>
 
-      <div class="phone-email">
-          <span class="phone-icon"><i class="fa-solid fa-phone"></i></span>
-          <span class="phone-number">+47 552 24 356</span>
+          <form id="contact-info">
+            <input type="text" placeholder="Email:" />
+          </form>
 
-          <span class="email-icon"><i class="fa-solid fa-envelope"></i></span>
-          <span class="email">gamehub@customersupport.com</span>
+          <form id="contact-message" class="message-box">
+            <textarea placeholder="Your message...." id="textarea"></textarea>
+          </form>
+          <div id="send-btn-container">
+            <button id="send-btn" type="submit" class="rounded-btns">
+              SEND
+            </button>
+          </div>
+        </div>
       </div>
 
-      <div class="contact-details">
+      <div class="contact-info">
+        <h2>WE ARE HERE TO<span> SUPPORT YOU</span></h2>
+
+        <div class="phone-email">
+          <div>
+            <span class="phone-icon"><i class="fa-solid fa-phone"></i></span>
+            <span class="phone-number">+47 552 24 356</span>
+          </div>
+          <div>
+            <span class="email-icon"><i class="fa-solid fa-envelope"></i></span>
+            <span class="email">gamehub@customersupport.com</span>
+          </div>
+        </div>
+
+        <div class="contact-details">
           <div class="phone">
-              <h3>PHONE</h3>
-              <p>Mon-Fri: 08-16</p>
-              <p>Sat: 10-14</p>
-              <p>Sun: Closed</p>
+            <h3>PHONE</h3>
+            <p>Mon-Fri: 08-16</p>
+            <p>Sat: 10-14</p>
+            <p>Sun: Closed</p>
           </div>
 
           <div class="email">
-              <h3>EMAIL</h3>
-              <p>We are answering emails as soon as we can. Expected answer within 24 hours.</p>
+            <h3>EMAIL</h3>
+            <p>
+              We are answering emails as soon as we can. Expected answer within
+              24 hours.
+            </p>
           </div>
+        </div>
       </div>
+
+      <div class="subtitle">
+        <div class="line"></div>
+        <h2>FREQUENTLY<span> ASKED QUESTIONS</span></h2>
+        <div class="line"></div>
+      </div>
+
+      <h5 class="contact-questions-mob">
+        SHIPPING<i class="fa-solid fa-chevron-down"></i>
+      </h5>
+      <h5 class="contact-questions-mob">
+        PROFILE<i class="fa-solid fa-chevron-down"></i>
+      </h5>
+      <h5 class="contact-questions-mob">
+        RETURNS & <br />GUARANTEE<i class="fa-solid fa-chevron-down"></i>
+      </h5>
+      <h5 class="contact-questions-mob">
+        GIFT CARD & <br />COUPONS<i class="fa-solid fa-chevron-down"></i>
+      </h5>
     </div>
 
-    <div class="subtitle">
-      <div class="line"></div>
-          <h2>FREQUENTLY<span> ASKED QUESTIONS</span></h2>
-      <div class="line"></div>
-    </div>
+    <!---------------------------------------------------- FOOTER ---------------------------------------------------->
 
-    <h5 class="contact-questions-mob">SHIPPING<i class="fa-solid fa-chevron-down"></i></h5>
-    <h5 class="contact-questions-mob">PROFILE<i class="fa-solid fa-chevron-down"></i></h5>
-    <h5 class="contact-questions-mob">RETURNS & <br>GUARANTEE<i class="fa-solid fa-chevron-down"></i></h5>
-    <h5 class="contact-questions-mob">GIFT CARD & <br>COUPONS<i class="fa-solid fa-chevron-down"></i></h5>
-</div>
+    <footer id="footer-main">
+      <div id="contact-information-container">
+        <div class="Contact">
+          <a id="footer-heading" href="/HTML/contact.html">CONTACT</a>
+          <p class="footer-p">Contact us</p>
+          <p class="footer-p">Support</p>
+        </div>
+        <div class="contact-footer">
+          <span id="phone-ico"><i class="fa-solid fa-phone"></i></span>
+          <span id="phone-nmbr">+47 552 24 356</span><br />
+          <span id="email-ico"><i class="fa-solid fa-envelope"></i></span>
+          <span id="email-adr">gamehub@customersupport.com</span>
+        </div>
+      </div>
 
-<!---------------------------------------------------- FOOTER ---------------------------------------------------->
-
-<footer id="footer-main">
-  <div id='contact-information-container'> 
-    <div class="Contact">
-      <a id="footer-heading" href="/HTML/contact.html">CONTACT</a>
-      <p class="footer-p">Contact us</p>
-      <p class="footer-p">Support</p>
-    </div>
-    <div class="contact-footer">
-      <span id="phone-ico"><i class="fa-solid fa-phone"></i></span>
-      <span id="phone-nmbr">+47 552 24 356</span><br/>
-      <span id="email-ico"><i class="fa-solid fa-envelope"></i></span>
-      <span id="email-adr">gamehub@customersupport.com</span>
-    </div>
-  </div>
-  
-  <div>
-    <div class="About">
-      <a id="footer-heading" href="/HTML/about.html">ABOUT</a>
-      <p class="footer-p">About</p>
-      <p class="footer-p">Our culture</p>
-      <p class="footer-p">Careers</p>
-    </div>
-  </div>
-  <div>
-    <div class="Partners">
-      <a id="footer-heading" href="#">PARTNERS</a>
-      <p class="footer-p">EA Games</p>
-      <p class="footer-p">Blizzard</p>
-      <p class="footer-p">Xbox</p>
-      <p class="footer-p">Playstation</p>
-      <p class="footer-p">Nintendo</p>
-    </div>
-  </div>
-
-<!---------------------------------------------------- FOOTER MOBILE ---------------------------------------------------->
-
-  <div id='follow-container-mobile'>
-    <a id="follow-btn" href="#"><i class="fa-brands fa-instagram"></i></a>
-    <a id="follow-btn" href="#"><i class="fa-brands fa-facebook"></i></a>
-    <a id="follow-btn" href="#"><i class="fa-brands fa-linkedin"></i></a>
-  </div>
-  <div id='terms-container-mobile'><p class="Terms">Privacy Policy | Terms & Conditions | Cookie Policy</p></div>
-<div id='contact-container-mobile'>
-
-  <div class="contact-footer">
-    <span id="phone-ico"><i class="fa-solid fa-phone"></i></span>
-    <span id="phone-nmbr">+47 552 24 356</span><br/>
-    <span id="email-ico"><i class="fa-solid fa-envelope"></i></span>
-    <span id="email-adr">gamehub@customersupport.com</span>
-  </div>
-</div>
-
-  <div id='follow-container'>
-    <div class="Follow">
-      <a id="footer-heading" href="#">FOLLOW US</a>
       <div>
+        <div class="About">
+          <a id="footer-heading" href="/HTML/about.html">ABOUT</a>
+          <p class="footer-p">About</p>
+          <p class="footer-p">Our culture</p>
+          <p class="footer-p">Careers</p>
+        </div>
+      </div>
+      <div>
+        <div class="Partners">
+          <a id="footer-heading" href="#">PARTNERS</a>
+          <p class="footer-p">EA Games</p>
+          <p class="footer-p">Blizzard</p>
+          <p class="footer-p">Xbox</p>
+          <p class="footer-p">Playstation</p>
+          <p class="footer-p">Nintendo</p>
+        </div>
+      </div>
+
+      <!---------------------------------------------------- FOOTER MOBILE ---------------------------------------------------->
+
+      <div id="follow-container-mobile">
         <a id="follow-btn" href="#"><i class="fa-brands fa-instagram"></i></a>
         <a id="follow-btn" href="#"><i class="fa-brands fa-facebook"></i></a>
         <a id="follow-btn" href="#"><i class="fa-brands fa-linkedin"></i></a>
       </div>
-    </div>
+      <div id="terms-container-mobile">
+        <p class="Terms">Privacy Policy | Terms & Conditions | Cookie Policy</p>
+      </div>
+      <div id="contact-container-mobile">
+        <div class="contact-footer">
+          <span id="phone-ico"><i class="fa-solid fa-phone"></i></span>
+          <span id="phone-nmbr">+47 552 24 356</span><br />
+          <span id="email-ico"><i class="fa-solid fa-envelope"></i></span>
+          <span id="email-adr">gamehub@customersupport.com</span>
+        </div>
+      </div>
 
-    <div>
-      <p class="Terms">Privacy Policy</p>
-      <p class="Terms">Terms & Conditions</p>
-      <p class="Terms"> Cookie Policy</p>
-    </div>
-  </div>
+      <div id="follow-container">
+        <div class="Follow">
+          <a id="footer-heading" href="#">FOLLOW US</a>
+          <div>
+            <a id="follow-btn" href="#"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a id="follow-btn" href="#"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a id="follow-btn" href="#"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
 
-</footer>
-
-</body>
+        <div>
+          <p class="Terms">Privacy Policy</p>
+          <p class="Terms">Terms & Conditions</p>
+          <p class="Terms">Cookie Policy</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
-
-  

@@ -25,10 +25,7 @@ body {
     gap: 30px;
 }
 
-.shoppingbag h1,
-.delivery-info h1,
-.shipping-mtd h1,
-.payment-mtd h1 {
+.headline-bag {
     grid-column: 1 / span 5;
     color: #ff6001;
     font-family: 'Montserrat', sans-serif;

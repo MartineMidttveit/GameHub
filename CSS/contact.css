@@ -1,447 +1,449 @@
 body {
-    background-color: #101018;
-  }
-  
-  /*-------------------- CONTACT US ---------------------*/
-  
-  .container {
-    width: 100%;
-    display: flex;
-    flex: 1 1 100px;
-    justify-content: center;
-    margin: 0 auto;
-    padding-top: 212px;
-  }
-  
-  .contact-container {
-    background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.56) 100%);
-    border-radius: 70px 0px 0px 70px;
-    height: 619px;
-    width: 572px;
-    text-align: center;
-    padding-top: 15px;
-    position: relative;
-  }
-  
-  .contact-container h1 {
-    font-size: 32px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
-  }
-  
-  .contact-container h1 span {
-    color: #ff6001;
-  }
-  #contact-info,
-  #contact-message {
-    width: 400px;
-    margin: 10px;
-    display: inline-block;
-    background-color: white;
-    border-radius: 6px;
-  }
-  
-  #contact-info input {
-    width: 100%;
-    height: 42px;
-    padding-left: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    color: #000000;
-    position: relative;
-  }
-  
-  #send-btn {
-    border: none;
-    font-weight: 500;
-    font-family: 'Poppins', sans-serif;
-    position: absolute;
-    bottom: 20px;
-    right: 220px;
-    cursor: pointer;
-    padding: 0;
-  }
-  
-  .send-btn:hover {
-    background-color: white;
-    transform: scale(1.1);
-    transition: 0.2s;
-  }
+  background-color: #101018;
+}
 
-  #contact-message {
-    height: 50%;
-  }
+/*-------------------- CONTACT US ---------------------*/
 
-  textarea {
-    width: 100%;
-    height: 100%;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    font-size: 18px;
-    resize: none;
-    font-family: 'Poppins', sans-serif;
-    border: none;
-  }
-  
-  /*-------------------- Image ---------------------*/
-  
-  .contact-image {
-    height: 1036px;
-    width: 615px;
-    background-image: url(/IMAGES/Contact.png);
-    position: relative;
-    background-size: cover;
-  }
-  
-  /*-------------------- Contact information ---------------------*/
-  
+.container {
+  width: 100%;
+  display: flex;
+  flex: 1 1 100px;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 212px;
+}
+
+.contact-container {
+  background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.56) 100%);
+  border-radius: 70px 0px 0px 70px;
+  height: 619px;
+  width: 572px;
+  text-align: center;
+  padding-top: 15px;
+  position: relative;
+}
+
+.contact-container h1 {
+  font-size: 32px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.contact-container h1 span {
+  color: #ff6001;
+}
+#contact-info,
+#contact-message {
+  width: 400px;
+  margin: 10px;
+  display: inline-block;
+  background-color: white;
+  border-radius: 6px;
+}
+
+#contact-info input {
+  width: 100%;
+  height: 42px;
+  padding-left: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: #000000;
+  position: relative;
+}
+
+#send-btn {
+  border: none;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  padding: 0;
+}
+
+#send-btn-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.send-btn:hover {
+  background-color: white;
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+#contact-message {
+  height: 50%;
+}
+
+textarea {
+  width: 100%;
+  height: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 18px;
+  resize: none;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+}
+
+/*-------------------- Image ---------------------*/
+
+.contact-image {
+  height: 1036px;
+  width: 615px;
+  background-image: url(/IMAGES/Contact.png);
+  position: relative;
+  background-size: cover;
+}
+
+/*-------------------- Contact information ---------------------*/
+
+.contact-info {
+  display: flex;
+  background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.56) 100%);
+  width: 1196px;
+  height: 376px;
+  border-radius: 70px 0px 0px 70px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1025px) {
   .contact-info {
-    display: flex;
-    background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.56) 100%);
-    width: 1196px;
-    height: 376px;
-    border-radius: 70px 0px 0px 70px;
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
+    width: 1020px;
   }
-  
-  @media only screen and (min-width: 901px) and (max-width: 1025px) {
-    .contact-info {
-      width: 1020px;
-    }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1385px) {
+  .container {
+    padding-top: 0;
   }
-  
-  @media only screen and (min-width: 901px) and (max-width: 1385px) {
-    .container {
-      padding-top: 0;
-    }
+}
+.contact-info div {
+  width: 100%;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info h2 {
+  font-size: 32px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  float: left;
+  text-align: center;
+  position: relative;
+  top: 100px;
+  left: 140px;
+}
+
+.contact-info h2 span {
+  color: #ff6001;
+}
+
+.email,
+.phone-icon,
+.phone-number,
+.email-icon {
+  font-size: 20px;
+}
+
+.phone-icon,
+.email-icon {
+  padding-right: 10px;
+}
+
+.contact-details {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  float: right;
+  top: 30px;
+}
+
+.contact-details h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contact-details p {
+  font-weight: 300;
+  line-height: 1;
+}
+
+/*-------------------- Questions ---------------------*/
+
+.cathegories {
+  display: grid;
+  grid-template-columns: 270px auto;
+  grid-template-rows: auto;
+  gap: 60px;
+  padding-bottom: 60px;
+  padding-left: 20%;
+}
+
+.contact-subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 266px;
+  height: 130px;
+  background-color: #000000;
+  border-radius: 6px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.contact-subtitle:hover {
+  background-color: #ff6001;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.contact-questions {
+  line-height: 2;
+}
+
+.contact-questions li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.contact-questions li:hover {
+  text-decoration: underline;
+  text-decoration-color: #ff6001;
+  text-decoration-thickness: 2.5px;
+}
+
+.contact-questions ul {
+  margin-top: 30px;
+}
+
+.Mobile-version {
+  display: none;
+}
+
+/*-------------------- Media Quieries ---------------------*/
+
+@media only screen and (min-width: 901px) and (max-width: 1400px) {
+  .Mobile-version {
+    display: none;
   }
-  .contact-info div {
+
+  .Desktop-version {
+    margin-top: 40px;
+  }
+
+  .contact-image {
+    height: 850px;
+    width: 40%;
+    background-position: top;
+  }
+
+  .contact-container {
+    width: 450px;
+    height: 500px;
+  }
+
+  .contact-info {
+    height: 300px;
+  }
+
+  #contact-info {
+    width: 70%;
+  }
+
+  #contact-info input {
+    font-size: 16px;
     width: 100%;
   }
-  
-  .contact-content {
+
+  #contact-message {
+    width: 70%;
+    height: 200px;
+  }
+
+  #contact-message input {
+    height: 200px;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .contact-info {
+    width: 870px;
+  }
+
+  .contact-info h2 {
+    top: 60px;
+    left: 80px;
+  }
+
+  .phone-email {
+    left: 224px;
+    top: 30px;
+  }
+
+  .email,
+  .phone-icon,
+  .phone-number,
+  .email-ico {
+    font-size: 14px;
+  }
+
+  .contact-details {
+    margin-right: 12px;
+    width: 40%;
+    top: 30px;
+  }
+
+  .line {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 899px) {
+  .Mobile-version {
     display: flex;
     flex-direction: column;
+  }
+
+  .Desktop-version {
+    display: none;
+  }
+
+  .contact-image {
+    height: 600px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contact-container {
+    position: unset;
+    padding: 0;
+    width: 80%;
+    border-radius: 20px 20px 20px 20px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 140px;
+  }
+
+  .contact-container h1 {
+    font-size: 26px;
+    padding-top: 14px;
+  }
+
+  #contact-info {
+    width: 80%;
+  }
+
+  #contact-info input {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  #contact-message {
+    width: 80%;
+    height: 130px;
+  }
+
+  #contact-message input {
+    height: 130px;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .send-btn {
+    height: 30px;
+    width: 100px;
+    position: unset;
+    float: right;
+    margin-right: 26px;
+    margin-top: 8px;
+  }
+
+  .contact-info {
+    position: unset;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .contact-info h2 {
+    font-size: 26px;
+    position: unset;
+  }
+
+  .phone-email {
+    position: unset;
+    text-align: center;
+  }
+  .phone-email div {
+    display: flex;
     align-items: center;
+    gap: 5px;
     justify-content: center;
   }
-  
-  .contact-info h2 {
-    font-size: 32px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
-    float: left;
-    text-align: center;
-    position: relative;
-    top: 100px;
-    left: 140px;
-  }
-  
-  .contact-info h2 span {
-    color: #ff6001;
-  }
-  
+
   .email,
   .phone-icon,
   .phone-number,
   .email-icon {
-    font-size: 20px;
+    font-size: 16px;
   }
-  
-  .phone-icon,
-  .email-icon {
-    padding-right: 10px;
-  }
-  
+
   .contact-details {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    position: relative;
-    float: right;
-    top: 30px;
+    position: unset;
+    padding-top: 20px;
+    padding-left: 60px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-evenly;
   }
-  
+
   .contact-details h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 16px;
   }
-  
+
   .contact-details p {
-    font-weight: 300;
-    line-height: 1;
+    font-size: 14px;
+    line-height: 1.5;
   }
-  
-  /*-------------------- Questions ---------------------*/
-  
-  .cathegories {
-    display: grid;
-    grid-template-columns: 270px auto;
-    grid-template-rows: auto;
-    gap: 60px;
-    padding-bottom: 60px;
-    padding-left: 20%;
+
+  .subtitle h4 {
+    font-size: 18px;
   }
-  
-  .contact-subtitle {
-    display: inline-block;
-    width: 266px;
-    height: 130px;
+
+  .line {
+    margin-top: 0px;
+  }
+
+  .contact-questions-mob {
     background-color: #000000;
-    border-radius: 6px;
+    padding: 30px 0px;
+    margin: 2px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
     font-weight: 400;
   }
-  
-  .contact-subtitle:hover {
-    background-color: #ff6001;
-    transition: 0.2s;
-    cursor: pointer;
-  }
-  
-  .contact-questions {
-    line-height: 2;
-  }
-  
-  .contact-questions li {
-    list-style-type: none;
-    cursor: pointer;
-  }
-  
-  .contact-questions li:hover {
-    text-decoration: underline;
-    text-decoration-color: #ff6001;
-    text-decoration-thickness: 2.5px;
-  }
-  
-  .contact-questions ul {
-    margin-top: 30px;
-  }
-  
-  .Mobile-version {
-    display: none;
-  }
-  
-  /*-------------------- Media Quieries ---------------------*/
-  
-  @media only screen and (min-width: 901px) and (max-width: 1400px) {
-    .Mobile-version {
-      display: none;
-    }
 
-    .Desktop-version {
-      margin-top: 40px;
-    }
-  
-    .contact-image {
-      height: 850px;
-      width: 40%;
-      background-position: top;
-    }
-  
-    .contact-container {
-      width: 450px;
-      height: 500px;
-    }
-  
-    .send-btn {
-      position: unset;
-      float: right;
-      margin-right: 68px;
-      height: 36px;
-    }
-  
-    .contact-info {
-      height: 300px;
-    }
-  
-    #contact-info {
-      width: 70%;
-    }
-  
-    #contact-info input {
-      font-size: 16px;
-      width: 100%;
-    }
-  
-    #contact-message {
-      width: 70%;
-      height: 200px;
-    }
-  
-    #contact-message input {
-      height: 200px;
-      width: 100%;
-      font-size: 16px;
-    }
-  
-    .contact-info {
-      width: 870px;
-    }
-  
-    .contact-info h2 {
-      top: 60px;
-      left: 80px;
-    }
-  
-    .phone-email {
-      left: 224px;
-      top: 30px;
-    }
-  
-    .email,
-    .phone-icon,
-    .phone-number,
-    .email-ico {
-      font-size: 14px;
-    }
-  
-    .contact-details {
-      margin-right: 12px;
-      width: 40%;
-      top: 30px;
-    }
-  
-    .line {
-      margin-top: 0px;
-    }
+  .fa-chevron-down {
+    margin-left: 20px;
   }
-  
-  @media only screen and (min-width: 0px) and (max-width: 899px) {
-    .Mobile-version {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .Desktop-version {
-      display: none;
-    }
-  
-    .contact-image {
-      height: 600px;
-      width: 100%;
-      padding: 0;
-      margin: 0;
-    }
-  
-    .contact-container {
-      position: unset;
-      padding: 0;
-      width: 80%;
-      border-radius: 20px 20px 20px 20px;
-      height: 400px;
-      margin: 0 auto;
-      margin-top: 140px;
-    }
-  
-    .contact-container h1 {
-      font-size: 26px;
-      padding-top: 14px;
-    }
-  
-    #contact-info {
-      width: 80%;
-    }
-  
-    #contact-info input {
-      font-size: 16px;
-      width: 100%;
-    }
-  
-    #contact-message {
-      width: 80%;
-      height: 130px;
-    }
-  
-    #contact-message input {
-      height: 130px;
-      width: 100%;
-      font-size: 16px;
-    }
-  
-    .send-btn {
-      height: 30px;
-      width: 100px;
-      position: unset;
-      float: right;
-      margin-right: 26px;
-      margin-top: 8px;
-    }
-  
-    .contact-info {
-      position: unset;
-      border-radius: 0px 0px 20px 20px;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      margin-bottom: 10px;
-    }
-  
-    .contact-info h2 {
-      font-size: 26px;
-      position: unset;
-    }
-  
-    .phone-email {
-      position: unset;
-      text-align: center;
-    }
-  
-    .email,
-    .phone-icon,
-    .phone-number,
-    .email-icon {
-      font-size: 16px;
-      padding: 0 auto;
-      margin: 0 auto;
-    }
-  
-    .contact-details {
-      position: unset;
-      padding-top: 20px;
-      padding-left: 60px;
-      padding-right: 20px;
-      display: flex;
-      justify-content: space-evenly;
-    }
-  
-    .contact-details h3 {
-      font-size: 16px;
-    }
-  
-    .contact-details p {
-      font-size: 14px;
-      line-height: 1.5;
-    }
-  
-    .subtitle h4 {
-      font-size: 18px;
-    }
-
-    .line {
-      margin-top: 0px;
-    }
-  
-    .contact-questions-mob {
-      background-color: #000000;
-      padding: 30px 0px;
-      margin: 2px;
-      text-align: center;
-      font-weight: 400;
-    }
-  
-    .fa-chevron-down {
-      margin-left: 20px;
-    }
-  }
-  
+}
