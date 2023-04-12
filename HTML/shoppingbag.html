@@ -4,18 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Found what you are looking for, or would you like to go back to explore more games?">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
 
-    <script
-      src="https://kit.fontawesome.com/b515e79b0f.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/b515e79b0f.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="/CSS/style.css" />
     <link rel="stylesheet" href="/CSS/shoppingbag.css" />
@@ -28,7 +23,7 @@
 
 <header>
   <nav class="header-nav">
-      <a id="logo" href="/index.html">GAME<span>HUB</span>
+      <a id="logo" href="Index.html">GAME<span>HUB</span>
         <p>The universe of games</p></a>
 
       <div class="navigate">
@@ -54,7 +49,7 @@
       </label>
 
   <nav class="nav-header">
-      <a class="nav-link" href="/index.html">Home</a>
+      <a class="nav-link" href="Index.html">Home</a>
       <a class="nav-link" href="/HTML/shop.html">Shop</a>
       <a class="nav-link" href="#">Sell</a>
       <a class="nav-link" href="/HTML/contact.html">Contact</a>
@@ -161,9 +156,16 @@
       <input class="del-info" type="text" placeholder="Name:" />
       <input class="del-info" type="text" placeholder="Address:" />
       <input class="del-info" type="text" placeholder="Post code:" />
-      <input class="del-info" type="text" placeholder="Pick your closest post-office"/>
+      
+      <datalist id="post-office">
+        <option value="Spar, Totland">Spar, Totland</option>
+        <option value="Meny, Kvernabekken">Meny, Kvernabekken</option>
+        <option value="Postboks, Totlandsveien">Postboks, Totlandsveien</option>
+        <option value="Kiwi, Skjoldskiftet">Kiwi, Skjoldskiftet</option>
+      </datalist>
     </form>
 
+    
     <div class="save-option">
       <input type="radio" id="save-info" name="save-info" value="save-info"/>
       <label for="save-info">Click here to save the information for next time!</label>
@@ -198,8 +200,9 @@
   </div>
 </section>
 
-<!---------------------------------------------------- FOOTER ---------------------------------------------------->
+<a class="rounded-btns" id="proceed-btn" href="/HTML/shop.html">CHECKOUT<i id="arrow" class="fa-solid fa-chevron-right"></i></a>
 
+<!---------------------------------------------------- FOOTER ---------------------------------------------------->
 
 <footer id="footer-main">
   <div id="contact-information-container">

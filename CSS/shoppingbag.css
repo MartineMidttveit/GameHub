@@ -5,13 +5,11 @@ body {
 /*--------------------------------SHOPPINGBAG--------------------------------*/
 
 #shop-more-btn {
-    margin-top: 172px;
-    margin-bottom: 20px;
-    margin-left: 160px;
+    margin-top: 172px 0px 20px 160px;
 }
 
 #arrow {
-    padding-right: 10px;
+    padding: 0px 10px;
 }
 
 .shoppingbag {
@@ -162,6 +160,12 @@ body {
 .save-option {
     padding-top: 20px;
     padding-bottom: 60px;
+}
+
+#post-office {
+    height: 42px;
+    background-color: white;
+    
 }
 
 /*--------------------------------SHIPPING METHOD--------------------------------*/
