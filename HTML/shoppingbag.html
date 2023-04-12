@@ -62,9 +62,11 @@
   </nav>
 </header>
 
-<!---------------------------------------------------- THANK YOU  ---------------------------------------------------->
+<!---------------------------------------------------- SHOPPINGBAG  ---------------------------------------------------->
 
-<div class="Shoppingbag">
+<a class="rounded-btns" id="shop-more-btn" href="/HTML/shop.html"><i id="arrow" class="fa-solid fa-chevron-left"></i>SHOP MORE</a>
+
+<div class="shoppingbag">
   <h1>SHOPPINGBAG</h1>
 
   <div class="col-1">
@@ -122,6 +124,31 @@
   <div class="col-12">
     <h3 class="style-2">£19.99</h3>
   </div>
+
+  <div class="line"></div>
+
+  <form class="coupon-giftcard">
+    <input type="text" placeholder="COUPON" id="coupon">
+    <input type="text" placeholder="GIFTCARD" id="giftcard">
+  </form>
+
+  <div class="col-13">
+    <h3 class="style-2">Subtotal:</h3>
+    <h3 class="style-2">Shipping:</h3>
+  </div>
+
+  <div class="col-14">
+    <h3 class="style-2">£59.98</h3>
+    <h3 class="style-2">FREE</h3>
+  </div>
+
+  <div class="col-15">
+    <h3 class="style-2"><span>TOTAL:</span></h3>
+  </div>
+
+  <div class="col-16">
+    <h3 class="style-2"><span>£59.98</span></h3>
+  </div>
 </div>
 
 <!---------------------------------------------------- DELIVERY INFO ---------------------------------------------------->
@@ -130,37 +157,56 @@
   <div class="delivery-info">
     <h1>DELIVERY INFORMATION</h1>
 
-    <form id="insert-name">
+    <form class="delivery-input">
       <input class="del-info" type="text" placeholder="Name:" />
-    </form>
-
-    <form id="insert-address">
       <input class="del-info" type="text" placeholder="Address:" />
-    </form>
-
-    <form id="insert-code">
       <input class="del-info" type="text" placeholder="Post code:" />
+      <input class="del-info" type="text" placeholder="Pick your closest post-office"/>
     </form>
 
-    <form id="post-office">
-      <input
-        class="del-info"
-        type="text"
-        placeholder="Pick your closest post-office"
-      />
-    </form>
+    <div class="save-option">
+      <input type="radio" id="save-info" name="save-info" value="save-info"/>
+      <label for="save-info">Click here to save the information for next time!</label>
+    </div>
+
+  </div>
+
+<!---------------------------------------------------- SHIPPING INFO ---------------------------------------------------->
+  <div class="shipping-mtd">
+    <h1>CHOOSE SHIPPING METHOD</h1>
+  
+        <input type="radio" id="normal-shipping" name="normal-shipping" value="normal-shipping"/>
+        <label for="normal-shipping">Normal shipping</label>
+        <h4 class="shipping-price">£4.90</h4>
+  
+        <input type="radio" id="express-shipping" name="express-shipping" value="express-shipping"/>
+        <label for="express-shipping">Express-shipping</label>
+        <h4 class="shipping-price">£10.99</h4>
+  </div>
+  
+  
+  <div class="payment-mtd">
+    <h1>CHOOSE PAYMENT METHOD</h1>
+      <input type="radio" id="credit-card" name="credit-card" value="credit-card"/>
+      <label for="credit-card">Credit Card<i class="fa-brands fa-cc-visa"></i><i class="fa-brands fa-cc-mastercard"></i></label>
+        
+      <input type="radio" id="paypal" name="paypal" value="paypal"/>
+      <label for="paypal">Paypal<i class="fa-brands fa-cc-paypal"></i></label> 
+  
+      <input type="radio" id="klarna" name="klarna" value="klarna"/>
+      <label for="klarna">Klarna<img id="klarna-img" src="/IMAGES/62b32650b223544c209f5eb6.png" alt="Klarna logo with light pink background"></label> 
   </div>
 </section>
 
-
 <!---------------------------------------------------- FOOTER ---------------------------------------------------->
+
 
 <footer id="footer-main">
   <div id="contact-information-container">
     <div class="Contact">
       <a id="footer-heading" href="/HTML/contact.html">CONTACT</a>
-      <p>Contact us</p>
-      <p>Support</p>
+      <p class="footer-p">Contact us</p>
+      <p class="footer-p">Support</p>
     </div>
     <div class="contact-footer">
       <span id="phone-ico"><i class="fa-solid fa-phone"></i></span>
@@ -173,19 +219,19 @@
   <div>
     <div class="About">
       <a id="footer-heading" href="/HTML/about.html">ABOUT</a>
-      <p>About</p>
-      <p>Our culture</p>
-      <p>Careers</p>
+      <p class="footer-p">About</p>
+      <p class="footer-p">Our culture</p>
+      <p class="footer-p">Careers</p>
     </div>
   </div>
   <div>
     <div class="Partners">
       <a id="footer-heading" href="#">PARTNERS</a>
-      <p>EA Games</p>
-      <p>Blizzard</p>
-      <p>Xbox</p>
-      <p>Playstation</p>
-      <p>Nintendo</p>
+      <p class="footer-p">EA Games</p>
+      <p class="footer-p">Blizzard</p>
+      <p class="footer-p">Xbox</p>
+      <p class="footer-p">Playstation</p>
+      <p class="footer-p">Nintendo</p>
     </div>
   </div>
   <div id="follow-container-mobile">
@@ -227,6 +273,5 @@
     </div>
   </div>
 </footer>
-  
-    </body>
-  </html>
+</body>
+</html>

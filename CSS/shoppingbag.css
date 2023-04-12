@@ -4,21 +4,31 @@ body {
 
 /*--------------------------------SHOPPINGBAG--------------------------------*/
 
-.Shoppingbag {
+#shop-more-btn {
+    margin-top: 172px;
+    margin-bottom: 20px;
+    margin-left: 160px;
+}
+
+#arrow {
+    padding-right: 10px;
+}
+
+.shoppingbag {
     background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.31) 100%);
-    width: 1196px;
-    height: auto;
+    width: 80%;
     margin: 0 auto;
-    margin-top: 200px;
-    padding: 40px 100px;
+    padding: 100px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
     gap: 30px;
 }
 
-.Shoppingbag h1,
-.delivery-info h1 {
+.shoppingbag h1,
+.delivery-info h1,
+.shipping-mtd h1,
+.payment-mtd h1 {
     grid-column: 1 / span 5;
     color: #ff6001;
     font-family: 'Montserrat', sans-serif;
@@ -82,37 +92,100 @@ body {
     padding-left: 6px;
 }
 
+.line {
+    grid-column: 1 / span 6;
+    max-width: 96%;
+}
+
+.coupon-giftcard {
+    grid-column: 1 / span 2;
+}
+
+#coupon,
+#giftcard {
+    width: 100%;
+    height: 42px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    border: none;
+    padding-left: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.col-13 {
+    grid-column: 5 / span 1;
+}
+
+.col-15 {
+    grid-column: 5 / span 1;
+}
+
+.style-2 span {
+    color: #ff6001;
+    font-weight: 500;
+}
+
 /*--------------------------------DELIVERY INFO--------------------------------*/
 
 .bottom-part {
-    display: flex;
-    flex: 1;
+    display: grid;
+    grid-template-columns: 45% 32.5%;
+    grid-row: auto auto;
     justify-content: center;
     align-items: center;
+    gap: 40px;
+    margin-top: 40px;
 }
 
 .delivery-info {
-    height: 400px;
-    width: 830px;
     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.31) 100%);
-    margin: 50px auto;
-    padding: 40px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-#insert {
-    background-color: white;
-    height: 40px;
-    margin: 20px 0px;
-    width: 600px;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
+.delivery-input {
+    width: 70%;
 }
 
 .del-info {
     font-size: 16px;
+    font-family: 'Poppins', sans-serif;
     width: 600px;
     height: 40px;
     border: none;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding-left: 15px;
 }
 
+.save-option {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+/*--------------------------------SHIPPING METHOD--------------------------------*/
+
+.shipping-mtd {
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.31) 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*--------------------------------PAYMENT METHOD--------------------------------*/
+
+.payment-mtd {
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.31) 100%);
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+#klarna-img {
+    width: 30px;
+    height: 35px;
+}
