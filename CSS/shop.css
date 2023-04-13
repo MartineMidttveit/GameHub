@@ -147,6 +147,12 @@ body {
     height: 10%;
     padding: 10px;
     margin-top: 14px;
+    border-radius: 60px;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding-top: 10px;
 }
 
 .buy-now:hover {
@@ -251,7 +257,8 @@ body {
     font-weight: 600;
 }
 
-.arrow {
+#arrow-right,
+#arrow-left {
     font-size: 16px;
     color: white;
     text-decoration: none;
