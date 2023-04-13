@@ -5,7 +5,7 @@ body {
 /*--------------------------------SHOPPINGBAG--------------------------------*/
 
 #shop-more-btn {
-    margin-top: 172px 0px 20px 160px;
+    margin: 172px 0px 20px 160px;
 }
 
 #arrow {
@@ -16,7 +16,7 @@ body {
     background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.31) 100%);
     width: 80%;
     margin: 0 auto;
-    padding: 100px;
+    padding: 80px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
@@ -79,14 +79,6 @@ body {
     width: 50px;
 }
 
-.chosen-device {
-    background-color: white;
-    width: 100%;
-    height: 30px;
-    color: black;
-    padding-left: 6px;
-}
-
 .line {
     grid-column: 1 / span 6;
     max-width: 96%;
@@ -139,6 +131,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 650px;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
 }
 
 .delivery-input {
@@ -157,15 +152,13 @@ body {
     padding-left: 15px;
 }
 
+/*--------------------------------------------------------------------------------
+#post-office {
+}---------------------------------------------------------------------------------*/
+
 .save-option {
     padding-top: 20px;
     padding-bottom: 60px;
-}
-
-#post-office {
-    height: 42px;
-    background-color: white;
-    
 }
 
 /*--------------------------------SHIPPING METHOD--------------------------------*/
@@ -174,8 +167,24 @@ body {
     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.31) 100%);
     display: flex;
     flex-direction: column;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    height: 300px;
 }
 
+.radio-input-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.choose-headline {
+    color: #ff6001;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
 
 /*--------------------------------PAYMENT METHOD--------------------------------*/
 
@@ -184,6 +193,8 @@ body {
     height: 300px;
     display: flex;
     flex-direction: column;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
 }
 
 #klarna-img {

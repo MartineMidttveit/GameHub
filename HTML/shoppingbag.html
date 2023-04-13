@@ -150,13 +150,13 @@
 
 <section class="bottom-part">
   <div class="delivery-info">
-    <h1 class="headline-bag">DELIVERY INFORMATION</h1>
+    <h5 class="choose-headline">DELIVERY METHOD</h5>
 
     <form class="delivery-input">
       <input class="del-info" type="text" placeholder="Name:" />
       <input class="del-info" type="text" placeholder="Address:" />
       <input class="del-info" type="text" placeholder="Post code:" />
-      
+
       <datalist id="post-office">
         <option value="Spar, Totland">Spar, Totland</option>
         <option value="Meny, Kvernabekken">Meny, Kvernabekken</option>
@@ -165,38 +165,52 @@
       </datalist>
     </form>
 
-    
     <div class="save-option">
       <input type="radio" id="save-info" name="save-info" value="save-info"/>
       <label for="save-info">Click here to save the information for next time!</label>
     </div>
-
   </div>
 
-<!---------------------------------------------------- SHIPPING INFO ---------------------------------------------------->
+<!---------------------------------------------------- SHIPPING METHOD ---------------------------------------------------->
   <div class="shipping-mtd">
-    <h1 class="headline-bag">CHOOSE SHIPPING METHOD</h1>
-  
+    <h5 class="choose-headline">CHOOSE SHIPPING METHOD</h5>
+
+    <div class="radio-input-container">
         <input type="radio" id="normal-shipping" name="normal-shipping" value="normal-shipping"/>
         <label for="normal-shipping">Normal shipping</label>
         <h4 class="shipping-price">£4.90</h4>
+    </div>
   
+    <div class="radio-input-container">
         <input type="radio" id="express-shipping" name="express-shipping" value="express-shipping"/>
         <label for="express-shipping">Express-shipping</label>
         <h4 class="shipping-price">£10.99</h4>
+    </div>
   </div>
-  
+
+  <!---------------------------------------------------- PAYMENT METHOD ---------------------------------------------------->
   
   <div class="payment-mtd">
-    <h1 class="headline-bag">CHOOSE PAYMENT METHOD</h1>
+    <h5 class="choose-headline">CHOOSE PAYMENT METHOD</h5>
+    
+    <div class="radio-input-container">
       <input type="radio" id="credit-card" name="credit-card" value="credit-card"/>
-      <label for="credit-card">Credit Card<i class="fa-brands fa-cc-visa"></i><i class="fa-brands fa-cc-mastercard"></i></label>
-        
+      <label for="credit-card">Credit Card</label>
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+    </div>
+    
+    <div class="radio-input-container">
       <input type="radio" id="paypal" name="paypal" value="paypal"/>
-      <label for="paypal">Paypal<i class="fa-brands fa-cc-paypal"></i></label> 
-  
+      <label for="paypal">Paypal</label> 
+          <i class="fa-brands fa-cc-paypal"></i>
+    </div>
+
+    <div class="radio-input-container">
       <input type="radio" id="klarna" name="klarna" value="klarna"/>
-      <label for="klarna">Klarna<img id="klarna-img" src="/IMAGES/62b32650b223544c209f5eb6.png" alt="Klarna logo with light pink background"></label> 
+      <label for="klarna">Klarna</label>
+      <img id="klarna-img" src="/IMAGES/62b32650b223544c209f5eb6.png" alt="Klarna logo with light pink background">
+    </div>
   </div>
 </section>
 
