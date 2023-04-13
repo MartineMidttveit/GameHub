@@ -122,7 +122,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 40px;
-    margin-top: 40px;
+    margin: 40px 0px;
 }
 
 .delivery-info {
@@ -201,3 +201,7 @@ body {
     width: 30px;
     height: 35px;
 }
+
+#proceed-btn {
+    grid-column: 2 / span 1;
+  }
