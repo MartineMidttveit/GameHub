@@ -338,6 +338,7 @@ header {
   justify-content: center;
   width: 70%;
 }
+
 #newsletter-image-container {
   width: 30%;
 }
@@ -353,6 +354,7 @@ header {
   height: 48px;
   font-family: 'Poppins', sans-serif;
 }
+
 .news-letter-text-box {
   display: block;
   align-items: center;
@@ -415,7 +417,7 @@ header {
   gap: 40px;
 }
 
-#footer-heading {
+.footer-heading {
   text-decoration: none;
   color: white;
   font-family: 'Montserrat', sans-serif;
@@ -429,7 +431,7 @@ header {
   font-size: 15px;
 }
 
-#follow-btn {
+.follow-btn {
   padding: 6px 8px;
   font-size: 25px;
   text-decoration: none;
@@ -451,8 +453,8 @@ header {
   font-size: 12px;
 }
 
-#follow-btn:focus,
-#footer-heading:focus {
+.follow-btn:focus,
+.footer-heading:focus {
   color: #ff6001;
   transition: 1s;
 }
@@ -638,11 +640,11 @@ header {
     flex-direction: column;
   }
 
-  #follow-btn {
+  .follow-btn {
     font-size: 20px;
   }
 
-  #footer-heading {
+  .footer-heading {
     font-size: 16px;
   }
 
@@ -711,7 +713,7 @@ header {
     font-size: 16px;
   }
 
-  #footer-heading {
+  .footer-heading {
     font-size: 18px;
     padding: 0;
   }
@@ -729,7 +731,7 @@ header {
 }
 
 @media (min-width: 1180px) {
-  #footer-heading:hover {
+  .footer-heading:hover {
     color: #ff6001;
     transition: 0.3s;
   }
@@ -747,12 +749,12 @@ header {
     line-height: 1;
   }
 
-  #follow-btn {
+  .follow-btn {
     font-size: 24px;
     padding: 15px 20px 15px 0px;
   }
 
-  #follow-btn:hover {
+  .follow-btn:hover {
     color: #ff6001;
     transition: 0.2s;
   }
