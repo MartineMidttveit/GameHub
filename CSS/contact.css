@@ -435,7 +435,7 @@ textarea {
     margin-top: 0px;
   }
 
-  .contact-questions-mob {
+  details {
     background-color: #000000;
     padding: 30px 0px;
     margin: 2px;
@@ -443,7 +443,11 @@ textarea {
     font-weight: 400;
   }
 
-  .fa-chevron-down {
-    margin-left: 20px;
+  details ul li {
+    text-align: left;
+  }
+
+  summary:focus {
+    color: #ff6001;
   }
 }
