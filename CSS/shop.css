@@ -139,7 +139,7 @@ body {
     color: #D9D9D9;
 }
 
-#buy-now {
+.buy-now {
     background-color: #101018;
     color: white;
     font-size: 14px;
@@ -149,7 +149,7 @@ body {
     margin-top: 14px;
 }
 
-#buy-now:hover {
+.buy-now:hover {
     background-color: white;
     color: #000000;
 }
@@ -251,14 +251,14 @@ body {
     font-weight: 600;
 }
 
-#arrow {
+.arrow {
     font-size: 16px;
     color: white;
     text-decoration: none;
     padding: 10px 40px;
 }
 
-#page {
+.page {
     text-decoration: none;
     padding-left: 40px;
     color: white;
@@ -348,7 +348,7 @@ body {
         padding: 4px;
     }
 
-    #buy-now {
+    .buy-now {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -424,7 +424,7 @@ body {
         padding: 10px;
     }
 
-    #buy-now {
+    .buy-now {
         width: 40%;
         display: flex;
         align-items: center;
