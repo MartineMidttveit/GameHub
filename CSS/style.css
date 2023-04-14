@@ -144,6 +144,10 @@ header {
   z-index: 999;
 }
 
+#search-form label {
+  display: none;
+}
+
 /*-------------------------------------------------- HEROPICTURE/TEXT --------------------------------------------------*/
 
 .background {
@@ -387,6 +391,10 @@ header {
 
 #subscribe-btn:hover {
   background-color: white;
+}
+
+#newsletter label {
+  display: none;
 }
 
 /*-------------------------------------------------- Footer --------------------------------------------------*/

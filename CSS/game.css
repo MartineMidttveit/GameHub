@@ -156,6 +156,11 @@ body {
   font-weight: 600;
 }
 
+#device label,
+#condition label {
+  display: none;
+}
+
 /*---------------------------------------------------- MOBILE ---------------------------------------------------*/
 
 @media screen and (max-width: 767px) {

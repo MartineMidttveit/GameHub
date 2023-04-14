@@ -33,6 +33,7 @@ body {
 .contact-container h1 span {
   color: #ff6001;
 }
+
 #contact-info,
 #contact-message {
   width: 400px;
@@ -40,6 +41,11 @@ body {
   display: inline-block;
   background-color: white;
   border-radius: 6px;
+}
+
+#contact-info label,
+#contact-message label {
+  display: none;
 }
 
 #contact-info input {
