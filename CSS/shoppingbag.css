@@ -206,4 +206,51 @@ body {
 
 #proceed-btn {
     grid-column: 2 / span 1;
-  }
+}
+
+
+/*--------------------------------MEDIA QUIERIES--------------------------------*/
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .shoppingbag {
+        width: 90%;
+        border-radius: 70px;
+        padding: 30px;
+    }
+
+    .bottom-part {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 230px);
+        gap: 15px;
+    }
+
+    .delivery-info {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        height: auto;
+    }
+
+    .shipping-mtd {
+        grid-column: 1 / span 2;
+        grid-row: 3 / span 1;
+    }
+
+    .payment-mtd {
+        grid-column: 1 / span 2;
+        grid-row: 4 / span 1;
+    }
+
+    #shop-more-btn {
+        margin: 25px;
+        display: block;
+        float: left;
+        height: 36px;
+        font-size: 14px;
+    }
+
+    .headline-bag {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1081px) {}
