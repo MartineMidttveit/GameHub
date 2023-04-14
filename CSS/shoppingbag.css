@@ -119,17 +119,19 @@ body {
     display: grid;
     grid-template-columns: 45% 32.5%;
     grid-row: auto auto;
-    justify-content: center;
-    align-items: center;
     gap: 40px;
     margin: 40px 0px;
+}
+
+.bottom-part,
+.delivery-info {
+    justify-content: center;
+    align-items: center;
 }
 
 .delivery-info {
     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.31) 100%);
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     height: 650px;
     grid-column: 1 / span 1;

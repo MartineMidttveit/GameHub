@@ -25,15 +25,18 @@ body {
     background-color: black;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
 }
 
-.sort-by {
+.sort-by,
+.best-match {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+}
+
+.sort-by {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -51,13 +54,8 @@ body {
 .best-match {
     color: black;
     background-color: white;
-    display: flex;
     position: relative;
     margin-right: 82px;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
 }
 
 
@@ -81,16 +79,21 @@ body {
 
 /*-------------------------------------------------- Filter --------------------------------------------------*/
 
+.filter,
+.game-container,
+.text-container {
+    background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.31) 100%); 
+    display: flex;
+    flex-direction: column;
+}
+
 .filter {
-    background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.31) 100%);
     width: 300px;
     border-radius: 50px;
     margin-top: 30px;
     margin-left: 40px;
     padding-left: 30px;
     gap: 20px;
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
     padding-bottom: 30px;
     height: fit-content;
@@ -109,7 +112,9 @@ body {
     display: inline-block;
 }
 
-.filter h2, .filter p, .stars {
+.filter h2, 
+.filter p, 
+.stars {
     line-height: 1.5;
     margin-left: 40px;
 }
@@ -125,10 +130,6 @@ body {
 .filter p {
     font-size: 14px;
     font-weight: 400;
-}
-
-.filter p:hover {
-    cursor: pointer;
 }
 
 .solid-stars {
@@ -160,17 +161,13 @@ body {
     color: #000000;
 }
 
-
 /*-------------------------------------------------- GAMES --------------------------------------------------*/
 
 .game-container {
     width: 100%;
     height: 100%;
-    display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.51) 100%);
   }
   
   .game-container img {
@@ -225,7 +222,6 @@ body {
 }
 
 .text-container {
-    background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.51) 100%);
     height: 100px;
     width: 100%;
     background-color: #000000;

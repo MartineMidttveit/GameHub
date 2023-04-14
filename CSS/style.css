@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  max-width: 100rem;
+  max-width: 1600px;
   margin: 0 auto;
   color: white;
   font-family: 'Poppins', sans-serif;
@@ -22,11 +22,11 @@ body {
 /*-------------------------------------------------- HEADER --------------------------------------------------*/
 
 header {
-  height: 7rem;
+  height: 112px;
   background-color: black;
   top: 0;
   position: fixed;
-  max-width: 100rem;
+  max-width: 1600px;
   width: 100%;
   z-index: 999;
 }
@@ -38,24 +38,23 @@ header {
 }
 
 #logo {
-  font-size: 2.25rem;
+  font-size: 36px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   color: #d22cf5;
   text-decoration: none;
   line-height: 0.7;
-  margin-top: 2.5rem;
+  margin-top: 40px;
 }
 
-#logo span {
+#logo span,
+#logo p {
   color: white;
   font-weight: 400;
 }
 
 #logo p {
-  font-size: 1rem;
-  color: white;
-  font-weight: 400;
+  font-size: 16px;
 }
 
 .navigate {
@@ -68,8 +67,8 @@ header {
   color: white;
   display: inline-block;
   padding: 4px 20px;
-  font-size: 1.375rem;
-  margin-top: 2.75rem;
+  font-size: 22px;
+  margin-top: 44px;
 }
 
 /*-------------------------------------------------- NAVIGATIONBAR --------------------------------------------------*/
@@ -100,12 +99,18 @@ header {
   padding: 10px 15px;
   font-size: 18px;
   margin-right: 10px;
-  font-family: 'Poppins', sans-serif;
   background-color: transparent;
   width: 100%;
   position: absolute;
   z-index: 999;
   border: none;
+}
+
+.searching,
+#newsletter,
+#email,
+#subscribe-btn {
+  font-family: 'Poppins', sans-serif;
 }
 
 .nav-header,
@@ -162,20 +167,22 @@ header {
   margin-bottom: 180px;
 }
 
-.text-box-headline {
-  font-size: 36px;
-  font-weight: 400;
+.text-box-headline, 
+.text-box-text,
+.subtitle h2 {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
+  font-weight: 400;
+}
+
+.text-box-headline {
+  font-size: 36px;
   letter-spacing: 5.4px;
   margin-top: 52px;
 }
 
 .text-box-text {
   font-size: 16px;
-  font-weight: 400;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -221,9 +228,6 @@ header {
 
 .subtitle h2 {
   font-size: 20px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  text-align: center;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -235,11 +239,7 @@ header {
 /*-------------------------------------------------- GALLERY1 --------------------------------------------------*/
 
 .gallery {
-  background: linear-gradient(
-    180deg,
-    rgba(16, 16, 24, 0.9) 0%,
-    rgba(16, 16, 24, 0) 100%
-  );
+  background: linear-gradient(180deg, rgba(16, 16, 24, 0.9) 0%, rgba(16, 16, 24, 0) 100%);
   width: 100%;
   height: 100%;
   display: flex;
@@ -276,11 +276,6 @@ header {
 .games:hover {
   transform: scale(1.1);
   transition: 0.15s;
-}
-
-.Desc1:hover {
-  height: -286px;
-  transition: 1s;
 }
 
 /*-------------------------------------------------- INFORMATIONAL --------------------------------------------------*/
@@ -350,9 +345,8 @@ header {
 }
 
 #newsletter {
-  width: 450px;
+  width: 42%;
   height: 48px;
-  font-family: 'Poppins', sans-serif;
 }
 
 .news-letter-text-box {
@@ -373,12 +367,10 @@ header {
   border: none;
   height: 100%;
   padding-left: 10px;
-  font-family: 'Poppins', sans-serif;
 }
 
 #subscribe-btn {
   background-color: #ff6001;
-  font-family: 'Poppins', sans-serif;
   color: black;
   height: 48px;
   width: 120px;
@@ -459,7 +451,7 @@ header {
   transition: 1s;
 }
 
-/*MEDIA QUIERIES*/
+/*---------------------------------MEDIA QUIERIES------------------------------------*/
 
 @media (max-width: 1398px) {
   header {
