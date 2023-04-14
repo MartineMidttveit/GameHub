@@ -120,6 +120,7 @@ header {
 
 #menu-checkbox:checked ~ .nav-header {
   display: block;
+  margin-top: 300px;
 }
 
 .nav-link {
