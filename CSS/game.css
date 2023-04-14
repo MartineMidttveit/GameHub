@@ -20,7 +20,7 @@ body {
 .game-container img {
   height: 390px;
   width: 300px;
-  padding: 0px 100px;
+  padding: 0% 10%;
   box-sizing: unset;
 }
 
