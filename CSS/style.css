@@ -123,6 +123,10 @@ header {
   margin-top: 300px;
 }
 
+.hamburger-icon {
+  cursor: pointer;
+}
+
 .nav-link {
   display: block;
   color: white;
