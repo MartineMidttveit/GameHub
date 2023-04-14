@@ -279,7 +279,8 @@ body {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    
     .bottom-text {
         height: 16%;
         padding: 4px;
@@ -304,6 +305,7 @@ body {
         border: none;
         border-radius: 50px;
         text-align: center;
+        padding: 0;
     }
 
     .filter {
@@ -323,15 +325,14 @@ body {
     }
     
     .shop-grid {
-        padding: 0;
-        margin: 0;
-        grid-template-columns: repeat(4, 21%);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(6, 300px);
         padding-top: 10px;
-        gap: 22px;
         font-size: 14px;
         line-height: 1.5;
-        margin: 0;
+        margin: 0 auto;
+        padding: 0% 2%;
+        gap: 20px;
     }
 
     .shop-grid p {
