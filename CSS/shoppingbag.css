@@ -398,8 +398,8 @@ body {
         grid-template-columns: 20% 60% 20%;
         grid-template-rows: auto;
         border-radius: 70px;
-        width: 100%;
-        padding: 15%;
+        width: 95%;
+        padding: 10%;
         gap: 30px;
     }
 
@@ -491,27 +491,47 @@ body {
     }
 
     .bottom-part {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 230px);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 300px);
         gap: 15px;
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .delivery-info,
+    .payment-mtd,
+    .shipping-mtd {
+        height: 100%;
+        border-radius: 70px;
     }
 
     .delivery-info {
         grid-column: 1 / span 2;
         grid-row: 1 / span 2;
-        height: 100%;
     }
 
     .payment-mtd {
-        grid-column: 1 / span 2;
-        grid-row: 3 / span 1;
-        height: 100%;
+        grid-column: 3 / span 1;
+        grid-row: 1 / span 1;
+        padding: 8%;
     }
 
     .shipping-mtd {
-        grid-column: 1 / span 2;
-        grid-row: 4 / span 1;
-        height: 100%;
+        grid-column: 3 / span 1;
+        grid-row: 2 / span 1;
+        padding: 8%;
+    }
+
+    .payment-mtd,
+    .payment-mtd label,
+    .shipping-mtd label,
+    .shipping-price {
+        font-size: 14px;
+    }
+
+    .payment-mtd i {
+        font-size: 20px;
     }
 
     #shop-more-btn {
@@ -536,7 +556,7 @@ body {
     }
 
     .choose-headline {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .save-option {
