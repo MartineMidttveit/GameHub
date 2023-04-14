@@ -197,8 +197,9 @@
   </div>
 
   <form class="coupon-giftcard">
-    <input type="text" placeholder="COUPON" id="coupon">
-    <input type="text" placeholder="GIFTCARD" id="giftcard">
+    <label for="coupon-giftcard">coupon giftcard</label>
+      <input type="text" placeholder="COUPON" id="coupon">
+      <input type="text" placeholder="GIFTCARD" id="giftcard">
   </form>
 </div>
 
@@ -210,16 +211,21 @@
     <h5 class="choose-headline">DELIVERY METHOD</h5>
 
     <form class="delivery-input">
-      <input class="del-info" type="text" placeholder="Name:">
-      <input class="del-info" type="text" placeholder="Address:">
-      <input class="del-info" type="text" placeholder="Post code:">
+      <label for="delivery-input">delivery input</label>
+        <input class="del-info" type="text" placeholder="Name:">
+        <input class="del-info" type="text" placeholder="Address:">
+        <input class="del-info" type="text" placeholder="Post code:">
+    </form>
 
-      <datalist id="post-office">
-        <option value="Spar, Totland">Spar, Totland</option>
-        <option value="Meny, Kvernabekken">Meny, Kvernabekken</option>
-        <option value="Postboks, Totlandsveien">Postboks, Totlandsveien</option>
-        <option value="Kiwi, Skjoldskiftet">Kiwi, Skjoldskiftet</option>
-      </datalist>
+    <form id="post-office" action="select-postoffice">
+      <input placeholder="Select post-office" list="post-office-dl">
+        <label for="post-office">Select postoffice</label>
+          <datalist id="post-office-dl">
+            <option value="Spar, Totland">Spar, Totland</option>
+            <option value="Meny, Kvernabekken">Meny, Kvernabekken</option>
+            <option value="Postboks, Totlandsveien">Postboks, Totlandsveien</option>
+            <option value="Kiwi, Skjoldskiftet">Kiwi, Skjoldskiftet</option>
+          </datalist>
     </form>
 
     <div class="save-option">

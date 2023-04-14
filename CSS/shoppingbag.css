@@ -23,6 +23,7 @@ body {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
     gap: 30px;
+    border-radius: 70px;
 }
 
 .shoppingbag-mob {
@@ -106,6 +107,11 @@ body {
     font-size: 16px;
 }
 
+.delivery-input label,
+.coupon-giftcard label {
+    display: none;
+}
+
 .col-13 {
     grid-column: 5 / span 1;
 }
@@ -142,6 +148,7 @@ body {
     height: 650px;
     grid-column: 1 / span 1;
     grid-row: 1 / span 2;
+    border-radius: 70px;
 }
 
 .delivery-input {
@@ -160,24 +167,47 @@ body {
     padding-left: 15px;
 }
 
-/*--------------------------------------------------------------------------------
-#post-office {
-}---------------------------------------------------------------------------------*/
-
 .save-option {
     padding-top: 20px;
     padding-bottom: 60px;
 }
 
+#post-office label {
+    display: none;
+}
+
+#post-office {
+    width: 70%;
+    border-radius: 6px;
+    height: 40px;
+    background-color: white;
+    border: none;
+}
+
+#post-office input {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
 /*--------------------------------SHIPPING METHOD--------------------------------*/
 
 .shipping-mtd {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.shipping-mtd,
+.payment-mtd {
     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.31) 100%);
     display: flex;
     flex-direction: column;
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 1;
     height: 300px;
+    border-radius: 70px;
 }
 
 .radio-input-container {
@@ -197,10 +227,6 @@ body {
 /*--------------------------------PAYMENT METHOD--------------------------------*/
 
 .payment-mtd {
-    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.31) 100%);
-    height: 300px;
-    display: flex;
-    flex-direction: column;
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
 }
@@ -229,7 +255,6 @@ body {
         display: grid;
         grid-template-columns: 25% 45% 30%;
         grid-template-rows: auto;
-        border-radius: 70px;
         width: 100%;
         padding: 15% 10%;
         gap: 10px;
@@ -374,7 +399,7 @@ body {
 
     .save-option {
         font-size: 14px;
-        padding: 0% 15%;
+        padding: 5% 10%;
         text-align: center;
     }
 
@@ -397,7 +422,6 @@ body {
         display: grid;
         grid-template-columns: 20% 60% 20%;
         grid-template-rows: auto;
-        border-radius: 70px;
         width: 95%;
         padding: 10%;
         gap: 30px;
@@ -503,7 +527,6 @@ body {
     .payment-mtd,
     .shipping-mtd {
         height: 100%;
-        border-radius: 70px;
     }
 
     .delivery-info {
@@ -561,7 +584,7 @@ body {
 
     .save-option {
         font-size: 16px;
-        padding: 0% 15%;
+        padding: 10% 15%;
         text-align: center;
     }
 
