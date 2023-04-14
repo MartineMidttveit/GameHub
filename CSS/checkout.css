@@ -140,3 +140,152 @@ body {
   border-radius: 50px;
   width: 100%;
 }
+
+/*---------------------- Shipping/payment -----------------------*/
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .top-section {
+    padding-top: 0px;
+    margin-top: 20px;
+    width: 90%;
+  }
+
+  .headline-check {
+    font-size: 30px;
+  }
+
+  .text-check {
+    padding: 0px 30px;
+    font-size: 14px;
+  }
+
+  br {
+    display: none;
+  }
+
+  .summary-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .summary,
+  .Shipping,
+  .Billing,
+  .Shipping-method,
+  .payment-method {
+    width: 90%;
+    border-radius: 70px;
+  }
+
+  .Shipping,
+  .Billing {
+    height: 300px;
+    padding: 0px;
+  }
+
+  .Shipping-method {
+    height: 300px;
+  }
+
+  .payment-method {
+    height: 200px;
+  }
+
+  .Shipping-method img {
+    height: 60px;
+  }
+
+  .subtitle-check {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+  .top-section {
+    padding-top: 20px;
+    width: 80%;
+  }
+
+  .text-check {
+    padding: 0px 50px;
+  }
+
+  br {
+    display: none;
+  }
+
+  .summary-wrapper {
+    margin: 0 auto;
+    margin-top: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 250px);
+    width: 90%;
+  }
+
+  .summary {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    padding-bottom: 0px;
+  }
+
+  .Shipping {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+  }
+
+  .Billing {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+  }
+
+  .Shipping-method {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+  }
+
+  .payment-method {
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 1;
+  }
+
+  .summary,
+  .Shipping,
+  .Billing,
+  .Shipping-method,
+  .payment-method {
+    width: 100%;
+    border-radius: 70px;
+  }
+
+  .Game1,
+  .Game2 {
+    padding: 10px 20px;
+  }
+
+  .Shipping,
+  .Billing,
+  .payment-method,
+  .Shipping-method {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Shipping-method img {
+    height: 60px;
+    width: 70%;
+  }
+
+  .subtitle-check {
+    margin: 0;
+    padding: 0;
+  }
+
+  .Prices {
+    padding-left: 70px;
+  }
+}
