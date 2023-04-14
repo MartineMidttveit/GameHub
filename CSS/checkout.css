@@ -174,7 +174,7 @@ body {
   .Billing,
   .Shipping-method,
   .payment-method {
-    width: 90%;
+    width: 100%;
     border-radius: 70px;
   }
 
