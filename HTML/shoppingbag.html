@@ -38,8 +38,8 @@
 
 <header class="navigation">
   <div class="search-bar">
-      <form id="search-form" aria-label="search-form-lbl">
-          <input class="searching" type="text" placeholder="Search for games...">
+      <form id="search-form">
+          <input class="searching" type="text" placeholder="Search for games..." aria-label="search-form">
       </form>
   </div>
 
@@ -122,9 +122,9 @@
 
   <div class="line"></div>
 
-  <form class="coupon-giftcard" aria-label="coupon-giftcard-lbl">
-    <input type="text" placeholder="COUPON" id="coupon">
-    <input type="text" placeholder="GIFTCARD" id="giftcard">
+  <form class="coupon-giftcard">
+    <input type="text" placeholder="COUPON" id="coupon" aria-label="coupon">
+    <input type="text" placeholder="GIFTCARD" id="giftcard" aria-label="giftcard">
   </form>
 
   <div class="col-13">
@@ -196,10 +196,9 @@
     <p class="orange">£59.98</p>
   </div>
 
-  <form class="coupon-giftcard" aria-label="coupon-giftcard-lbl">
-    <label for="coupon-giftcard">coupon giftcard</label>
-      <input type="text" placeholder="COUPON" id="coupon">
-      <input type="text" placeholder="GIFTCARD" id="giftcard">
+  <form class="coupon-giftcard">
+      <input type="text" placeholder="COUPON" id="coupon" aria-label="coupon-lbl">
+      <input type="text" placeholder="GIFTCARD" id="giftcard" aria-label="coupon-lbl">
   </form>
 </div>
 
@@ -210,16 +209,14 @@
   <div class="delivery-info">
     <h3 class="choose-headline">DELIVERY METHOD</h4>
 
-    <form class="delivery-input" aria-label="delivery-input-lbl">
-      <label for="delivery-input">delivery input</label>
-        <input class="del-info" type="text" placeholder="Name:">
-        <input class="del-info" type="text" placeholder="Address:">
-        <input class="del-info" type="text" placeholder="Post code:">
+    <form class="delivery-input">
+        <input class="del-info" type="text" placeholder="Name:" aria-label="name">
+        <input class="del-info" type="text" placeholder="Address:" aria-label="address">
+        <input class="del-info" type="text" placeholder="Post code:" aria-label="postcode">
     </form>
 
-    <form id="post-office" action="select-postoffice" aria-label="post-office-lbl">
-      <input placeholder="Select post-office" list="post-office-dl">
-        <label for="post-office">Select postoffice</label>
+    <form id="post-office" action="select-postoffice">
+      <input placeholder="Select post-office" list="post-office-dl" aria-label="post-office-lbl">
           <datalist id="post-office-dl">
             <option value="Spar, Totland">Spar, Totland</option>
             <option value="Meny, Kvernabekken">Meny, Kvernabekken</option>

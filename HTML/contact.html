@@ -38,8 +38,8 @@
 
 <header class="navigation">
   <div class="search-bar">
-      <form id="search-form" aria-label="search-form-lbl">
-          <input class="searching" type="text" placeholder="Search for games...">
+      <form id="search-form">
+          <input class="searching" type="text" placeholder="Search for games..." aria-label="search-form-lbl">
       </form>
   </div>
 
@@ -64,13 +64,13 @@
     <div class="contact-container">
       <h1>CONTACT <span>US</span></h1>
 
-      <form id="contact-info" aria-label="contact-info-lbl">
-        <input id="contact-info-name" type="text" placeholder="Name:">
-        <input type="text" placeholder="Email:">
+      <form id="contact-info">
+        <input id="contact-info-name" type="text" placeholder="Name:" aria-label="contact-info-lbl">
+        <input type="text" placeholder="Email:" aria-label="contact-info-lbl">
       </form>
 
-      <form id="contact-message" class="message-box" aria-label="contact-message-lbl">
-        <textarea placeholder="Your message...." id="textarea"></textarea>
+      <form id="contact-message" class="message-box">
+        <textarea placeholder="Your message...." id="textarea" aria-label="contact-message-lbl"></textarea>
       </form>
       
       <div id="send-container">
@@ -177,14 +177,15 @@
   <div class="contact-image">
     <div class="contact-container">
       <h1>CONTACT <span>US</span></h1>
-      <form id="contact-info-mob" aria-label="contact-info-mob-lbl">
-        <input id="contact-info-name1" type="text" placeholder="Name:">
-        <input type="text" placeholder="Email:">
+      <form id="contact-info-mob">
+        <input id="contact-info-name1" type="text" placeholder="Name:" aria-label="contact-info-mob-lbl">
+        <input type="text" placeholder="Email:" aria-label="Email">
       </form>
 
-      <form id="contact-message-mob" class="message-box" aria-label="contact-message-mob-lbl">
-        <textarea placeholder="Your message...." id="textarea"></textarea>
+      <form id="contact-message-mob" class="message-box">
+        <textarea placeholder="Your message...." id="textarea" aria-label="contact-message-mob-lbl"></textarea>
       </form>
+      
       <div id="send-container-mob">
         <button id="send-btn-mob" type="submit" class="rounded-btns">SEND</button>
       </div>
