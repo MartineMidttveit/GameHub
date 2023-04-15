@@ -198,6 +198,9 @@ body {
 .shipping-mtd {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .shipping-mtd,
@@ -211,8 +214,9 @@ body {
 
 .radio-input-container {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
+    height: 40px;
+    width: 55%;
 }
 
 .choose-headline {
@@ -221,25 +225,65 @@ body {
     font-size: 24px;
     font-weight: 400;
     text-align: center;
+    margin: 10px 0px;
 }
 
+.shipping-price {
+    padding-left: 40px;
+}
 /*--------------------------------PAYMENT METHOD--------------------------------*/
 
 .payment-mtd {
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
-}
-
-#klarna-img {
-    width: 30px;
-    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #proceed-btn {
     grid-column: 2 / span 1;
+    margin-left: 70%;
+}
+
+.fa-cc-paypal {
+    padding-left: 40%;
+    font-size: 30px;
+}
+
+.fa-cc-visa {
+    padding-left: 25%;
+    font-size: 30px;
+}
+
+#klarna-img {
+    margin-left: 40%;
+    object-fit: fill;
+    height: 60px;
+    width: 42px;
 }
 
 /*--------------------------------MEDIA QUIERIES--------------------------------*/
+
+@media only screen and (min-width: 1081px) and (max-width: 1440px) {
+    .radio-input-container {
+        width: 100%;
+        padding-left: 35px;
+    }
+
+    .save-option {
+        padding: 6% 10%;
+        text-align: center;
+    }
+
+    .choose-headline {
+        padding: 4% 10%;
+    }
+
+    #proceed-btn {
+        margin-left: 55%;
+    }
+}
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
     body {
@@ -406,6 +450,28 @@ body {
         height: 36px;
         font-size: 14px;
     }
+
+    .radio-input-container {
+        width: 70%;
+        font-size: 14px;
+    }
+
+    .fa-cc-paypal {
+        padding-left: 40%;
+        font-size: 30px;
+    }
+    
+    .fa-cc-visa {
+        padding-left: 25%;
+        font-size: 30px;
+    }
+    
+    #klarna-img {
+        margin-left: 40%;
+        object-fit: fill;
+        height: 60px;
+        width: 42px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1080px) {
@@ -514,7 +580,7 @@ body {
     }
 
     .bottom-part {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 30% 30% 40%;
         grid-template-rows: repeat(2, 300px);
         gap: 15px;
         width: 95%;
@@ -590,5 +656,14 @@ body {
     .del-info {
         height: 40px;
         font-size: 16px;
+    }
+
+    .radio-input-container {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    #proceed-btn {
+        margin-left: 50%;
     }
 }
