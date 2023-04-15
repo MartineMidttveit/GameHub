@@ -38,7 +38,7 @@
 
 <header class="navigation">
   <div class="search-bar">
-      <form id="search-form">
+      <form id="search-form" aria-label="search-form-lbl">
           <input class="searching" type="text" placeholder="Search for games...">
       </form>
   </div>
@@ -71,7 +71,7 @@
 
   <div class="col-2">
     <h2 class="bag-titles">Title</h2>
-    <h3 class="style-2">Call of Duty</h3>
+    <p class="style-2">Call of Duty</p>
     <h4 class="style-3">Black Ops</h4>
   </div>
 
@@ -82,17 +82,17 @@
 
   <div class="col-4">
     <h2 class="bag-titles">Condition</h2>
-    <h3 class="style-2">New</h3>
+    <p class="style-2">New</p>
   </div>
 
   <div class="col-5">
     <h2 class="bag-titles">Quantity</h2>
-    <h3 class="style-2">- 1 +</h3>
+    <p class="style-2">- 1 +</p>
   </div>
 
   <div class="col-6">
     <h2 class="bag-titles">Price</h2>
-    <h3 class="style-2">£39.99</h3>
+    <p class="style-2">£39.99</p>
   </div>
 
   <div class="col-7">
@@ -100,8 +100,8 @@
   </div>
 
   <div class="col-8">
-    <h3 class="style-2">Just Cause</h3>
-    <h4 class="style-3">Explosion</h4>
+    <p class="style-2">Just Cause</p>
+    <p class="style-3">Explosion</p>
   </div>
 
   <div class="col-9">
@@ -109,40 +109,40 @@
   </div>
 
   <div class="col-10">
-    <h3 class="style-2">Pre-owned</h3>
+    <p class="style-2">Pre-owned</p>
   </div>
 
   <div class="col-11">
-    <h3 class="style-2">- 1 +</h3>
+    <p class="style-2">- 1 +</p>
   </div>
 
   <div class="col-12">
-    <h3 class="style-2">£19.99</h3>
+    <p class="style-2">£19.99</p>
   </div>
 
   <div class="line"></div>
 
-  <form class="coupon-giftcard">
+  <form class="coupon-giftcard" aria-label="coupon-giftcard-lbl">
     <input type="text" placeholder="COUPON" id="coupon">
     <input type="text" placeholder="GIFTCARD" id="giftcard">
   </form>
 
   <div class="col-13">
-    <h3 class="style-2">Subtotal:</h3>
-    <h3 class="style-2">Shipping:</h3>
+    <p class="style-2">Subtotal:</p>
+    <p class="style-2">Shipping:</p>
   </div>
 
   <div class="col-14">
-    <h3 class="style-2">£59.98</h3>
-    <h3 class="style-2">FREE</h3>
+    <p class="style-2">£59.98</p>
+    <p class="style-2">FREE</p>
   </div>
 
   <div class="col-15">
-    <h3 class="style-2"><span>TOTAL:</span></h3>
+    <p class="style-2"><span>TOTAL:</span></p>
   </div>
 
   <div class="col-16">
-    <h3 class="style-2"><span>£59.98</span></h3>
+    <p class="style-2"><span>£59.98</span></p>
   </div>
 </div>
 
@@ -196,7 +196,7 @@
     <p class="orange">£59.98</p>
   </div>
 
-  <form class="coupon-giftcard">
+  <form class="coupon-giftcard" aria-label="coupon-giftcard-lbl">
     <label for="coupon-giftcard">coupon giftcard</label>
       <input type="text" placeholder="COUPON" id="coupon">
       <input type="text" placeholder="GIFTCARD" id="giftcard">
@@ -208,16 +208,16 @@
 
 <section class="bottom-part">
   <div class="delivery-info">
-    <h5 class="choose-headline">DELIVERY METHOD</h5>
+    <h3 class="choose-headline">DELIVERY METHOD</h4>
 
-    <form class="delivery-input">
+    <form class="delivery-input" aria-label="delivery-input-lbl">
       <label for="delivery-input">delivery input</label>
         <input class="del-info" type="text" placeholder="Name:">
         <input class="del-info" type="text" placeholder="Address:">
         <input class="del-info" type="text" placeholder="Post code:">
     </form>
 
-    <form id="post-office" action="select-postoffice">
+    <form id="post-office" action="select-postoffice" aria-label="post-office-lbl">
       <input placeholder="Select post-office" list="post-office-dl">
         <label for="post-office">Select postoffice</label>
           <datalist id="post-office-dl">
@@ -236,7 +236,7 @@
 
 <!---------------------------------------------------- SHIPPING METHOD ---------------------------------------------------->
   <div class="shipping-mtd">
-    <h5 class="choose-headline">CHOOSE SHIPPING METHOD</h5>
+    <h3 class="choose-headline">CHOOSE SHIPPING METHOD</h4>
 
     <div class="radio-input-container">
         <input type="radio" id="normal-shipping" name="normal-shipping" value="normal-shipping">
@@ -254,7 +254,7 @@
   <!---------------------------------------------------- PAYMENT METHOD ---------------------------------------------------->
   
   <div class="payment-mtd">
-    <h5 class="choose-headline">CHOOSE PAYMENT METHOD</h5>
+    <h3 class="choose-headline">CHOOSE PAYMENT METHOD</h4>
 
       <div class="radio-input-container">
         <input type="radio" id="credit-card" name="credit-card" value="credit-card">

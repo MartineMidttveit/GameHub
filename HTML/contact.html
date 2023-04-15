@@ -38,7 +38,7 @@
 
 <header class="navigation">
   <div class="search-bar">
-      <form id="search-form">
+      <form id="search-form" aria-label="search-form-lbl">
           <input class="searching" type="text" placeholder="Search for games...">
       </form>
   </div>
@@ -64,17 +64,13 @@
     <div class="contact-container">
       <h1>CONTACT <span>US</span></h1>
 
-      <form id="contact-info">
+      <form id="contact-info" aria-label="contact-info-lbl">
         <input id="contact-info-name" type="text" placeholder="Name:">
-        <label for="contact-info">Name</label>
-
         <input type="text" placeholder="Email:">
-        <label for="contact-info">Email</label>
       </form>
 
-      <form id="contact-message" class="message-box">
+      <form id="contact-message" class="message-box" aria-label="contact-message-lbl">
         <textarea placeholder="Your message...." id="textarea"></textarea>
-        <label for="contact-message">Message</label>
       </form>
       
       <div id="send-container">
@@ -134,7 +130,7 @@
 <!---------------------------------------------------- Questions ---------------------------------------------------->
 
 <div class="cathegories">
-  <h5 class="contact-subtitle">SHIPPING</h5>
+  <h4 class="contact-subtitle">SHIPPING</h5>
   <div class="contact-questions">
     <ul>
       <li>When does my order arrive?</li>
@@ -144,7 +140,7 @@
     </ul>
   </div>
 
-  <h5 class="contact-subtitle">PROFILE</h5>
+  <h4 class="contact-subtitle">PROFILE</h5>
   <div class="contact-questions">
     <ul>
       <li>What do I do if I forget my password?</li>
@@ -154,7 +150,7 @@
     </ul>
   </div>
 
-  <h5 class="contact-subtitle">RETURNS & <br>GUARANTEE</h5>
+  <h4 class="contact-subtitle">RETURNS & <br>GUARANTEE</h5>
   <div class="contact-questions">
     <ul>
       <li>How much does it cost to return an order?</li>
@@ -164,7 +160,7 @@
     </ul>
   </div>
 
-  <h5 class="contact-subtitle">GIFT CARD & <br>COUPONS</h5>
+  <h4 class="contact-subtitle">GIFT CARD & <br>COUPONS</h5>
   <div class="contact-questions">
     <ul>
       <li>Where do I buy a gift card?</li>
@@ -181,12 +177,12 @@
   <div class="contact-image">
     <div class="contact-container">
       <h1>CONTACT <span>US</span></h1>
-      <form id="contact-info-mob">
+      <form id="contact-info-mob" aria-label="contact-info-mob-lbl">
         <input id="contact-info-name1" type="text" placeholder="Name:">
         <input type="text" placeholder="Email:">
       </form>
 
-      <form id="contact-message-mob" class="message-box">
+      <form id="contact-message-mob" class="message-box" aria-label="contact-message-mob-lbl">
         <textarea placeholder="Your message...." id="textarea"></textarea>
       </form>
       <div id="send-container-mob">

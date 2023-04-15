@@ -43,11 +43,6 @@ body {
   border-radius: 6px;
 }
 
-#contact-info label,
-#contact-message label {
-  display: none;
-}
-
 #contact-info-name {
   margin-bottom: 18px;
 }

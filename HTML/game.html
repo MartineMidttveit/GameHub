@@ -38,7 +38,7 @@
 
 <header class="navigation">
   <div class="search-bar">
-      <form id="search-form">
+      <form id="search-form" aria-label="search-form-lbl">
           <input class="searching" type="text" placeholder="Search for games...">
       </form>
   </div>
@@ -77,9 +77,8 @@
     <p>£39.99</p>
 
     <div class="game-forms">
-      <form id="device" action="select-device">
+      <form id="device" action="select-device" aria-label="device-lbl">
         <input type="text" placeholder="DEVICE:" list="devices">
-        <label for="device">Device</label>
 
         <datalist id="devices">
           <option value="Playstation 4">Playstation 4</option>
@@ -92,9 +91,8 @@
         </datalist>
       </form>
 
-      <form id="condition" action="select-device">
+      <form id="condition" action="select-device" aria-label="condition-lbl">
         <input type="text" placeholder="CONDITION:" list="conditions">
-        <label for="condition">condition</label>
           <datalist id="conditions">
             <option value="New">New</option>
             <option value="Pre-owned">Pre-owned</option>
