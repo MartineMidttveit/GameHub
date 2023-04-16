@@ -26,6 +26,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 440px;
   }
   
   .about-headlines {
@@ -49,35 +50,35 @@ body {
   
   .container1 {
     border-radius: 70px 0px 0px 70px;
-    height: 440px;
     width: 40%;
   }
   
   .container2 {
     border-radius: 0px 70px 70px 0px;
-    height: 438px;
     width: 35%;
   }
   
   .container3 {
     border-radius: 70px 0px 0px 70px;
-    height: 440px;
     width: 40%;
+  }
+
+  .About1,
+  .About2,
+  .About3 {
+    height: 440px;
+    object-fit: cover;
   }
   
   .About1,
   .About3 {
-    height: 440px;
     width: 35%;
     border-radius: 0px 70px 70px 0px;
-    object-fit: cover;
   }
   
   .About2 {
-    height: 438px;
     width: 40%;
     border-radius: 70px 0px 0px 70px;
-    object-fit: cover;
   }
   
   /*-------------------------MEDIA QUIERIES MOBILE ---------------------------*/

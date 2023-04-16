@@ -229,7 +229,6 @@ body {
   .top-section {
     padding-top: 20px;
     width: 90%;
-    margin-top: 20px;
   }
 
   .text-check {
@@ -309,5 +308,11 @@ body {
 
   .Prices {
     padding-left: 70px;
+  }
+}
+
+@media (max-width: 1398px) {
+  .top-section {
+    margin-top: 20px;
   }
 }
